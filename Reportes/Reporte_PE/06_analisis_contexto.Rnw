@@ -1,0 +1,1178 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Análisis del contexto económico}
+\label{chp_contexto}
+%---------------------------------------------------------------------------------------------------
+\section{Análisis de las tasas históricas relevantes para el estudio}
+% ------------------------------------------------------------------------------------------------
+\subsection{Evolución histórica de la tasa de desempleo}
+Estadísticas de desempleo\footnote{\url{http://www.ecuadorencifras.gob.ec/empleo-marzo-2019/}}
+representadas en forma porcentual durante el período junio 2012 – diciembre 2018,  abarca la población a nivel nacional, población urbana y rural, por sexo y por edad.
+
+\begin{figure}[H]
+\centering
+\caption{Total desempleo por períodos de tiempo}
+\label{fig:ind_desempleo}
+\includegraphics[scale=1]{graficos/iess_indice_desempleo_des.png}
+\caption*{\scriptsize Fuente: INEC. \\
+Elaborado: DAIE.}
+\end{figure}
+
+
+{\fontsize{11}{12}\selectfont
+\begin{longtable}[H]{crcr}
+\caption{Porcentaje total de desempleo por períodos de tiempo}\\
+\label{tab:porc_desempleo_des}\\
+\toprule
+\multicolumn{1}{c}{Período} & \multicolumn{1}{c}{Índice}        & \multicolumn{1}{c}{Período} & \multicolumn{1}{c}{Índice}\\
+                            & \multicolumn{1}{c}{Nacional (\%)} &                             & \multicolumn{1}{c}{Nacional (\%)}\\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{Período} & \multicolumn{1}{c}{Índice}        & \multicolumn{1}{c}{Período} & \multicolumn{1}{c}{Índice}\\
+                            & \multicolumn{1}{c}{Nacional (\%)} &                             & \multicolumn{1}{c}{Nacional (\%)}\\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{4}{r}{continúa...} \\
+\endfoot
+\bottomrule
+\caption*{\scriptsize Fuente: INEC. \\
+Elaborado: DAIE.}
+\endlastfoot
+\input{tablas/iess_porc_desempleo_des.tex}
+\end{longtable}
+}
+
+En la tabla y gráfica anterior se visualiza una tasa de desempleo promedio del 4,43\%. La tasa más alta es del 5,71\% y se presenta en el mes de marzo de 2016. A partir del mes de diciembre de 2018 se aprecia un decrecimiento del 3,69\%; de acuerdo con los datos publicados por el INEC.
+
+\begin{figure}[H]
+\centering
+\caption{índice de población urbana y rural desempleada}
+\label{fig:urb_rur_desempleo}
+\includegraphics[scale=1]{graficos/iess_urb_rur_desempleo_des.png}
+\caption*{\scriptsize Fuente: INEC. \\
+Elaborado: DAIE.}
+\end{figure}
+
+
+{\fontsize{11}{12}\selectfont
+\begin{longtable}[H]{crcrcr}
+\caption{Índice de población urbana y rural desempleada}\\
+\label{tab:urb_rur_desempleo}\\
+\toprule
+\multicolumn{1}{c}{Período} & \multicolumn{1}{c}{Población} & \multicolumn{1}{c}{Población} & \multicolumn{1}{c}{Período}& \multicolumn{1}{c}{Población} & \multicolumn{1}{c}{Población}\\
+ & \multicolumn{1}{c}{urbana (\%)} & \multicolumn{1}{c}{rural (\%)} & &\multicolumn{1}{c}{urbana (\%)} & \multicolumn{1}{c}{rural (\%)} \\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{Período} & \multicolumn{1}{c}{Población} & \multicolumn{1}{c}{Población} & \multicolumn{1}{c}{Período}& \multicolumn{1}{c}{Población} & \multicolumn{1}{c}{Población}\\
+ & \multicolumn{1}{c}{urbana (\%)} & \multicolumn{1}{c}{rural (\%)} & &\multicolumn{1}{c}{urbana (\%)} & \multicolumn{1}{c}{rural (\%)} \\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{6}{r}{continúa...} \\
+\endfoot
+\bottomrule
+\caption*{\scriptsize Fuente: INEC. \\
+Elaborado: DAIE.}
+\endlastfoot
+\input{tablas/iess_urb_rur_desempleo_des.tex}
+\end{longtable}
+}
+
+
+Se estima que en la población urbana existe un mayor índice de desempleo; por ejemplo, en el mes de junio de 2012 se observa el 5,20\% de desempleo y en la población rural apenas el 1,94\% existiendo una diferencia del 3,26\% entre ambas poblaciones.
+
+En el mes de diciembre de 2018 se visualiza una tasa de desempleo en la población rural del 1,42\% y en la población urbana del 4,80\%, observándose un decremento de este fenómeno en la población urbana mientras que la población rural sucede lo contrario.
+\begin{figure}[H]
+\centering
+\caption{índice de población desempleada por sexo}
+\label{fig:iess_sexo_desempleo}
+\includegraphics[scale=1]{graficos/iess_sexo_desempleo_des.png}
+\caption*{\scriptsize Fuente: INEC. \\
+Elaborado: DAIE.}
+\end{figure}
+
+{\fontsize{11}{12}\selectfont
+\begin{longtable}[H]{cccccc}
+\caption{Índice de población desempleada por sexo }\\
+\label{tab:sexo_desempleo}\\
+\toprule
+\multicolumn{1}{c}{\multirow{2}[2]{*}{Período}} & \multicolumn{2}{p{10.71em}}{Sexo} & \multicolumn{1}{c}{\multirow{2}[2]{*}{Período}} & \multicolumn{2}{p{10.71em}}{Sexo} \\
+\cmidrule{2-3}\cmidrule{5-6}          & Hombre & Mujer &       & Hombre & Mujer \\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{\multirow{2}[2]{*}{Período}} & \multicolumn{2}{p{10.71em}}{Sexo} & \multicolumn{1}{c}{\multirow{2}[2]{*}{Período}} & \multicolumn{2}{p{10.71em}}{Sexo} \\
+\cmidrule{2-3}\cmidrule{5-6}          & Hombre & Mujer &       & Hombre & Mujer \\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{6}{r}{continúa...} \\
+\endfoot
+\bottomrule
+\caption*{\scriptsize Fuente: INEC. \\
+Elaborado: DAIE.}
+\endlastfoot
+\input{tablas/iess_sexo_desempleo_des.tex}
+\end{longtable}
+}
+
+
+Para el período comprendido entre junio 2012 y diciembre 2018, se presenta una tasa de desempleo promedio igual a 3,65\% para hombres y 5,53\% para mujeres. En el mes de marzo de 2016 se registra que la tasa de desempleo alcanza un máximo de 4,44\% para hombres y 7,42\% para mujeres. Además, se confirma una desviación estándar de 0,43\% y 0,77\% para hombres y mujeres, respectivamente; lo que implica una mayor variación en el indicador para las mujeres.
+
+Para el mes de diciembre de 2018 se registra una tasa de desempleo de 3,14\% para hombres y 4,46\% para mujeres, observándose un decrecimiento en ambos casos.
+
+{\fontsize{9}{10}\selectfont
+\begin{longtable}[H]{*{6}{r}}
+\caption{Índice de población desempleada por rango de edad }\\
+\label{tab:edad_desempleo}\\
+\toprule
+\multicolumn{1}{c}{\multirow{2}[2]{*}{Período}} & \multicolumn{5}{c}{Rango de edad} \\
+\cmidrule{2-6}
+& Entre 15 y 24 años & Entre 25 y 34 años & Entre 35 y 44 años & Entre 55 y 64 años & 65 años o más \\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{\multirow{2}[2]{*}{Período}} & \multicolumn{5}{p{26.775em}}{Rango de edad} \\
+\cmidrule{2-6}
+& Entre 15 y 24 años & Entre 25 y 34 años & Entre 35 y 44 años & Entre 55 y 64 años & 65 años o más \\
+\midrule
+\endhead
+\bottomrule \multicolumn{6}{r}{continúa...} \\
+\endfoot
+\bottomrule
+\caption*{\scriptsize Fuente: INEC. \\
+Elaborado: DAIE.}
+\endlastfoot
+\input{tablas/iess_edad_desempleo_des.tex}
+\end{longtable}
+}
+
+
+% 
+% \begin{figure}[H]
+% \centering
+% \caption{índice de población desempleada por rangos de edad}
+% \label{fig:pobla_desemp_edad_des.png}
+% \includegraphics[scale=0.9]{graficos/IESS_pobla_desemp_edad_des.png}
+% \caption*{\scriptsize Fuente: INEC. \\
+% Elaborado: DAIE.}
+% \end{figure}
+
+Dentro del período junio 2012 y diciembre 2018 se observa que la mayor tasa de desempleo corresponde un rango de edad que fluctúa entre los 15 y 24 años durante el mes de junio de 2014 (12,75\%). A partir de los 35 años se visualiza que la tendencia de desempleo va hacia la baja.
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Evolución de la inflación en el Ecuador}
+Una de las hipótesis más importante considerada en los modelos matemáticos - actuariales es la inflación, que mide el aumento generalizado y sostenido de los precios de bienes y servicios en un país, cuya comprobación consiste en el cálculo de los incrementos que presenta el Índice de Precios al Consumidor (IPC), su efecto final se presenta en el poder adquisitivo de los capitales. Es por ello por lo que ponemos especial atención en este fenómeno económico debido a que afecta tanto a las tasas de interés como al incremento salarial, que es la base del crecimiento de las reservas y del salario en el tiempo, referente tanto de aporte como de beneficios.
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica del índice de precios (IPC)}
+\label{fig:iess_ipc_hist}
+\includegraphics[scale=1]{graficos/iess_ipc_hist.png}
+\caption*{\scriptsize Fuente: Instituto Nacional de Estadísticas y Censos. \\
+            Elaborado: DAIE.}
+\end{figure}
+
+
+{\fontsize{11}{12}\selectfont
+\begin{longtable}[H]{ccc}
+\caption{Evolución histórica del IPC (período 2000-2018)}\\
+\label{tab:iess_ipc_hist}\\
+\toprule
+Año & IPC & Inflación acumulada\\
+& (a diciembre)    & anual (\%) \\
+\midrule
+\endfirsthead
+
+\toprule
+Año & IPC & Inflación acumulada\\
+& (a diciembre)    & anual (\%) \\
+\midrule
+\endhead
+\bottomrule \multicolumn{3}{r}{continúa...} \\
+\endfoot
+\bottomrule
+\caption*{\scriptsize Fuente: INEC. \\
+Elaborado: DAIE.}
+\endlastfoot
+\input{tablas/iess_ipc_hist.tex}
+\end{longtable}
+}
+
+El Ecuador registró la inflación más alta de su historia en el año 2000 (91\%), año en que se inicia el sistema monetario dólares. Con la implementación de la dolarización, la inflación se redujo paulatinamente, desde 22,4\% en el 2001 al -0,2\% en el 2017, siendo el menor registro desde la adopción del sistema monetario dolarización. Los años con mayor inflación interanual fueron 2001, 2002 y 2008, con valores superiores al 8\%. Por el contrario, los años con menor inflación fueron estos últimos tres: 2016, 2017 y 2018, con valores inferiores al 1,2\%.
+
+% --------------------------------------------------------------------------------------------------
+\subsection{Evolución del salario básico unificado}
+Otra de las hipótesis a considerarse en los modelos matemáticos - actuariales es el comportamiento del
+salario básico unificado (SBU) y su crecimiento a futuro. El SBU está directamente influenciado por
+el comportamiento de la inflación.
+\begin{figure}[H]
+\centering
+\caption{Serie histórica del Salario Básico Unificado}
+\label{fig:iess_sbu_hist}
+\includegraphics[scale=1.0]{graficos/iess_sbu_hist.png}
+\caption*{\scriptsize Fuente: Ministerio del Trabajo. \\
+Elaborado: DAIE}
+\end{figure}
+
+\begin{table}[H]
+\begin{center}
+\caption{Salario Básico Unificado (período 2002-2018)}
+\label{tab:iess_sbu_hist}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{ccc}
+\toprule
+Año & SBU & Tasa de         \\
+& (USD)& crecimiento (\%) \\
+\midrule
+\input{tablas/iess_sbu_hist.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Ministerio del Trabajo. \\
+Elaborado: DAIE}
+\end{center}
+\end{table}
+
+En la tabla \ref{fig:iess_sbu_hist}, se presenta la evolución histórica del SBU en dólares desde el año 2002 hasta 2018. Como se observa, el SBU hasta diciembre de 2018 fue de USD 386, para el año 2019 se fijó en USD 394, lo que significó un incremento del 2,07\%. Se destaca una desaceleración paulatina de los crecimientos del SBU en los últimos cinco años en sus tasas de crecimiento. En el año 2017, se registró el menor incremento en el SBU (2,46\%); en cambio, en el año 2008, se registró su mayor crecimiento (17,67\%). Por último, el SBU creció 4,26\% en promedio durante el período 2003 a 2018, pero para los próximos años se espera una menor tasa de crecimiento del SBU, debido a las siguientes predicciones económicas: no se espera altos precios del crudo; existe gran incertidumbre económica en el país; y el dólar se cotiza muy fuerte en comparación a otras monedas de la región.
+
+% --------------------------------------------------------------------------------------------------
+\subsection{Evolución histórica de los salarios}
+Los ingresos mensuales por aportes que reciben tanto el Fondo de Cesantía como el Seguro de Desempleo, es un porcentaje fijo de la materia gravada, entendiéndose que esta es todo ingreso susceptible de apreciación pecuniaria, percibido por el afiliado con motivo de la realización de su actividad personal. Una de las variables claves de este estudio es la tasa de crecimiento de los salarios; pues de esta, se determina de cierta manera el ingreso futuro por concepto de aportes.
+
+El salario declarado promedio de los afiliados activos del SGO se incrementó un 41\% entre 2010 y 2018 pasando de USD 520,56 a USD 734,66 con un crecimiento promedio anual geométrico del 4,4\%. En el año 2011 se registró el crecimiento nominal anual más alto del salario con un 9,06\%, mientras que en 2016 se registró el más bajo con un 1,5\%.
+\begin{table}[H]
+\begin{center}
+\caption{Evolución histórica del salario nominal promedio aportado}
+\label{tab:iess_spd_hist}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{*{4}{c}}
+\toprule
+Año & Salario declarado & Incremento & Tasa de \\
+    & promedio (USD)         & anual (USD)    & crecimiento (\%) \\
+\midrule
+\input{tablas/iess_spd_hist.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: IESS-Planillas. \\
+  Elaborado: DAIE.}
+\end{center}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica del salario nominal promedio aportado}
+\label{fig:iess_spd_hist}
+\includegraphics[scale=1.0]{graficos/iess_spd_hist.png}
+\caption*{\scriptsize Fuente: IESS-Planillas. \\
+  Elaborado: DAIE.}
+\end{figure}
+
+% --------------------------------------------------------------------------------------------------
+\subsection{Evolución histórica de la tasa de crecimiento real del PIB del Ecuador}
+A continuación, se muestra la evolución histórica de la tasa de crecimiento real del PIB, la cual se 
+obtuvo de la página del Banco Mundial \footnote{\url{https://datos.bancomundial.org/pais/ecuador}} 
+(ver tabla \ref{tab:iess_pib_hist} y figura \ref{fig:iess_pib_hist}).
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica del crecimiento real del PIB del Ecuador}
+\label{fig:iess_pib_hist}
+\includegraphics[scale=1.0]{graficos/iess_pib_hist.png}
+\caption*{\scriptsize Fuente: Banco Mundial. \\
+  Elaborado: DAIE.}
+\end{figure}
+
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{crcr}
+\caption{Evolución de la tasa de crecimiento real del PIB desde 1961 a 2018} \\
+\label{tab:iess_pib_hist} \\
+\toprule
+Año & Crecimiento Real & Año & Crecimiento Real \\
+    & PIB (\%)         &     &  PIB (\%)  \\
+\midrule
+\endfirsthead
+
+\toprule
+Año & Crecimiento Real & Año & Crecimiento Real \\
+    & PIB (\%)         &     &  PIB (\%)  \\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{4}{c}{continúa...} \\
+\endfoot
+\bottomrule
+\caption*{\scriptsize Fuente: Banco Mundial. \\
+  Elaborado: DAIE.}
+\endlastfoot
+  \input{tablas/iess_pib_hist.tex}
+\end{longtable}
+}
+
+Las mayores tasas de crecimiento del PIB se registraron durante la bonanza petrolera de los años setenta y los mayores decrecimientos se registraron en el año 1999 (4,74\%) y en el año 2016 (1,23\%). En la última década el crecimiento del PIB fue impulsado por los altos precios del crudo hasta diciembre de 2014, después de este año se han registrado menores tasas de crecimientos. En el 2018 se registró un crecimiento real del PIB de 1,38\% y en promedio los últimos 58 años se registró una tasa real de crecimiento del PIB igual a 2,19\%.
+%---------------------------------------------------------------------------------------------------
+\section{Proyección de las tasas utilizadas en el horizonte de estudio}
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Proyección del IPC}
+Para obtener la proyección, se consideró los registros mensuales del IPC publicado por el INEC entre 
+enero 2000 a noviembre 2018. Es necesario aclarar que para realizar esta proyección se observan 
+registros mensuales, pero para objetivos netamente analíticos, se toman en cuenta solo los IPC de 
+cada diciembre para las estimaciones anuales de la inflación. Para modelar la proyección se utiliza 
+el siguiente modelo SARIMA presentado en la tabla \ref{mod:iess_ipc_proy}.
+\begin{table}[H]
+\centering
+\caption{Estimación de los coeficientes y algunos estadísticos del modelo $SARIMA(2,1,2)(0,1,0)_{12}$ 
+para los índices de precios al consumidor (IPC)}
+\label{mod:iess_ipc_proy}
+{\fontsize{10}{12}\selectfont
+
+\begin{tabular}{*{5}{c}}
+\hline
+\textbf{Variable:}         & \multicolumn{1}{l}{\textbf{Coeficiente}} & \textbf{Error Estándar}               & \textbf{Estadístico-t}                  & \multicolumn{1}{l}{\textbf{P-valor}} \\ \hline
+AR(1)             & 0,329814                        & 0,066120                     & \multicolumn{1}{c}{4,988092}   & 0,000000                    \\
+AR(2)             & 0,367200                        & 0,059862                     & \multicolumn{1}{c}{6,134081}   & 0,000000                    \\
+MA(12)            & -0,958225                       & 0,009174                     & \multicolumn{1}{c}{-104,44900} & 0,000000                    \\
+MA(2)             & -0,149047                       & 0,009218                     & \multicolumn{1}{c}{-16,169240} & 0,000000                    \\
+MA(10)            & 0,146504                        & 0,010249                     & \multicolumn{1}{c}{14,294590}  & 0,000000                    \\ \hline
+\multicolumn{5}{c}{\textbf{Estadísticos}}                                                                                                               \\ \hline
+$R^2$             & 0,712037                        & \multicolumn{2}{c}{Media de la var. dependiente} &  -0,089151                   \\
+$R^2$ ajustado    & 0,706473                        & \multicolumn{2}{c}{SD var. dependiente}          &   0,435801                    \\
+SD regresión      & 0,236109                        & \multicolumn{2}{c}{AIC}                          & -0,025745                   \\
+S.R.C.            & 11,539720                       & \multicolumn{2}{c}{Criterio de Schwarz}          & 0,053420                    \\
+Log Verosimilitud & 7,728949                         & \multicolumn{2}{c}{Est Durbin-Watson}           &  1,883864                    \\ \hline
+\end{tabular}
+}
+\caption*{\scriptsize Elaborado: DAIE.}
+\end{table}
+
+La figura \ref{fig:iess_ipc_proy} y la tabla \ref{tab:iess_ipc_proy} muestran los valores estimados 
+del IPC (a diciembre) para el período 2019 a 2058 con sus respectivos intervalos de confianza
+(límites inferiores y superiores) al 95\% de nivel. 
+\begin{figure}[H]
+\centering
+\caption{Predicciones e intervalos de confianza, al nivel del 95\%, del modelo para los Índice al
+precio al consumidor (IPC)}
+\label{fig:iess_ipc_proy}
+\includegraphics[scale=1.0]{graficos/iess_proy_ipc.png}
+\caption*{\scriptsize Fuente: Instituto Nacional de Estadísticas y Censos y DAIE. \\
+  Elaborado: DAIE.}
+\end{figure}
+
+De la proyección del IPC con valores observados a diciembre de cada año (ver tabla \ref{tab:iess_ipc_proy}), se obtiene 
+la inflación anual acumulada de cada año para el período de valuación. A continuación, en la figura 
+\ref{fig:iess_proy_inflacion} y tabla \ref{tab:iess_ipc_proy}, se presentan los resultados de las 
+predicciones de la inflación.
+
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{crrrr}
+\caption{Valores estimados de la variación del IPC a diciembre y la inflación acumulada anual 
+(período 2019 – 2058)} \\
+\label{tab:iess_ipc_proy} \\
+\toprule
+\multicolumn{1}{c}{Año} & \multicolumn{1}{c}{IPC} & \multicolumn{1}{c}{Intervalo} & \multicolumn{1}{c}{Intervalo}  & \multicolumn{1}{c}{Inflación acumulada}\\
+                        &           & \multicolumn{1}{c}{inferior}  &  \multicolumn{1}{c}{superior} & \multicolumn{1}{c}{anual (\%)} \\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{Año} & \multicolumn{1}{c}{IPC} & \multicolumn{1}{c}{Intervalo} &  \multicolumn{1}{c}{Intervalo} & \multicolumn{1}{c}{Inflación} \\
+&           & \multicolumn{1}{c}{inferior}  &  \multicolumn{1}{c}{superior} & \multicolumn{1}{c}{(\%)}  \\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{5}{c}{continúa...} \\
+\endfoot
+\bottomrule
+\caption*{\scriptsize Fuente: DAIE. \\
+Elaborado: DAIE.}
+\endlastfoot
+  \input{tablas/iess_ipc_proy.tex}
+\end{longtable}
+}
+
+\begin{figure}[H]
+\centering
+\caption{Predicciones de la Inflación acumulada anual para el período 2019--2058}
+\label{fig:iess_proy_inflacion}
+\includegraphics[scale=1.0]{graficos/iess_proy_inflacion.png}
+\caption*{\scriptsize Fuente: Instituto Nacional de Estadísticas y Censos y DAIE. \\
+  Elaborado: DAIE.}
+\end{figure}
+
+Se puede observar que la inflación histórica (ver la figura \ref{fig:iess_proy_inflacion}) ha sido 
+bastante irregular con una tendencia decreciente en general desde que se implementó la dolarización.
+En este mismo sentido, la inflación proyectada tiene un comportamiento
+decreciente para los próximos años. Se proyecta que la inflación para el año 2019 y 2020 será 1,96\% 
+y 2,58\%, respectivamente. Para los siguientes años, se estima que la inflación acumulada anual 
+decrecerá hasta situarse en 1,31\% en el año 2058. Se estima que la inflación acumulada anual será igual a 1,83\% para el período 2019 a 2058.
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Proyección del Salario Básico Unificado}
+Para obtener las proyecciones del SBU, se considera las estimaciones del Índice de Precios al Consumidor (IPC) a diciembre de cada año. El SBU está directamente influenciado por el comportamiento de la inflación, misma que se determina calculando las tasas de crecimiento del IPC. Para la determinación del SBU en función del IPC, se realizó un modelo de regresión entre los datos históricos en el período 2002 a 2018 que se presentan a continuación.
+
+\begin{table}[H]
+\centering
+\caption{Estimación de los coeficientes y algunos estadísticos del modelo de regresión lineal 
+para el salario básico unificado (SBU).}
+\label{mod:iess_sbu_proy}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{@{}*{5}{c}@{}}
+\toprule
+\textbf{Variable:}  & \textbf{Coeficiente} & \textbf{Error Estándar} & \textbf{Estadístico-t} & \textbf{P-valor} \\ \midrule
+Constante           & -257,1728            & 9,172860                & -28,03626              & 0,00000          \\
+IPC                 & 6,057658             & 0,106716                & 56,76432               & 0,00000          \\ \midrule
+\multicolumn{5}{c}{\textbf{Estadísticos}}                                                                        \\ \midrule
+$R^2$               & 0,995674             & \multicolumn{2}{c}{Media de la var. dependiente} & 255,6875         \\
+$R^2$ ajustado      & 0,995365             & \multicolumn{2}{c}{SD var. dependiente}          & 93,11765         \\
+SD regresión        & 6,339583             & \multicolumn{2}{c}{AIC}                          & 6,647972         \\
+S.R.C.              & 562,6644             & \multicolumn{2}{c}{Criterio de Schwarz}          & 6,744545         \\
+Log Verosimilitud   & -51,18377            & \multicolumn{2}{c}{Criterio de Hannan-Quinn}     & 6,652917         \\
+Estadístico F       & 3.222,189             & \multicolumn{2}{c}{Est. Durbin-Watson}           & 2,165633         \\
+Prob(Estadístico F) & 0,000000             &                         &                        &                  \\ \bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Elaborado: DAIE.}
+\end{table}
+
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{crrr}
+\caption{Tasa de crecimiento SBU (período 2019 a 2058)}\\
+\label{tab:iess_sbu_proy}\\
+\toprule
+\multicolumn{1}{c}{Año} & \multicolumn{1}{c}{SBU} & \multicolumn{1}{c}{Intervalo} & \multicolumn{1}{c}{Intervalo} \\
+    & \multicolumn{1}{c}{(USD)}& \multicolumn{1}{c}{Inferior (USD)}& \multicolumn{1}{c}{Superior (USD)} \\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{Año} & \multicolumn{1}{c}{SBU} & \multicolumn{1}{c}{Intervalo} & \multicolumn{1}{c}{Intervalo} \\
+    & \multicolumn{1}{c}{(USD)}& \multicolumn{1}{c}{Inferior (USD)}& \multicolumn{1}{c}{Superior (USD)} \\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{4}{c}{continúa en la siguiente página...} \\
+\endfoot
+
+\bottomrule
+\caption*{\scriptsize Fuente: DAIE.\\
+Elaborado: DAIE.}
+\endlastfoot
+  \input{tablas/iess_sbu_proy.tex}
+\end{longtable}
+}
+
+\begin{figure}[H]
+\centering
+\caption{Predicciones e intervalos de confianza, al nivel del 95\%, del salario básico unificado 
+para el período 2019 a 2058}
+\label{fig:iess_proy_sbu}
+\includegraphics[scale=1.0]{graficos/iess_proy_sbu.png}
+\caption*{\scriptsize Fuente: Ministerio del Trabajo y DAIE. \\
+  Elaborado: DAIE.}
+\end{figure}
+
+Se espera que el SBU seguirá una tendencia de crecimiento lineal, en función del IPC como variable dependiente. De esta manera el SBU se incrementará entre el año 2019 a 2058 de USD 394 a USD 1.048,88, respectivamente. Esto implica una tasa de crecimiento anual de SBU de 2,53\% para el período 2019 a 2058.
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Proyección del salario promedio}
+Utilizando los salarios promedio mensuales de los afiliados activos del IESS de los períodos 
+comprendidos entre enero de 2010 a diciembre de 2018 (ver \ref{fig:iess_proy_salario}), se predice
+los salarios promedio para el período 2019 a 2058, utilizando la metodología de series de tiempo de 
+Box-Jenkins, más específicamente, un modelo SARIMA con errores modelados con un modelo EGARCH, como 
+se muestra a continuación.
+\begin{table}[H]
+\centering
+\caption{Estimación de los coeficientes y algunos estadísticos del modelo $SARIMA(0,2,12)(1,0,0)_{12}$ con errores $EGARCH(1,0)$ para el salario promedio mensual}
+\label{mod:iess_proy_salario}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{@{}*{6}{c}@{}}
+\toprule
+\textbf{Variable:} & \textbf{Coeficiente} & \textbf{Error Estándar}      & \textbf{Estadístico-t} & \textbf{P-valor} \\ \midrule
+MA(12)             & 0,849302             & 0,020773                     & 40,88465               & 0,00000           \\
+SMA(1)             & -0,974479            & 0,021180                      & -46,00965              & 0,00000            \\ \midrule
+\multicolumn{5}{c}{\textbf{Ecuación de la varianza}}                                                                 \\ \midrule
+Constante          & 6,363001             & 0,306560                      & 20,75617               & 0,00000           \\
+GARCH(1)           & -0,948961            & 0,036710                      & -25,850000             & 0,00000           \\ \midrule
+\multicolumn{5}{c}{\textbf{Estadísticos}}                                                                             \\ \midrule
+$R^2$              & 0,804856             & Media de la var. dependiente &                        & 0,163168         \\
+$R^2$ ajustado     & 0,802979             & SD var. dependiente          &                        & 12,10743         \\
+SD regresión       & 5,374129             & AIC                          &                        & 6,164128         \\
+SRC             & 3.003,651             & Criterio de Schwarz          &                        & 6,264635         \\
+Log Verosimilitud  & -322,6988            & Criterio de Hannan-Quinn     &                        & 6,204864         \\
+Est. Durbin-Watson & 2,444977             &                              &                        &                  \\ \bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Elaborado: DAIE.}
+\end{table}
+
+
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{crrr}
+\caption{Predicciones de los salarios promedios (período 2019 a 2058)}\\
+\label{tab:iess_proy_salario}\\
+\toprule
+\multicolumn{1}{c}{Año} & \multicolumn{1}{c}{Salario} & \multicolumn{1}{c}{Intervalo} & \multicolumn{1}{c}{Intervalo} \\
+    & \multicolumn{1}{c}{Promedio (USD)}& \multicolumn{1}{c}{Inferior (USD)}  & \multicolumn{1}{c}{Superior (USD)}  \\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{Año} & \multicolumn{1}{c}{Salario} & \multicolumn{1}{c}{Intervalo} & \multicolumn{1}{c}{Intervalo} \\
+    & \multicolumn{1}{c}{Promedio (USD)}& \multicolumn{1}{c}{Inferior (USD)}  & \multicolumn{1}{c}{Superior (USD)}  \\
+\midrule
+\endhead
+\bottomrule
+\multicolumn{4}{r}{continúa en la siguiente página...} \\
+\endfoot
+\bottomrule
+\caption*{\scriptsize Fuente: DAIE.\\
+Elaborado: DAIE.}
+\endlastfoot
+  \input{tablas/iess_proy_salarios.tex}
+\end{longtable}
+}
+
+\begin{figure}[H]
+\centering
+\caption{Predicciones e intervalos de confianza, al nivel del 95\%, del salario promedio para el
+período 2019 a 2058}
+\label{fig:iess_proy_salario}
+\includegraphics[scale=0.97]{graficos/iess_proy_salarios.png}
+\caption*{\scriptsize Fuente: Planillas - BIESS y DAIE.\\
+Elaborado: DAIE.}
+\end{figure}
+
+Empleando el modelo de la tabla \ref{mod:iess_proy_salario}, se predice que el salario promedio de 
+los activos crecerá de USD 759,15 en el año 2019 a USD 1.721,82 en el año 2058. Lo que
+implica una tasa de crecimiento de 2,15\% anual para el período 2019 a 2058 si se toma el promedio
+de sus tasas de crecimiento.
+%---------------------------------------------------------------------------------------------------
+\subsection{Proyección de la tasa de crecimiento real del PIB del Ecuador}
+
+Utilizando las tasas de crecimiento real del PIB del Ecuador recolectadas por el Banco Mundial desde
+el año 1961 a 2018 (ver tabla \ref{tab:iess_pib_hist}), se procede a realizar sus respectivas
+proyecciones para los próximos cuarenta (40) años, al utilizar la metodología de series de tiempo de
+Box-Jenkins, más específicamente, un modelo ARIMA con errores modelados con un modelo
+EGARCH, como se muestra a continuación.
+
+\begin{table}[H]
+\centering
+\caption{Estimación de los coeficientes y algunos estadísticos del modelo $ARIMA(3,2,2)$ con errores 
+$EGARCH(2,0)$ para la tasa de crecimiento real del PIB del Ecuador}
+\label{mod:iess_proy_pib}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{@{}*{6}{c}@{}}
+\toprule
+\textbf{Variable:} & \textbf{Coeficiente} & \textbf{Error Estándar} & \textbf{Estadístico-t} & \textbf{P-valor} \\ \midrule
+AR(1)              & -1,512931            & 0,057901                & -26,12949              & 0,0000           \\
+AR(2)              & -0,803678            & 0,088692                & -9,061411              & 0,0000           \\
+AR(3)              & -0,300165            & 0,044538                & -6,739576              & 0,0000           \\
+MA(2)              & -0,962369            & 0,009504                & -101,2548              & 0,0000           \\ \midrule
+\multicolumn{5}{c}{\textbf{Ecuación de la varianza}}                                                            \\ \midrule
+Constante          & -5,312035            & 0,381368                & -13,98891              & 0,0000           \\
+ARCH(1)          & -1,132470            & 0,380624                & -2,975300              & 0,0000           \\
+ARCH(2)          & -1,308987            & 0,362139                & -3,614601              & 0,0000           \\ \midrule
+\multicolumn{5}{c}{\textbf{Estadísticos}}                                                                       \\ \midrule
+$R^2$              & 0,7047900            & \multicolumn{2}{c}{Media de la var. dependiente} & 0,000593         \\
+$R^2$ ajustado     & 0,6867160            & \multicolumn{2}{c}{SD var. dependiente}          & 0,057469         \\
+SD regresión       & 0,0321660            & \multicolumn{2}{c}{A.I.C.}                       & -4,201802        \\
+S.R.C.             & 0,0506990            & \multicolumn{2}{c}{Criterio de Schwarz}          & -3,941574        \\
+Log  Verosimilitud & 118,34770            & \multicolumn{2}{c}{Criterio de Hannan-Quinn}     & -4,101731        \\
+Est. Durbin-Watson & 1,8988930              &                              &                        &                  \\ \bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Elaborado: DAIE.}
+\end{table}
+
+{\fontsize{9}{10.5}\selectfont
+\begin{longtable}[H]{*{4}{c}}
+\caption{Predicciones e intervalos de confianza, al nivel del 95\%, del modelo para la tasa de 
+crecimiento real del PIB del Ecuador}\\
+\label{tab:iess_proy_pib}\\
+\toprule
+Año & Predicciones & Intervalo inferior & Intervalo superior \\
+    & (\%)        &       (\%)          &(\%) \\
+\midrule
+\endfirsthead
+\toprule
+Año & Predicciones & Intervalo inferior & Intervalo superior \\
+    & (\%)        &       (\%)          &(\%) \\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{3}{r}{continúa en la siguiente página...} \\
+\endfoot
+
+\bottomrule
+\caption*{\scriptsize Fuente: DAIE.\\
+Elaborado: DAIE.}
+\endlastfoot
+\input{tablas/iess_proy_pib.tex}
+
+\end{longtable}
+}
+
+
+\begin{figure}[H]
+\centering
+\caption{Predicciones e intervalos de confianza, al nivel del 95\%, del modelo para la tasa de 
+crecimiento real del PIB del Ecuador}
+\label{fig:iess_proy_pib}
+\includegraphics[scale=1]{graficos/iess_proy_pib.png}
+\caption*{\scriptsize Fuente: Banco Mundial y DAIE.\\
+Elaborado: DAIE.}
+\end{figure}
+
+La serie de predicciones de la tasa de crecimiento real del PIB del Ecuador (ver históricos en la 
+tabla \ref{tab:iess_pib_hist}) presentada en la tabla \ref{tab:iess_proy_pib} tiene un promedio
+igual a 1,67\% y desviación estándar igual a 0,557\%, lo cual es considerablemente inferior al promedio 
+del período 1961 a 2018 (3,85\%), debido al inicio de las exportaciones de crudo en los años setenta 
+(70) que conllevaron a las más altas tasas de crecimiento del PIB registradas hasta la fecha (13,95\% 
+(1973), 11,21\% (1974) y 10,97\% (1975)). Otro factor para considerar en el estudio son las malas previsiones de la economía ecuatoriana fomentada por la caída del crudo desde diciembre de 2014 y, además, que no 
+se tiene previsto que el petróleo alcance los precios observados en 2008.
+%---------------------------------------------------------------------------------------------------
+\subsection{Proyección de la tasa de rendimiento de las cuentas individuales de cesantía}
+Según lo que dispone artículo 6 de la \legalcite{ResIESS_CD518}, los rendimientos de las cuentas individuales de los afiliados rendirán el interés simple aplicado a los saldos
+mensuales de acuerdo con la tasa pasiva mensual de rendimiento referencial vigente,
+determinada por el Banco Central del Ecuador. Las proyecciones de la tasa pasiva referencial se encentran en la tabla \ref{tab:iess_pasiva_proy} y la figura \ref{fig:iess_tasa_pas}
+
+%---------------------------------------------------------------------------------------------------
+\section{Estudio de la situación actual y prevista del mercado de inversiones}
+En primer lugar, se analizará el comportamiento de las tasas activa, pasiva y spread, las cuales son
+determinadas por la Junta de Política y Regulación Monetaria y Financiera.
+
+En segundo lugar, se revisarán la rentabilidad sobre activos (ROA) y la rentabilidad sobre capital
+invertido (ROE) de los bancos privados, mutualistas, sociedades financieras e instituciones públicas
+(CFN, BanEcuador y Banco del Estado) y del BIESS durante el período 2011 a 2018.  Por último, se
+revisan las tasas de rendimiento de los Bonos del Estado Ecuatoriano y del BIESS (incluye todos los 
+fondos).
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Comportamiento de las tasas de interés}
+Los numerales 1, 2 y 23 del artículo 14 del Código Orgánico Monetario y Financiero, respectivamente y
+en su orden, establecen como funciones de la Junta de Política y  Regulación Monetaria y Financiera 
+formular y dirigir las políticas monetarias, crediticia, cambiaria y financiera, y vigilar su 
+aplicación; y, establecer niveles de crédito, tasas de interés, reservas de liquidez, encaje y 
+provisiones aplicables a las operaciones crediticias, financieras, mercantiles y otras, que podrán 
+definirse por segmentos, actividades económicas y otros criterios.
+
+El Banco Central del Ecuador, de conformidad con lo dispuesto en los numerales 1 y 25 del artículo 
+36 del Código Orgánico Monetario y Financiero, le corresponde instrumentar y ejecutar las políticas 
+y regulaciones dictadas por la Junta de Política y Regulación Monetaria y Financiera para los 
+sistemas monetario y financiero, monitorear y supervisar su aplicación, sancionar su incumplimiento, 
+en el ámbito de sus competencias, e informar de sus resultados; y, monitorear el cumplimiento de las
+tasas de interés aprobadas por la Junta.
+
+Los datos expuestos en la figura \ref{fig:iess_tasas_ref_hist} y tabla \ref{tab:iess_tasas_ref_hist}
+fueron extraídos de la página oficial del BCE\footnote{\url{https://contenido.bce.fin.ec/documentos/Administracion/bi_menuTasas.html}}  y representan las tasas correspondientes al mes de diciembre de cada año. Además, la tasa 
+Spread se la obtuvo de la diferencia entre la tasa activa y la tasa pasiva. 
+
+\begin{figure}[H]
+\centering
+\caption{Evolución de las tasas referenciales activa y pasiva}
+\label{fig:iess_tasas_ref_hist}
+\includegraphics[scale=1.0]{graficos/iess_tasas_ref_hist.png}
+\caption*{\scriptsize Fuente: Banco Central del Ecuador. \\
+  Elaborado: DAIE.}
+\end{figure}
+
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{crrr}
+\caption{Evolución histórica de las tasas de interés referenciales}\\
+\label{tab:iess_tasas_ref_hist}\\
+\toprule
+\multicolumn{1}{c}{Fecha} & \multicolumn{1}{c}{Tasa activa (\%)} & \multicolumn{1}{c}{Tasa pasiva (\%)} & \multicolumn{1}{c}{Tasa spread  (\%)}\\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{Fecha} & \multicolumn{1}{c}{Tasa activa (\%)} & \multicolumn{1}{c}{Tasa pasiva (\%)} & \multicolumn{1}{c}{Tasa spread  (\%)}\\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{3}{r}{continúa en la siguiente página...} \\
+\endfoot
+
+\bottomrule
+\caption*{\scriptsize Fuente: Banco Central del Ecuador. \\
+  Elaborado: DAIE.}
+\endlastfoot
+  \input{tablas/iess_tasas_ref_hist.tex}
+
+\end{longtable}
+}
+
+Se observa que la tasa activa sufrió un descenso a principios de la década pasada, decreció del 2000 
+hasta el 2004, en 6,5\%, y  desde el  año 2005 hasta el año 2016 decreció en 0,3\% del 9\% al 8,7\%, 
+respectivamente. De igual manera, la tasa pasiva decreció  entre el año 2000 y 2004 del 7,7\% al 4,1\%, 
+respectivamente, pero solo registró un crecimiento del 1,7\% desde el año 2004 al 2016, aunque, se 
+registró su máximo en 2008 (5,5\%).
+
+% --------------------------------------------------------------------------------------------------
+\subsection{Predicciones de los modelos para las tasas de interés referenciales: activa y pasiva}
+Se realizan las predicciones de los modelos para las tasas de interés referencial: activa y pasiva,
+durante el período 2019 a 2058; es decir, a un horizonte de predicción de cuarenta (40) años. 
+En la figura \ref{fig:iess_tasa_act} y tabla \ref{tab:iess_act_proy}, se muestran las predicciones de
+los modelos para las tasas de interés referenciales activas y pasivas. 
+
+La tabla \ref{tab:iess_act_coef} presenta la estimación de los coeficientes y algunos estadísticos del 
+modelo ARMA(2, 11) con componentes EGARCH(0, 2) para las tasas de interés activas referenciales.
+\begin{table}[H]
+\centering
+\caption{Estimación de los coeficientes y algunos estadísticos del modelo $ARMA(2, 11)$ con errores
+EGARCH(0, 2) para la tasa de interés activa en escala logarítmica}
+\label{tab:iess_act_coef}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{*{5}{c}}
+\toprule
+\textbf{Variable}  & \textbf{Coeficiente} & \textbf{Error Estándar} & \textbf{Estadístico-t} & \textbf{p-valor} \\ \midrule
+Constante                  & 2,151890             & 0,042022                & 51,208060              & 0,000000         \\
+AR(2)              & 0,322855             & 0,048346                & 6,677948               & 0,000000         \\
+AR(1)              & 0,579551             & 0,044524                & 13,016710              & 0,000000         \\
+MA(6)              & 0,211349             & 0,067486                & 3,131763               & 0,001700         \\
+MA(11)             & -0,213532            & 0,062113                & -3,437781              & 0,000600         \\
+MA(2)              & -0,155376            & 0,064932                & -2,392891              & 0,016700         \\
+MA(9)              & 0,268134             & 0,064117                & 4,181927               & 0,000000         \\ \midrule
+\multicolumn{5}{c}{\textbf{\begin{tabular}[c]{@{}c@{}}Ecuación para la varianza\end{tabular}}}              \\ \midrule
+Constante                  & -25,37337            & 0,278115                & -91,2333               & 0,000000                 \\
+GARCH(1)          & -1,990457            & 0,007113                & -279,8508              & 0,000000                 \\
+GARCH(2)          & -1,007306            & 0,007260                 & -138,7450               & 0,000000                 \\ \midrule
+\multicolumn{5}{c}{\textbf{Estadísticos}}                                                                       \\ \midrule
+$R^2$              & 0,878433             & \multicolumn{2}{c}{Media de la var. dependiente} & 2,188371         \\
+$R^2$ ajustado     & 0,874512             & \multicolumn{2}{c}{SD var. dependiente}          & 0,127612         \\
+SD regresión       & 0,045206             & \multicolumn{2}{c}{AIC}                          & -3,373552        \\
+SRC             & 0,380102             & \multicolumn{2}{c}{Criterio de Schwarz}                          & -3,204501        \\
+Log Verosimilitud  & 335,547754           & \multicolumn{2}{c}{Criterio de  Hannan-Quinn}    & -3,305092        \\
+Est Durbin-Watson & 1,896483             & \multicolumn{3}{c}{}                                                \\ \bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Elaborado: DAIE.}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Predicciones e intervalos de confianza, al nivel del 95\%, del modelo para tasas activas
+referenciales}
+\label{fig:iess_tasa_act}
+\includegraphics[scale=1]{graficos/iess_tasa_act.png}
+\caption*{\scriptsize Fuente: Banco Central del Ecuador y DAIE.\\
+Elaborado: DAIE.}
+\end{figure}
+
+{\fontsize{11}{12}\selectfont
+\begin{longtable}[H]{*{4}{c}}
+\caption{Predicciones e intervalos de confianza, al nivel del 95\%, del modelo para tasas activas
+referenciales}\\
+\label{tab:iess_act_proy}\\
+\toprule
+Año & Predicciones & Intervalo inferior & Intervalo superior \\
+    & (\%)        &       (\%)          &(\%) \\
+\midrule
+\endfirsthead
+\toprule
+Año & Predicciones & Intervalo inferior & Intervalo superior \\
+    & (\%)        &       (\%)          &(\%) \\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{3}{r}{continúa en la siguiente página...} \\
+\endfoot
+
+\bottomrule
+\caption*{\scriptsize Fuente: DAIE.\\
+Elaborado: DAIE.}
+\endlastfoot
+\input{tablas/iess_act_proy.tex}
+
+\end{longtable}
+}
+
+%Tasas pasivas ------------------------------------------------------------------------------------
+La tabla \ref{tab:iess_pas_coef} presenta la estimación de los coeficientes y algunos estadísticos
+del modelo ARMA(9, 0) con componentes EGARCH(0, 3) para las tasas de interés pasivas referenciales.
+\begin{table}[H]
+\centering
+\caption{Estimación de los coeficientes y algunos estadísticos del modelo ARMA(9 , 0) con
+errores EGARCH(0 , 3) para la tasa de interés pasiva referencial}
+\label{tab:iess_pas_coef}
+{\fontsize{11}{12}\selectfont
+\begin{tabular}{*{5}{c}}
+\toprule
+\textbf{Variable:} & \textbf{Coeficiente}         & \textbf{Error Estándar}      & \textbf{Estadístico-t}        & \textbf{p-valor}             \\ \midrule
+Constante          & 4,878917                     & 0,209127                     & 23,329960                     & 0,000000 \\
+AR(1)              & 1,010832                     & 0,028858                     & 35,028370                     & 0,000000                     \\
+AR(8)              & -0,248513                    & 0,065666                     & -3,784479                     & 0,000200                     \\
+AR(9)              & 0,176470                     & 0,058766                     & 3,002955                      & 0,002700                     \\ \midrule
+\multicolumn{5}{c}{\textbf{Ecuación de la varianza}}                                                                                            \\ \midrule
+Constante          & -0,008488                    & 0,001338                     & -6,34325                      & 0,000000                     \\
+GARCH(-1)          & 1,009248                     & 0,101378                     & 9,95531                       & 0,000000                     \\
+GARCH(-2)          & 0,950005                     & 0,202442                     & 4,69272                       & 0,000000                     \\
+GARCH(-3)          & -0,961534                    & 0,101642                     & -9,45999                      & 0,000000                     \\ \midrule
+\multicolumn{5}{c}{\textbf{Estadísticos}}                                                                                                       \\ \midrule
+$R^2$              & 0,902896                     & \multicolumn{2}{c}{Media de la var. Dependiente}             & 4,859355                     \\
+$R^2$ ajustado     & 0,901296                     & \multicolumn{2}{c}{SD var. dependiente}                      & 0,596849                     \\
+SD regresión       & 0,187514                     & \multicolumn{2}{c}{AIC}                                      & -0,730712                    \\
+SRC                & 6,399359                     & \multicolumn{2}{c}{Criterio de Schwarz}                      & -0,591970                    \\
+Log Verosimilitud  & 75,956180                    & \multicolumn{2}{c}{Criterio de  Hannan-Quinn}                & -0,674488                    \\
+Est. Durbin-Watson & 2,350910                     & \multicolumn{3}{c}{}                                                                        \\
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Elaborado: DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\caption{Predicciones e intervalos de confianza, al nivel del 95\%, del modelo para la tasa pasiva referencial}
+\label{fig:iess_tasa_pas}
+\includegraphics[scale=1.0]{graficos/iess_tasa_pas.png}
+\caption*{\scriptsize Fuente: Banco Central del Ecuador y DAIE. \\
+Elaborado: DAIE.}
+\end{figure}
+
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[p]{*{4}{c}}
+\caption{Predicciones e intervalos de confianza, al nivel del 95\%, del modelo para tasas pasivas 
+referenciales}\\
+\label{tab:iess_pasiva_proy}\\
+\toprule
+Año & Predicciones & Intervalo inferior & Intervalo superior \\
+    & (\%)        &       (\%)          &(\%) \\
+\midrule
+\endfirsthead
+\toprule
+Año & Predicciones & Intervalo inferior & Intervalo superior \\
+    & (\%)        &       (\%)          &(\%) \\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{3}{r}{continúa en la siguiente página...} \\
+\endfoot
+
+\bottomrule
+\caption*{\scriptsize Fuente: DAIE. \\
+Elaborado: DAIE}
+\endlastfoot
+\input{tablas/iess_pasiva_proy.tex}
+
+\end{longtable}
+}
+
+%--------------------------------------------------------------------------------------------------
+\subsection{Rentabilidad sobre activos y sobre capital invertido en el ámbito nacional}
+En el análisis del comportamiento de las tasas de rendimiento de las inversiones en el ámbito nacional, 
+se toman en cuenta: bancos privados, mutualistas, sociedades financieras e instituciones públicas 
+(CFN, BanEcuador y Banco del Estado). Para el análisis de estas instituciones, se utiliza los índices
+financieros: Rendimiento Operativo sobre Activo (ROA\footnote{$ROA=\text{Utilidad o perdida del 
+ejercicio}⁄\text{Activo}$}) y Rendimiento sobre patrimonio (ROE \footnote{$ROE=\text{Utilidad o perdida 
+del ejercicio}⁄(\text{Patrimonio-Utilidad o perdida del ejercicio})$}).
+
+Los índices financieros de rentabilidad o rendimiento son proporciones que miden los resultados
+obtenidos por una entidad en un período económico en relación con sus recursos patrimoniales (capital) 
+o con sus activos. El ROA mide la rentabilidad de los activos; mayores valores de esta ratio representan 
+una mejor condición de la empresa; en cambio, el ROE mide la rentabilidad del patrimonio, mayores valores 
+de esta ratio representan una mejor condición.
+
+Los índices ROA y ROE, para bancos privados, mutualistas, sociedades financieras e instituciones 
+públicas, se obtuvieron de la página de la Superintendencia de Bancos (SB). Los índices fueron 
+publicados en los boletines mensuales que la SB publica en su página, especialmente, se utilizan los
+estados de pérdidas y ganancias a diciembre para obtener los rendimientos del período, y las cuentas
+de los activos y patrimonios.
+\begin{table}[H]
+\centering
+\caption{Principales tasas de interés por instituciones de inversión período 2010 a 2018}
+\label{tab:iess_tasas_inst}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\multirow{2}{*}{\textbf{Institución  o sector:}} & \multicolumn{2}{c}{\textbf{ROE}}                 & \multicolumn{2}{c}{\textbf{ROA}}                 \\ \cmidrule(l){2-5} 
+                                                 & \textbf{Promedio} & \textbf{Desviación estándar} & \textbf{Promedio} & \textbf{Desviación estándar} \\ \midrule
+Bancos Privados                                  & 11,61\%           & 3,65\%                       & 1,07\%            & 0,30\%                       \\
+Mutualistas                                      & 5,33\%            & 3,42\%                       & 0,48\%            & 0,30\%                       \\
+Sociedades Financieras                           & 14,74\%           & 6,96\%                       & 2,16\%            & 0,95\%                       \\
+Instituciones Públicas                           & 6,89\%            & 2,31\%                       & 2,05\%            & 0,72\%                       \\
+Banco del Estado                                 & 9,83\%            & 1,78\%                       & 2,67\%            & 0,55\%                       \\
+BanEcuador                                       & 3,46\%            & 3,86\%                       & 0,83\%            & 0,93\%                       \\
+CFN                                              & 8,27\%            & 1,99\%                       & 2,81\%            & 0,83\%                       \\
+BIESS\footnotemark[1] & 8,06\%            & 7,36\%                       & 5,58\%            & 4,81\%                       \\ \bottomrule
+\end{tabular}}
+\caption*{\scriptsize Fuente: Superintendencia de Bancos. \\
+Elaborado: DAIE}
+\end{table}
+\footnotetext[1]{BIESS período 2011 - 2018.}
+% 
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Comportamiento de las tasas de rendimiento del portafolio de inversiones del BIESS}
+El BIESS se crea mediante la Ley del Banco del Instituto Ecuatoriano de Seguridad Social, publicada 
+en el Suplemento del Registro Oficial No. 587 del 11 de mayo de 2009, como una institución financiera 
+pública con autonomía técnica, administrativa y financiera, con finalidad social y de servicio público, 
+de propiedad de Instituto Ecuatoriano de Seguridad Social, IESS.
+
+Para entender la evolución de los rendimientos netos del portafolio de inversiones del BIESS, se 
+debe considerar lo siguiente:
+
+\begin{enumerate}[label=\arabic*.,topsep=0pt,itemsep=1ex,parsep=1ex,partopsep=1ex]
+\item Este estudio presenta la información de los rendimientos financieros, en función de los balances 
+de los Fondos Previsionales Administrados por el BIESS, a partir del año 2012, debido a que la 
+información de los años 2010 y 2011 se reportaba al organismo de control, en forma consolidada, de 
+acuerdo con el CUC \footnote{CUC: Catálogo Único de Cuentas aprobado por la Superintendencia de Bancos} vigente en esos años.
+
+\item Este estudio presenta la información de los rendimientos financieros, en función de los balances
+de los Fondos Previsionales Administrados por el BIESS, a partir del año 2012, debido a que la 
+información de los años 2010 y 2011 se reportaba al organismo de control, en forma consolidada, acuerdo con el CUC vigente en esos años.
+
+\item El IESS mantenía bajo su administración parte de la cartera hipotecaria, esta  fue transferida 
+al BIESS en febrero del 2013, lo que originó que para el año 2012 en la contabilidad de los fondos 
+se registren ingresos sin mantener la administración de dicha cartera, originando que el fondo 
+administrado sea menor y genere resultados superiores con respecto a los años subsiguientes.
+
+
+\item De igual manera, el IESS mantenía en su administración títulos valores correspondientes a 
+Bonos del Estado del 40\% de aporte del Estado, estos fueron transferidos al BIESS en los años 2015 y 2016, 
+incrementando el fondo administrado y generando una reducción de los rendimientos para esos años.
+
+\item A fin de cumplir con la programación de desinversión del fondo IVM solicitada por el IESS, en 
+los años 2016 y 2017, se vendieron cupones de interés, anticipando los ingresos en ese año y
+reduciendo los ingresos para los años subsiguientes.
+
+\item Para octubre del año 2018, de acuerdo con la disposición normativa del organismo de control, se 
+registraron gastos por provisiones del Fideicomiso Toachi Pilaton por USD 145 millones aproximadamente,
+lo que ocasionó una caída en el rendimiento, este informe presenta los rendimientos sin considerar 
+dicha provisión, ya que para el año 2019 la deuda pendiente fue cancelada.
+
+\end{enumerate}
+
+En la tabla \ref{tab:iess_portafolio_hist} y figura \ref{fig:iess_portaf_hist}, se presentan la evolución histórica de los rendimientos.
+
+\begin{table}[H]
+\centering
+\caption{Evolución del rendimiento neto anual del portafolio de inversiones del BIESS.}
+\label{tab:iess_portafolio_hist}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{crrrrrrr}
+\toprule
+\multicolumn{1}{c}{Corte:} & \multicolumn{1}{c}{Ingresos} & \multicolumn{1}{c}{Gastos Operativos}& \multicolumn{1}{c}{Gastos Administrativos} & \multicolumn{1}{c}{Fondo Administrado}	& \multicolumn{1}{c}{Fondo Administrado Promedio} &	\multicolumn{1}{c}{Rendimiento Bruto}	&\multicolumn{1}{c}{Rendimiento Neto}\\
+    & \multicolumn{1}{c}{(USD)} & \multicolumn{1}{c}{(USD)} & \multicolumn{1}{c}{(USD)} & \multicolumn{1}{c}{(USD)} & \multicolumn{1}{c}{(USD)} & \multicolumn{1}{c}{(\%)}& \multicolumn{1}{c}{(\%)}\\
+\midrule
+\input{tablas/iess_portafolio_hist.tex}
+\bottomrule
+\end{tabular}}
+\caption*{\scriptsize Fuente: Dirección de Tesorería - BIESS. \\
+Elaborado: DAIE}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Evolución del rendimiento neto del portafolio global de inversiones del BIESS durante el
+período 2010 a 2018}
+\label{fig:iess_portaf_hist}
+ \includegraphics[scale=1]{graficos/iess_portaf_hist.png}
+ \caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS y Dirección de Tesorería - BIESS. \\
+Elaborado: DAIE}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Estimación de los coeficientes y algunos estadísticos del modelo $SARIMA(1,0,12)(0,1,0)_{12}$ con errores
+EGARCH(1,0) para las tasas de rendimiento del BIESS en escala logarítmica}
+\label{tab:iess_portaf_coef}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{*{5}{c}}
+\toprule
+\textbf{Variable:} & \textbf{Coeficiente} & \textbf{Error Estándar} & \textbf{Estadístico-t} & \textbf{P-valor} \\ \midrule
+AR(1)              & 0,875509             & 0,067318                & 13,005650              & 0,000000         \\
+MA(12)             & -0,918362            & 0,016312                & -56,298180             & 0,000000         \\ \midrule
+\multicolumn{5}{c}{\textbf{\begin{tabular}[c]{@{}c@{}}Ecuación para la varianza\end{tabular}}}              \\ \midrule
+Constante          & -5,337314            & 0,187485                & -28,467900             & 0,000000         \\
+ARCH(1)            & 0,595516             & 0,152030                & 3,917088               & 0,000100         \\ \midrule
+\multicolumn{5}{c}{\textbf{Estadísticos}}                                                                       \\ \midrule
+$R^2$              & 0,874091             & \multicolumn{2}{c}{Media de la var. dependiente} & -0,065383         \\
+$R^2$ ajustado     & 0,872266             & \multicolumn{2}{c}{SD var. dependiente}          & 0,258771         \\
+SD regresión       & 0,092485             & \multicolumn{2}{c}{AIC}                          & -1,944288        \\
+SRC             & 0,590185             & \multicolumn{2}{c}{Criterio de Schwarz}                          & -1,816813        \\
+Log Verosimilitud  & 73,02221           & \multicolumn{2}{c}{Criterio de  Hannan-Quinn}    & -1,893595        \\
+Est. Durbin-Watson & 1,971391             & \multicolumn{3}{c}{}                                                \\ \bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: DAIE. \\
+Elaborado: DAIE.}
+\end{table}
+
+En la figura \ref{tab:iess_portaf_proy_1} y en la tabla \ref{tab:iess_portaf_proy}, se estima el rendimiento de las inversiones del BIESS con sus intervalos de confianza para el período 2019 al 2058. El promedio de las predicciones del rendimiento neto de las inversiones del BIESS es 6,57\% para el período 2019 a 2058.
+\begin{figure}[H]
+\centering
+\caption{Predicciones e intervalos de confianza, al nivel del 95\%, del modelo para la tasa de 
+rendimiento neto del BIESS}
+\label{tab:iess_portaf_proy_1}
+ \includegraphics[scale=1]{graficos/iess_portaf_proy.png}
+ \caption*{\scriptsize Fuente: DAIE. \\
+Elaborado: DAIE.}
+\end{figure}
+
+La tasa de rendimiento neto del portafolio de inversiones del BIESS registra una clara tendencia a la baja, producida por diferentes factores, explicados anteriormente; en el año 2012, se registró una tasa del rendimiento neto de las inversiones igual a 9,08\%, como tasa máxima de rendimiento. A partir del año 2013, se inicia el descenso en las tasas llegando a obtener 5,63\% en el año 2018. El promedio de la tasa de rendimiento neta en el período 2011 a 2018 fue 7,54\% con una desviación estándar igual a 1,04\%.
+
+{\fontsize{11}{12}\selectfont
+\begin{longtable}[H]{crrr}
+\caption{Predicciones e intervalos de confianza, al nivel del 95\%, del modelo para la tasa de 
+rendimiento neto del BIESS.} \\
+\label{tab:iess_portaf_proy} \\
+\toprule
+\multicolumn{1}{c}{Año} & \multicolumn{1}{c}{Predicciones} & \multicolumn{1}{c}{Intervalo superior} & \multicolumn{1}{c}{Intervalo inferior} \\
+    &  \multicolumn{1}{c}{(\%)}       &  \multicolumn{1}{c}{(\%)}             &  \multicolumn{1}{c}{(\%)}     \\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{Año} & \multicolumn{1}{c}{Predicciones} & \multicolumn{1}{c}{Intervalo superior} & \multicolumn{1}{c}{Intervalo inferior} \\
+    &  \multicolumn{1}{c}{(\%)}       &  \multicolumn{1}{c}{(\%)}             &  \multicolumn{1}{c}{(\%)}     \\
+\midrule
+\endhead
+\bottomrule \multicolumn{4}{c}{continúa...} \\
+\endfoot
+\bottomrule
+  \caption*{\scriptsize Fuente: DAIE. \\
+            Elaborado: DAIE.}
+\endlastfoot
+ \input{tablas/iess_portaf_proy.tex}
+\end{longtable}
+}
+
+\subsection{Comportamiento de las tasas de rendimiento y colocación de Bonos del Estado Ecuatoriano}
+
+Se presentan un rápido resumen del comportamiento de los Bonos del Estado Ecuatoriano que se registran como deuda interna del sector público por el Ministerio de Finanzas en sus boletines de deuda que se encuentran en el repositorio digital de su página web\footnote{\url{https://www.finanzas.gob.ec/deuda-publica/}}. A noviembre de 2018, la deuda pública interna del Estado se registró en USD 13.904,66 millones, los principales acreedores son el Banco Central y el IESS.  
+% La idea de deuda interna, en este marco, se refiere a la porción de la deuda pública de una nación cuyos acreedores son ciudadanos de esa misma nación. El resto de la deuda pública se constituye por la deuda externa (los acreedores, en ese caso, son organismos extranjeros (Banco Mundial, BID, CAF, etc.)).
+
+A continuación (ver tabla \ref{tab:iess_bonos_rend} y figura \ref{fig:iess_bonos_rend}), se presentan: el monto nominal, el rendimiento promedio ponderado y su plazo promedio ponderado para cada año en el período 2011 a 2018 de la colocación de los bonos emitidos por el Estado en el mercado nacional. El rendimiento promedio ponderado y el plazo promedio ponderado se calcula utilizando como pesos su respectivo valor nominal.
+
+\begin{figure}[H]
+
+\caption{Evolución del monto nominal colocado, rendimiento promedio ponderado y plazo promedio ponderado de los Bonos del Estado}
+
+\label{fig:iess_bonos_rend}
+\centering
+\includegraphics[scale=1.0]{graficos/iess_bonos_rend.png}
+  \caption*{\scriptsize Fuente: Boletines de deuda interna del Ministerio de Finanzas. \\
+  Elaborado: DAIE.}
+\end{figure}
+
+
+{\fontsize{11}{12}\selectfont
+\begin{longtable}[H]{crrr}
+  \caption{Evolución del monto nominal colocado, rendimiento promedio ponderado y plazo promedio ponderado de los Bonos del Estado} \\
+\label{tab:iess_bonos_rend} \\
+\toprule
+    \multicolumn{1}{c}{Año}	& \multicolumn{1}{c}{Monto Nominal}  &	\multicolumn{1}{c}{Rendimiento Promedio} 	&\multicolumn{1}{c}{Plazo Promedio}\\
+        &\multicolumn{1}{c}{Colocado (USD)}  &  \multicolumn{1}{c}{Ponderado (USD)}       &\multicolumn{1}{c}{Ponderado (días)}\\
+\midrule
+\endfirsthead
+
+\toprule
+    \multicolumn{1}{c}{Año}	& \multicolumn{1}{c}{Monto Nominal}  &	\multicolumn{1}{c}{Rendimiento Promedio} 	&\multicolumn{1}{c}{Plazo Promedio}\\
+        &\multicolumn{1}{c}{Colocado (USD)}  &  \multicolumn{1}{c}{Ponderado (USD)}       &\multicolumn{1}{c}{Ponderado (días)}\\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{4}{c}{continúa...} \\
+\endfoot
+\bottomrule
+  \caption*{\scriptsize Fuente: Boletines de deuda interna del Ministerio de Finanzas. \\
+  Elaborado: DAIE.}
+\endlastfoot
+    \input{tablas/iess_bonos_rend.tex}
+\end{longtable}
+}
+
+La serie cronológica de la evolución histórica de los montos colocados, en valor nominal, en Bonos del Estado (registrados en la deuda interna) por el Ministerio de Finanzas para el período 2011 a 2018 presenta los siguientes estadísticos: promedio, USD 3.882.085.900; su mínimo se alcanzó en el 2011, con USD 546.652.000; y su máximo en el 2016, con USD 7.710.467.400. El volumen de colocación de Bonos del Estado tuvo una tendencia creciente hasta el año 2016; en cambio, en el último año (2018) solo se emitieron USD 553.235.000 en bonos a tasas de rendimiento de 2,59\% y 4,78\% a plazos de entre 3 a 5 años, en la mayoría de los casos. Esto se debió al cambio de la política de financiamiento del Estado, para cubrir su déficit fiscal o pago de sus obligaciones, que pasó de emitir bonos, que generalmente se destinaban al IESS en el período 2012 a 2015, a adquirir deuda con organismos internacionales en el año 2018.
+
+
+En cambio, el rendimiento promedio ponderado de los Bonos del Estado Ecuatoriano (registrados en la deuda interna), para el período 2011 a 2018 presenta los siguientes estadísticos: promedio, 3,89\%; desviación estándar, 154,67\%; su mínimo se alcanzó en el 2016, con 1,53\%; y su máximo en el 2012, con 5,62\%.
+
+%---------------------------------------------------------------------------------------------------
+\section{Análisis de tendencias demográficas actuales y proyectadas}
+
+Las pirámides poblacionales del Ecuador para los años 2018, 2038 y 2058 de las proyecciones realizadas por el CELADE\footnote{Centro Latinoamericano y Caribeño de Demografía}. El CELADE es la división de población de la CEPAL\footnote{Comisión Económica para América Latina y el Caribe} y las estimaciones y proyecciones de la población que se presentan  en las figuras \ref{fig:iess_pir_poblacion2018}; \ref{fig:iess_pir_poblacion2038} y \ref{fig:iess_pir_poblacion2058} fueron tomadas de su página web \footnote{\url{https://www.cepal.org/es/temas/proyecciones-demograficas/estimaciones-proyecciones-poblacion-total-urbana-rural-economicamente-activa}}.
+
+La pirámide de la población ecuatoriana en el año 2018 (ver figura \ref{fig:iess_pir_poblacion2018}) presenta una forma triangular, típica de un país en vías de desarrollo, describe a una población joven con una tasa de natalidad alta, pero con tendencia a la reducción, y una tasa de mortalidad que también se está disminuyendo; esto hace presagiar un crecimiento de la esperanza de vida de los ecuatorianos en los próximos años.
+
+Para el año 2038 (ver figura \ref{fig:iess_pir_poblacion2038}), la CELADE proyecta la pirámide poblacional del Ecuador en forma estancada, iniciando una tendencia regresiva. Las proyecciones muestran que la tasa de natalidad decrecerá en comparación al 2018, pero la tasa de mortalidad se reducirá, lo cual conllevará a un aumento en la esperanza de vida.
+
+\begin{figure}[H]
+\caption{Pirámides poblacionales nacionales para el año 2018.}
+\label{fig:iess_pir_poblacion2018}
+\centering
+\includegraphics[scale=1.0]{graficos/iess_pir_poblacion_2018.png}
+  \caption*{\scriptsize Fuente: CELADE - CEPAL \\
+  Elaborado: DAIE.}
+\end{figure}
+
+\begin{figure}[h]
+\caption{Pirámides poblacionales nacionales para el año 2038.}
+\label{fig:iess_pir_poblacion2038}
+\centering
+\includegraphics[scale=1.0]{graficos/iess_pir_poblacion_2038.png}
+  \caption*{\scriptsize Fuente: CELADE - CEPAL \\
+  Elaborado: DAIE.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Pirámides poblacionales nacionales para el año 2058.}
+\label{fig:iess_pir_poblacion2058}
+\centering
+\includegraphics[scale=1.0]{graficos/iess_pir_poblacion_2058.png}
+  \caption*{\scriptsize Fuente: CELADE - CEPAL \\
+  Elaborado: DAIE.}
+\end{figure}
+
+Para el último año de la valuación (año 2058) (ver figura \ref{fig:iess_pir_poblacion2058}), la CELADE proyecta la una pirámide poblacional del Ecuador en forma regresiva. Las proyecciones muestran que la tasa tanto de natalidad como de mortalidad bajan, esto demuestra el crecimiento de la  esperanza de vida y que la mayoría de la población será adulta.
+
+La población económicamente activa (PEA) comprende a las personas en edad de trabajar (15-60 años y más) y que cumplen al menos una de las siguientes condiciones:
+
+\begin{enumerate}[label=\alph*.,topsep=0pt,itemsep=1ex,parsep=1ex,partopsep=1ex]
+\item Trabajar al menos una hora durante el período de referencia de la medición (por lo general, la semana anterior) en tareas con o sin remuneración, incluyendo la ayuda a otro miembro de la familia en alguna actividad productiva o en un negocio o finca del hogar; 
+
+\item Si bien no trabajaron, tenían algún empleo o negocio del cual estuvieron ausentes por enfermedad, huelga, licencia, vacaciones u otras causas; y
+
+\item No comprendidas en los dos grupos anteriores, que estaban en disponibilidad de trabajar. 
+\end{enumerate}
+
+Se excluyen las personas que se dedican solo a quehaceres domésticos o a estudiar exclusivamente, a los que son pensionistas y a los impedidos de trabajar, sea por invalidez, jubilación, etc.
+
+La pirámide de la población económicamente activa se presenta en las siguientes figuras:
+
+\begin{figure}[H]
+\caption{Pirámides poblacionales de la PEA para el año 2018.}
+\label{fig:iess_pir_pea2018}
+\centering
+\includegraphics[scale=1.0]{graficos/iess_pir_pea_2018.png}
+  \caption*{\scriptsize Fuente: CELADE - CEPAL \\
+  Elaborado: DAIE.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Pirámides poblacionales de la PEA para el año 2038.}
+\label{fig:iess_pir_pea2038}
+\centering
+\includegraphics[scale=1.0]{graficos/iess_pir_pea_2038.png}
+  \caption*{\scriptsize Fuente: CELADE - CEPAL \\
+  Elaborado: DAIE.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Pirámides poblacionales de la PEA para el año 2058.}
+\label{fig:iess_pir_pea2058}
+\centering
+\includegraphics[scale=1.0]{graficos/iess_pir_pea_2058.png}
+  \caption*{\scriptsize Fuente: CELADE - CEPAL \\
+  Elaborado: DAIE.}
+\end{figure}
+
+Las pirámides \ref{fig:iess_pir_pea2018}, \ref{fig:iess_pir_pea2038} y \ref{fig:iess_pir_pea2058} muestran el envejecimiento de la PEA, pasando de una población joven en el año 2018 a una más adulta en el año 2058, debido a la reducción de la tasa de natalidad del Ecuador y a una alta esperanza de vida.

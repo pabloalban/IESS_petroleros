@@ -1,0 +1,1143 @@
+%---------------------------------------------------------------------------------------------------
+\chapter[Análisis de la información financiera y contable con sus tendencias]{Análisis de la
+información financiera y contable}
+\label{chp_infofinan}
+
+En este capítulo, se presenta un análisis de las principales cuentas del balance al último ejercicio económico: total de activos, reservas, ingresos por aportes, otros ingresos, egresos por pago de beneficios y prestaciones, otros egresos, entre otros.
+
+El \Sexpr{REP_seg} se crea mediante \legalcite{ResIESS_CD515} de fecha 30 de marzo de 2016, en la cual se establece la tasa de aportación para este seguro y se estableció su reglamento en la \legalcite{ResIESS_CD518} de fecha 19 de abril de 2016; y su primera prestación se entregó el 26 de abril de 2016.
+
+Es necesario citar que no existen estados financieros del \Sexpr{REP_seg} para el año 2016, así lo corroboran el oficio Nro. BIESS-OF-GGEN-1118-2019 y el memorando Nro. IESS-SDNC-2019-0652-M. Las transacciones del año 2016 de este seguro se registraban en el Fondo del Seguro de Cesantía y recién mediante la Resolución SB-2017-019 de la Superintendencia de Bancos de fecha 06 de enero de 2017, se crea el Catálogo de Cuentas del Fondo Administrado del \Sexpr{REP_seg}.
+
+\section{Activos}
+En la tabla \ref{tab:total_activos_des_1} y figura \ref{fig:tot_act_desempleo_1}, se muestra la evolución del total de los Activos del \Sexpr{REP_seg} durante  los años 2017 a 2018.
+
+\begin{table}[H]
+\begin{center}
+\caption{Evolución histórica de la cuenta activos del \Sexpr{REP_seg}}
+\label{tab:total_activos_des_1}
+{\fontsize{11}{12}\selectfont
+\begin{tabular}{crrr}
+\toprule
+\multicolumn{1}{c}{Año}	& \multicolumn{1}{c}{Activo}	& \multicolumn{1}{c}{Incremento} & 	\multicolumn{1}{c}{Incremento Porcentual}  \\
+    & \multicolumn{1}{c}{(USD)}   & \multicolumn{1}{c}{Anual (USD)} &  \multicolumn{1}{c}{Anual (\%)}\\
+\midrule
+\input{tablas/iess_activo.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE}
+\end{center}
+\end{table}
+
+El crecimiento del Fondo del Seguro Desempleo es notable, esto se debe a su financiamiento; es decir, al importe que se genera por los ingresos del aporte patronal del 1\% de la remuneración del trabajador, obrero o servidor; valor que constituye el fondo solidario de este Seguro. Se observa que en el año 2017 se contaba con USD 457.375.450,79 en activos y el año 2018 con USD. 545.903.123,82  lo que representa un crecimiento del 19,36\% entre estos años.
+
+
+\begin{figure}[H]
+\centering
+\caption{Total Activos del Fondo del Seguro de Desempleo}
+\label{fig:tot_act_desempleo_1}
+\includegraphics[scale=1]{graficos/iess_tot_act_desempleo_des.png}
+\caption*{\scriptsize Fuente: Balance General Consolidado de los Fondos Administrados por el IESS - DNGF. \\
+Elaborado: DAIE.}
+\end{figure}
+
+Existe un crecimiento notable entre los Activos registrados en el año 2017 y  2018, los mismos que se pueden verificar en los Balances Generales del IESS.
+Los componentes del Activo del \Sexpr{REP_seg} son:
+		\begin{enumerate}
+			\item Fondos Disponibles (Fondos en el Banco Central);
+			\item Recursos Administrados por el BIESS (Inversiones); y
+			\item Cuentas por Cobrar.
+		\end{enumerate}
+
+
+
+
+\subsection{Fondos Disponibles}
+A continuación, se presenta la evolución de los fondos disponibles del \Sexpr{REP_seg} en el Banco Central del Ecuador en el período 2017 y 2018.
+
+\begin{table}[H]
+\begin{center}
+\caption{Evolución histórica de los fondos disponibles del \Sexpr{REP_seg}}
+\label{tab:iess_fondos_disponibles}
+{\fontsize{11}{12}\selectfont
+\begin{tabular}{crrr}
+\toprule
+\multicolumn{1}{c}{Año}	& \multicolumn{1}{c}{Fondos disponibles}	& \multicolumn{1}{c}{Incremento} & 	\multicolumn{1}{c}{Incremento Porcentual}  \\
+    & \multicolumn{1}{c}{(USD)}   & \multicolumn{1}{c}{Anual (USD)} &  \multicolumn{1}{c}{Anual (\%)}\\
+\midrule
+\input{tablas/iess_fondos_disponibles.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica de los fondos disponibles del \Sexpr{REP_seg}}
+\label{fig:tot_act_desempleo}
+\includegraphics[scale=1]{graficos/iess_fondos_disponibles_des.png}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE.}
+\end{figure}
+
+
+Los valores registrados en la cuenta Fondos Disponibles del \Sexpr{REP_seg} en el Banco Central del Ecuador decrecieron USD 28.237.344,02 entre el 2017 y 2018, lo que representa una reducción del 54,27\%.
+
+\subsection{Recursos administrados por el BIESS}
+La cuenta Recursos administrados por el BIESS pertenece a los activos del fondo; la evolución y análisis de esta cuenta se encuentra en la sección \ref{chp_infofinan:rentablidad}, detallado en la tabla \ref{tab:iess_rec_admi_BIESS}.
+
+
+\subsection{Cuentas por cobrar}
+A continuación, se presenta la evolución de las cuentas por cobrar del fondo de \Sexpr{REP_seg} por el período 2017 - 2018.
+
+\begin{table}[H]
+\begin{center}
+\caption{Evolución histórica de las cuentas por cobrar del Fondo del \Sexpr{REP_seg}}
+\label{tab:total_activos_des}
+{\fontsize{11}{12}\selectfont
+\begin{tabular}{crrr}
+\toprule
+\multicolumn{1}{c}{Año}	& \multicolumn{1}{c}{Cuentas por cobrar}	& \multicolumn{1}{c}{Incremento} & 	\multicolumn{1}{c}{Incremento Porcentual}  \\
+    & \multicolumn{1}{c}{(USD)}   & \multicolumn{1}{c}{Anual (USD)} &  \multicolumn{1}{c}{Anual (\%)}\\
+\midrule
+\input{tablas/iess_cuentas_cobrar.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[H]
+\centering
+\caption{Evolución de las cuentas por cobrar del Fondo del \Sexpr{REP_seg}}
+\label{fig:tot_act_desempleo}
+\includegraphics[scale=1]{graficos/iess_cuentas_cobrar_des.png}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE.}
+\end{figure}
+
+
+Se observa que las cuentas por cobrar correspondientes al año 2018 con respecto al año 2017 decrecieron en un -95,17\%; siendo el año 2017 el punto más alto y el año 2018 el punto más bajo de la cuenta. Sin embargo, hay que mencionar que el decrecimiento se debe a que la cuenta ``Diferencia por Neteos Deudora'' disminuye en USD 140.234.982,95. 
+
+\section{Pasivos}
+Se presenta la evolución del pasivo del fondo de Desempleo por el período 2017 - 2018 en la tabla \ref{tab:iess_pasivo} y figura \ref{fig:iess_pasivo_des}.
+
+\begin{table}[H]
+\begin{center}
+\caption{Evolución histórica del pasivo del Fondo del \Sexpr{REP_seg}}
+\label{tab:iess_pasivo}
+{\fontsize{11}{12}\selectfont
+\begin{tabular}{crrr}
+\toprule
+\multicolumn{1}{c}{Año}	& \multicolumn{1}{c}{Pasivo}	& \multicolumn{1}{c}{Incremento} & 	\multicolumn{1}{c}{Incremento Porcentual}  \\
+    & \multicolumn{1}{c}{(USD)}   & \multicolumn{1}{c}{Anual (USD)} &  \multicolumn{1}{c}{Anual (\%)}\\
+\midrule
+\input{tablas/iess_pasivo.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE}
+\end{center}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\caption{Evolución del pasivo del Fondo del \Sexpr{REP_seg}}
+\label{fig:iess_pasivo_des}
+\includegraphics[scale=1]{graficos/iess_pasivo_des.png}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE.}
+\end{figure}
+
+Se observa que los pasivos correspondientes al 2018 con respecto al 2017 decrecieron en un 88.22\% en este período; siendo el año 2017 el punto más alto y el año 2018 el punto más bajo de la cuenta; sin embargo, hay que mencionar que el decrecimiento de la cuenta hace referencia a  la cuenta “Diferencia por Neteos Acreedora”. 
+
+Los componentes del Pasivo del Fondo de Desempleo son:
+		\begin{enumerate}
+			\item Pasivos Corrientes (Cuentas por pagar); y
+			\item Pasivos No corrientes (Depósitos no identificados).
+		\end{enumerate}
+		
+\subsection{Pasivos Corrientes}
+En el pasivo corriente se registra solo las cuentas por pagar intrainstitucionales, en la cual se encuentra proveedores, el cual representa el 100\% del pasivo corriente en los años 2017 y 2018. En la tabla \ref{tab:iess_cuentas_pagar_1} y figura \ref{fig:iess_cuentas_por_pagar_des}, se presenta su evolución durante este período (2017 a 2018).
+
+\begin{table}[H]
+\begin{center}
+\caption{Evolución histórica del pasivo corriente del Fondo del \Sexpr{REP_seg}}
+\label{tab:iess_cuentas_pagar_1}
+{\fontsize{11}{12}\selectfont
+\begin{tabular}{crrr}
+\toprule
+\multicolumn{1}{c}{Año}	& \multicolumn{1}{c}{Cuentas por pagar}	& \multicolumn{1}{c}{Incremento} & 	\multicolumn{1}{c}{Incremento Porcentual}  \\
+    & \multicolumn{1}{c}{(USD)}   & \multicolumn{1}{c}{Anual (USD)} &  \multicolumn{1}{c}{Anual (\%)}\\
+\midrule
+\input{tablas/iess_cuentas_pagar.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE}
+\end{center}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Evolución del pasivo corriente del Fondo del \Sexpr{REP_seg}}
+\label{fig:iess_cuentas_por_pagar_des}
+\includegraphics[scale=1]{graficos/iess_cuentas_por_pagar_des.png}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE.}
+\end{figure}
+
+Entre los componentes del pasivo corriente se detalla las cuentas por pagar a proveedores, pertenecientes al ejercicio económico del año 2018, las mismas que decrecieron en un -22,07\% con respecto al año 2017.
+
+
+\subsection{Pasivos No Corrientes}
+En la tabla \ref{tab:iess_pasivos_no_corrientes} y figura \ref{fig:iess_pasivos_no_corrientes}, se presenta su evolución, decremento y tasa de crecimiento anual del pasivo no corriente del Fondo del \Sexpr{REP_seg} durante el período 2017 a 2018.
+
+\begin{table}[H]
+\begin{center}
+\caption{Evolución histórica de los pasivos no corrientes del Fondo del \Sexpr{REP_seg}}
+\label{tab:iess_pasivos_no_corrientes}
+{\fontsize{11}{12}\selectfont
+\begin{tabular}{crrr}
+\toprule
+\multicolumn{1}{c}{Año}	& \multicolumn{1}{c}{Pasivos No Corrientes}	& \multicolumn{1}{c}{Incremento} & 	\multicolumn{1}{c}{Incremento Porcentual}  \\
+    & \multicolumn{1}{c}{(USD)}   & \multicolumn{1}{c}{Anual (USD)} &  \multicolumn{1}{c}{Anual (\%)}\\
+\midrule
+\input{tablas/iess_pasivos_no_corrientes.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE}
+\end{center}
+\end{table}
+
+El pasivo no corriente decreció de USD 147.611.210,75 a USD 17.345.027,17 entre los años 2017 y 2018, respectivamente, lo que representa una reducción del 88,25\% de sus valores.
+
+\begin{figure}[H]
+\centering
+\caption{Evolución del pasivo no corriente del Fondo del \Sexpr{REP_seg}}
+\label{fig:iess_pasivos_no_corrientes}
+\includegraphics[scale=1]{graficos/iess_pasivos_no_corrientes_des.png}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE.}
+\end{figure}
+
+
+\section{Patrimonio}
+La tabla \ref{tab:iess_patrimonio} y figura \ref{fig:iess_patrimonio_des} presentan la evolución del patrimonio de este fondo a diciembre de cada año.
+
+\begin{table}[H]
+\begin{center}
+\caption{Evolución histórica del patrimonio del Fondo del \Sexpr{REP_seg}}
+\label{tab:iess_patrimonio}
+{\fontsize{11}{12}\selectfont
+\begin{tabular}{crrr}
+\toprule
+\multicolumn{1}{c}{Año}	& \multicolumn{1}{c}{Patrimonio}	& \multicolumn{1}{c}{Incremento} & 	\multicolumn{1}{c}{Incremento Porcentual}  \\
+    & \multicolumn{1}{c}{(USD)}   & \multicolumn{1}{c}{Anual (USD)} &  \multicolumn{1}{c}{Anual (\%)}\\
+\midrule
+\input{tablas/iess_patrimonio.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE}
+\end{center}
+\end{table}
+
+El patrimonio de este fondo aumentó en un 70,65\% (USD 218.806.044,15) en el período 2018 con respecto al 2017; por el resultado del ejercicio actual que se ven reflejados dentro de los balances. Para esta valuación actuarial, se considerará como reserva inicial a USD 528.515.073,38.
+
+
+\begin{figure}[H]
+\centering
+\caption{Evolución del patrimonio del Fondo del \Sexpr{REP_seg}}
+\label{fig:iess_patrimonio_des}
+\includegraphics[scale=0.95]{graficos/iess_patrimonio_des.png}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE.}
+\end{figure}
+
+Las componentes del Patrimonio del Fondo del \Sexpr{REP_seg} son las siguientes cuentas:
+\begin{enumerate}
+	\item Fondos Capitalizados; y
+\item Resultados del Ejercicio Actual.
+\end{enumerate}
+
+
+\subsection{Fondos Capitalizados}
+En la tabla \ref{tab:iess_fondo_cap} y figura \ref{fig:iess_fondo_cap_des}, se presenta su evolución, decremento y tasa de crecimiento anual de la cuenta Fondos Capitalizados del Balance del Fondo del \Sexpr{REP_seg} durante el período 2017 a 2018.
+
+\begin{table}[H]
+\begin{center}
+\caption{Evolución histórica de los fondos capitalizados del Fondo del \Sexpr{REP_seg}}
+\label{tab:iess_fondo_cap}
+{\fontsize{11}{12}\selectfont
+\begin{tabular}{crrr}
+\toprule
+\multicolumn{1}{c}{Año}	& \multicolumn{1}{c}{Fondos capitalizados}	& \multicolumn{1}{c}{Incremento} & 	\multicolumn{1}{c}{Incremento Porcentual}  \\
+    & \multicolumn{1}{c}{(USD)}   & \multicolumn{1}{c}{Anual (USD)} &  \multicolumn{1}{c}{Anual (\%)}\\
+\midrule
+\input{tablas/iess_fondo_cap.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE}
+\end{center}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica de los fondos capitalizados del Fondo del \Sexpr{REP_seg}}
+\label{fig:iess_fondo_cap_des}
+\includegraphics[scale=1]{graficos/iess_fondo_cap_des.png}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE.}
+\end{figure}
+
+La cuenta Fondos Capitalizados del Balance del Fondo del \Sexpr{REP_seg} incrementó USD 241.744.565,85, de USD 67.964.463,38 a USD 309.709.029,23, entre los años 2017 y 2018. En términos porcentuales, este crecimiento es igual al 355,69\% de sus valores.
+
+
+\subsection{Resultados del Ejercicio Actual}
+En la tabla \ref{tab:iess_resultados} y figura \ref{fig:iess_resultados_des}, se presenta su evolución, incremento y tasa de crecimiento anual de los resultados del ejercicio actual del Fondo del \Sexpr{REP_seg} durante el período 2017 a 2018.
+
+\begin{table}[H]
+\begin{center}
+\caption{Evolución histórica de los relsultado del ejercicio actual del Fondo del \Sexpr{REP_seg}}
+\label{tab:iess_resultados}
+{\fontsize{11}{12}\selectfont
+\begin{tabular}{crrr}
+\toprule
+\multicolumn{1}{c}{Año}	& \multicolumn{1}{c}{Pasivos No Corrientes}	& \multicolumn{1}{c}{Incremento} & 	\multicolumn{1}{c}{Incremento Porcentual}  \\
+    & \multicolumn{1}{c}{(USD)}   & \multicolumn{1}{c}{Anual (USD)} &  \multicolumn{1}{c}{Anual (\%)}\\
+\midrule
+\input{tablas/iess_resultados_ejercicio_actual.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE}
+\end{center}
+\end{table}
+
+El resultado del ejercicio actual del Fondo del \Sexpr{REP_seg} registró un decrecimiento igual a 9,46\%, de USD 241.744.565,85 a USD 218.806.044,15, entre los años 2017 y 2018.
+
+\begin{figure}[H]
+\centering
+\caption{Evolución de los resultado del ejercicio actual del Fondo del \Sexpr{REP_seg}}
+\label{fig:iess_resultados_des}
+\includegraphics[scale=1]{graficos/iess_resultados_des.png}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE.}
+\end{figure}
+
+
+
+\section{Ingresos}
+
+A continuación, se procede al análisis de ingresos y egresos, que se encuentran en los Estados de Pérdidas y Ganancias al 31 de diciembre de cada año, por el período 2017 al 2018. Cabe indicar que no se contabilizan ingresos o egresos por el método del devengado, lo que ocasiona que no se visualice la situación financiera real del fondo. 
+
+\begin{table}[H]
+\begin{center}
+\caption{Evolución histórica de los ingresos del Fondo del \Sexpr{REP_seg}}
+\label{tab:iess_ingresos_des}
+{\fontsize{11}{12}\selectfont
+\begin{tabular}{crrr}
+\toprule
+\multicolumn{1}{c}{Año}	& \multicolumn{1}{c}{Ingresos}	& \multicolumn{1}{c}{Incremento} & 	\multicolumn{1}{c}{Incremento Porcentual}  \\
+    & \multicolumn{1}{c}{(USD)}   & \multicolumn{1}{c}{Anual (USD)} &  \multicolumn{1}{c}{Anual (\%)}\\
+\midrule
+\input{tablas/iess_ingresos.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE}
+\end{center}
+\end{table}
+
+El crecimiento del Fondo del Seguro de Desempleo es notable, esto se debe a su financiamiento; es decir, al importe que se genera por los ingresos del aporte patronal del 1\% de la remuneración del trabajador, obrero o servidor; valor que constituye el fondo solidario de este Seguro. Se observa que los ingresos de este fondo decrecieron 11,76\%, de USD 276.419.273,73 a USD 243.907.164,94, entre los años 2017 y 2018, debido al impacto de la disminución en la cuenta de los aportes patronales de este fondo. En cambio, la Dirección Nacional de Recaudación y Gestión de Cartera señala, a través del memorando Nro. IESS-DNRGC-2019-0778-M de fecha 05 de julio de 2019, que la recaudación por aportes patronales del 1\% correspondiente al Seguro de Desempleo ascendió a USD 146.454.700,05 en el año 2016.
+
+
+\begin{figure}[H]
+\centering
+\caption{Evolución de los ingresos del Fondo del \Sexpr{REP_seg}}
+\label{fig:iess_ingresos_des}
+\includegraphics[scale=0.95]{graficos/iess_ingresos_des.png}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE.}
+\end{figure}
+
+
+% \begin{table}[H]
+% \begin{center}
+% \caption{Evolución histórica de recaudación por aportes patronales del \Sexpr{REP_seg}, según la Dirección Nacional de Recaudación y Gestión de Cartera}
+% \label{tab:iess_ingresos_DNFTSD}
+% {\fontsize{11}{12}\selectfont
+% \begin{tabular}{crrr}
+% \toprule
+% \multicolumn{1}{c}{Año}	& \multicolumn{1}{c}{Ingresos}	& \multicolumn{1}{c}{Incremento} & 	\multicolumn{1}{c}{Incremento Porcentual}  \\
+%     & \multicolumn{1}{c}{(USD)}   & \multicolumn{1}{c}{Anual (USD)} &  \multicolumn{1}{c}{Anual (\%)}\\
+% \midrule
+% \input{tablas/iess_ingresos_DNFTSD.tex}
+% \bottomrule
+% \end{tabular}
+% }
+% \caption*{\scriptsize Fuente: Dirección Nacional de Recaudación y Gestión de Cartera - IESS \\
+% Elaborado: DAIE}
+% \end{center}
+% \end{table}
+% 
+
+
+\section{Gastos}
+\label{chp_infofinan:egresos_pens}
+El pago de prestaciones por el beneficio de Desempleo para el período 2017 a 2018 se muestran a continuación:
+
+\begin{table}[H]
+\begin{center}
+\caption{Evolución histórica de los gastos del Fondo del \Sexpr{REP_seg}}
+\label{tab:iess_cuentas_pagar}
+{\fontsize{11}{12}\selectfont
+\begin{tabular}{crrr}
+\toprule
+\multicolumn{1}{c}{Año}	& \multicolumn{1}{c}{Gastos}	& \multicolumn{1}{c}{Incremento} & 	\multicolumn{1}{c}{Incremento Porcentual}  \\
+    & \multicolumn{1}{c}{(USD)}   & \multicolumn{1}{c}{Anual (USD)} &  \multicolumn{1}{c}{Anual (\%)}\\
+\midrule
+\input{tablas/iess_gastos.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE}
+\end{center}
+\end{table}
+
+Se observa un decrecimiento en el registro de los pagos realizados a los beneficiarios del fondo solidario de desempleo durante los años 2017 y 2018. Entre los años 2018 y 2017 los gastos prestacionales del fondo de desempleo decrecieron en un 27,61\%; en este período, correspondiendo a un valor de USD 9.573.587,09. Esta reducción de gastos prestacionales se debió a la reducción del número de solicitudes del \Sexpr{REP_seg} de 28.068 a 20.745 en el período antes mencionado.
+
+\begin{figure}[H]
+\centering
+\caption{Evolución de los gastos del Fondo del \Sexpr{REP_seg}}
+\label{fig:iess_ingresos_des}
+\includegraphics[scale=0.95]{graficos/iess_gastos_des.png}
+\caption*{\scriptsize Fuente: Balances Financieros IESS \\
+Elaborado: DAIE.}
+\end{figure}
+
+%---------------------------------------------------------------------------------------------------
+\section{Descripción del portafolio de inversiones del \Sexpr{REP_seg}}
+\label{chp_infofinan:rentablidad}
+
+El artículo 372 de la Constitución de la República del Ecuador establece: ``Los fondos y reservas del seguro universal obligatorio
+serán propios y distintos de los del fisco, y servirán para cumplir de forma adecuada los fines de
+su creación y sus funciones. Ninguna institución del Estado podrá intervenir o disponer de sus
+fondos y reservas, ni menoscabar su patrimonio. Los fondos provisionales (sic) públicos y sus
+inversiones se canalizarán a través de una institución financiera de propiedad del Instituto
+Ecuatoriano de Seguridad Social; su gestión se sujetará a los principios de seguridad, solvencia,
+eficiencia, rentabilidad y al control del órgano competente''.
+
+Para medir la rentabilidad de las inversiones, se utilizarán dos indicadores: el rendimiento
+promedio ponderado y el rendimiento neto. El rendimiento promedio ponderado para cada instrumento
+financiero, con pesos iguales a los saldos en valor nominal, se calcula según el artículo 5.4.1.3
+del Capítulo III ``Manual operativo para valoración a precios de mercado de valores de contenido crediticio y de participación y procedimiento'' del Título III ``De las operaciones del Instituto
+Ecuatoriano de Seguridad Social, del Instituto de Seguridad Social de las Fuerzas Armadas, del
+Instituto de Seguridad Social de la Policía Nacional, del Servicio de Cesantía de la Policía
+Nacional'' del  Libro II ``Normas de control para las entidades del sistema de seguridad
+social''\footnote{La normativa citada se encuentra derogada, pero se encontraba vigente en la
+mayoría del período de valuación.}, en el cual manifiesta que la fórmula para calcular el
+rendimiento efectivo promedio ponderado, $\overline{TIR}$, es:
+\begin{equation}
+\overline{TIR}=\frac{\sum^{K}_{1} TIR_{i}\cdot VP_{i}}{\sum^{k}_{1}VP_{i}},
+\end{equation}
+
+donde: $TIR_{i}$ es el rendimiento efectivo de la operación de contado $i$, $VP_{i}$ es el valor nominal residual o valor parcial de la inversión y $k$ es el número de operaciones a tener en cuenta.
+
+El rendimiento neto de cada fondo se calcula según la metodología expuesta en el informe ``Cálculo
+de rendimientos financieros de los Fondos Previsionales administrados por el Banco del Instituto
+Ecuatoriano de Seguridad Social''. El rendimiento neto, $R_{i}$, del fondo $i$, se estiman a través de la siguiente fórmula:
+
+\begin{equation}
+R_{i}=\frac{\left(I_{i}-Gop_{i}-GAdm_{i}\right)\cdot \left(12/j\right)}{\overline{FA_{i}}}, \qquad para\; \; i=1,2,3,\ldots,9,
+\end{equation}
+
+donde: $I_{t}$ es el ingreso acumulado del fondo $i$, $Gop_{t}$ es el gasto operativo acumulado del fondo $i$, $GAdm_{i}$ es el Gasto administrativo acumulado del fondo $i$ y $\overline{FA_{i}}$ es el fondo administrativo promedio del fondo $i$.
+
+$\overline{FA_{i}}$ hace referencia al promedio del saldo del fondo registrado 
+el último día de cada mes, desde el 31 de diciembre del año 
+anterior hasta el último día del mes considerando para el cálculo. Específicamente, la fórmula  de cálculo es la siguiente:
+\begin{equation}
+\overline{FA_{i}}=\frac{FA_{i,dic}+FA_{i,ene}+FA_{i,feb}+FA_{i,mar}+\cdots+FA_{i,actual}}{j+1},
+\end{equation}
+donde: $j+1$ es el número total de observaciones para ser consideradas en el promedio móvil del fondo administrado.
+
+Según los balances financieros del \Sexpr{REP_seg}, el BIESS administra USD 515 millones de este seguro a 31 de diciembre de 2018, de los cuales su totalidad se encuentra en inversiones no privativas. En cambio, en el 2017 solo se registró USD 258 millones, como se puede observar en la tabla \ref{tab:iess_rec_admi_BIESS}.
+
+\begin{table}[H]
+  \begin{center}
+  \caption{Recursos administrados por el BIESS pertenecientes al \Sexpr{REP_seg} a 31 de diciembre de 2018}
+  \label{tab:iess_rec_admi_BIESS}
+ % \resizebox{\columnwidth}{!}{%
+  \begin{tabular}{lrrr}
+    \toprule
+      \multicolumn{1}{c}{Año} &  \multicolumn{1}{c}{Recursos}&    \multicolumn{1}{c}{Incremento} &   \multicolumn{1}{c}{Tasa de crecimiento} \\
+            &\multicolumn{1}{c}{Administrados BIESS (USD)}&     \multicolumn{1}{c}{(USD)}      &     \multicolumn{1}{c}{(\%)}\\
+    \midrule
+    \input{tablas/iess_rec_admi_BIESS.tex}
+    \bottomrule
+  \end{tabular}
+  %  }
+\caption*{\scriptsize Fuente: Balances Financieros - IESS. \\
+Elaborado: DAIE.}
+  \end{center}
+\end{table}
+
+
+Mediante el Oficio Nro. BIESS-OF-GGEN-1118-2019 de 06 de noviembre de 2019, el Director General del BIESS pone a conocimiento del Director General del IESS las inversiones del \Sexpr{REP_seg}. También; en dicho memorando se indican las siguientes peculiaridades respecto a las inversiones de este seguro, con las siguientes palabras: 
+
+\textit{ ``(…), se remite el archivo con el detalle de las inversiones del Fondo Seguro de Desempleo, con corte a 31 de diciembre de 2018; cabe indicar que, durante los años 2016 y 2017, la Subgerencia de Banca de Inversión, conforme a la Certificación de Recursos emitidos por la Coordinación Financiera, no realizó colocaciones en inversiones del Mercado de Valores con recursos provenientes del Seguro de Desempleo.} 
+
+\textit{A efectos de identificar las inversiones correspondientes a los años 2016, 2017 y parte del 2018, es preciso conformar una comisión entre el IESS y BIESS para el fondo de desempleo con el fin de poder determinar los valores y fechas exactas de las transferencias del IESS al BIESS, con el fin de definir el rendimiento de este Portafolio en función de las inversiones realizadas con estos recursos (…)}
+
+\textit{ (…) actualmente no es factible presentar los rendimientos resultantes de dicho fondo, debido a que se encuentra incluido en el Fondo del Seguro de Cesantía; por el momento nos encontramos analizando los registros correspondientes a fin de contar con registros separados''.}
+
+Por tal razón, a la fecha de expedición de este estudio solo se ha logrado separar las inversiones en Certificados de Tesorería al 31 de diciembre de 2018 del \Sexpr{REP_seg}, puestas en conocimiento en el oficio Nro. BIESS-OF-GGEN-1118-2019 (ver tabla \ref{tab:iess_total_des}); y también cabe indicar  que en la tabla \ref{tab:iess_total_des} no están registrados todas las inversiones del fondo, puesto que según los balances contables las inversiones no privativas administradas por el BIESS (ver tabla \ref{tab:iess_rec_admi_BIESS}) ascienden a USD 515 millones a diciembre de 2018.
+
+
+\begin{table}[H]
+  \begin{center}
+  \caption{Portafolio de inversiones identificadas del \Sexpr{REP_seg} a 31 de diciembre de 2018}
+  \label{tab:iess_total_des}
+ % \resizebox{\columnwidth}{!}{%
+  \begin{tabular}{lrrr}
+    \toprule
+   \multicolumn{1}{c}{Instrumento} &  \multicolumn{1}{c}{Saldo Valor}   &  \multicolumn{1}{c}{Rendimiento Promedio} &  \multicolumn{1}{c}{Plazo Remanente} \\  
+  \multicolumn{1}{c}{Financiero:}  &  \multicolumn{1}{c}{Nominal (USD)} &  \multicolumn{1}{c}{Ponderado (\%)}       &   \multicolumn{1}{c}{(días)} \\    
+    \midrule
+    \input{tablas/iess_total_des.tex}
+    \bottomrule
+  \end{tabular}
+  %  }
+\caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS y Dirección de Tesorería - BIESS. \\
+Elaborado: DAIE.}
+  \end{center}
+\end{table}
+
+
+A la fecha solo se ha establecido que, al 31 de diciembre de 2018, se registró inversiones por USD 120.373.000 en certificados de tesorería con 2,09\% de rendimiento y un plazo remanente de 20 días, y USD 1.999.832 en la caja; en total, suma USD 122.372.832 en fondos administrados por el BIESS del \Sexpr{REP_seg}. Se sugiere que la comisión conformada entre el BIESS y el IESS, de acuerdo con el ámbito de su competencia, determine lo valores que se encuentran invertidos del resto de los valores administrados por el BIESS del \Sexpr{REP_seg} (ver tabla \ref{tab:iess_rec_admi_BIESS}) y, además, determine los rendimientos correspondientes desde el año 2016.
+
+Esta sugerencia se realiza debido a que valores correspondientes a las inversiones del \Sexpr{REP_seg} se encontraban incluidos en el portafolio de inversiones del Fondo del Seguro de Cesantía; por lo que en este estudio se presenta la evolución histórica de los valores invertidos y rendimientos del portafolio del Fondo del Seguro de Cesantía.
+
+\section{Descripción del portafolio de inversiones del Fondo del Seguro de Cesantía}
+\label{chp_portafolio_cesantia}
+
+A partir de la información recopilada de los siguientes documentos: memorando Nro. IESS-DNGF-2018-0859-M de 2 de octubre de 2018, oficio Nro. BIESS-OF-GGEN-0315-2019 de fecha 28 de
+marzo de 2019 y el informe técnico BIESS-IF-GADF-002-2018 de fecha 23 de febrero de 2018, se
+presenta la siguiente información respecto a las inversiones y reservas del Fondo del Seguro de Cesantía. No se presentan las inversiones diferenciadas tanto del Seguro de Cesantía como Seguro de Desempleo debido a que el BIES no ha realizado la separación respectiva.
+
+A continuación, se presenta la evolución histórica del valor nominal y su respectivo rendimiento del
+portafolio de inversiones del Fondo del Seguro de Cesantía, durante el período 2011 a 2018 en la tabla \ref{tab:iess_total_ces} y la figura \ref{fig:inv_total_ces}.
+
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica del saldo en valor nominal de las inversiones del  Fondo del Seguro de Cesantía
+y su rendimiento neto}
+\label{fig:inv_total_ces}
+\includegraphics[scale=1]{graficos/inv_total_ces.png}
+\caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS y Dirección de Tesorería - BIESS. \\
+Elaborado: DAIE}
+\end{figure}
+
+El portafolio total de inversiones del Fondo del Seguro de Cesantía creció de USD 2.797.786.718,98 en el año 2011 a USD 7.428.197.432,49 dólares en el año 2018, lo que implica un crecimiento de 165,5\% durante ese período de tiempo. De igual manera, su tasa de rendimiento promedio ponderada creció de 7,19\% en el año 2011 a 8,73\% a diciembre de 2018. En cambio, el rendimiento neto tendió a la baja; el más alto se registró en el año 2013 (12\%) y las más bajas fueron en el 2018 (5,29\%) y su promedio es 7,43\% para el período 2012 a 2018.
+
+\begin{table}[H]
+  \begin{center}
+  \caption{Evolución de los Fondos de Cesantía administrados por el BIESS}
+  \label{tab:iess_total_ces}
+  \resizebox{\columnwidth}{!}{%
+  \begin{tabular}{rrrrcrrc}
+    \toprule
+ \multicolumn{1}{c}{Año} & \multicolumn{1}{c}{Inversiones} & \multicolumn{1}{c}{Caja} & \multicolumn{1}{c}{Fondo total} & \multicolumn{1}{c}{Rendimiento Promedio}& \multicolumn{1}{c}{Rendimiento} & \multicolumn{1}{c}{Rendimiento Neto} & \multicolumn{1}{c}{Plazo Promedio}  \\ 
+     &  \multicolumn{1}{c}{(USD)}           &\multicolumn{1}{c}{(USD)} & \multicolumn{1}{c}{administrados BIESS (USD)}&  \multicolumn{1}{c}{Ponderado (\%)}    & \multicolumn{1}{c}{Neto (\%)}   & \multicolumn{1}{c}{Real (\%)}  &  \multicolumn{1}{c}{Ponderado (días)}  \\ 
+    \midrule
+    \input{tablas/iess_total_ces.tex}
+    \bottomrule
+  \end{tabular}
+    }
+\caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS y Dirección de Tesorería - BIESS. \\
+Elaborado: DAIE.}
+  \end{center}
+\end{table}
+
+
+El artículo 4 del Capítulo V ``Norma para regular las operaciones del Banco del Instituto Ecuatoriano de Seguridad Social '' del Título XXVI del Libro I ``Normas Generales para las Instituciones del Sistema Financiero''\footnote{La normativa citada se encuentra derogada, pero se encontraba vigente en la mayoría del período de valuación.} de la normativa de la Superintendencia de Bancos, establece que las inversiones del Fondo del Seguro de Cesantía se invertirán a largo plazo; es decir, hasta plazos mayores a cinco (5) años, en inversiones: privativas (préstamos hipotecarios, prendarios y quirografarios, e inversión en inmuebles), no privativas en renta fija (bonos, bonos locales, CETES \footnote{Certificados de tesorería}, certificados de depósito, papel comercial, obligaciones, titularizaciones y pólizas de acumulación) y no privativas en renta variable (fideicomisos mercantiles, acciones y cuotas de participación en fondos de inversión).
+
+Se presenta en la tabla \ref{tab:iess_inv_corte_ces} un breve resumen de la situación actual de las inversiones pertenecientes al Fondo del Seguro de Cesantía, a través del BIESS, en Bonos del Estado, titularizaciones, obligaciones, préstamos, fideicomisos y negocios fiduciarios, y acciones en renta variable, mostrando su saldo remanente de la inversión en valor nominal, su rendimiento promedio ponderado y su rendimiento promedio ponderado real a 31 de diciembre de 2018.
+
+
+\begin{table}[H]
+  \begin{center}
+  \caption{Portafolio de inversiones del Fondo del Seguro de Cesantía administrados del BIESS a 31 de diciembre de 2018}
+  \label{tab:iess_inv_corte_ces}
+  \resizebox{\columnwidth}{!}{%
+  \begin{tabular}{lrccr}
+    \toprule
+ \multicolumn{1}{c}{Instrumento} & \multicolumn{1}{c}{Saldo Valor}   & \multicolumn{1}{c}{Rendimiento Promedio}  & \multicolumn{1}{c}{Rendimiento Promedio}  & \multicolumn{1}{c}{Plazo Promedio}  \\
+             &  \multicolumn{1}{c}{Nominal (USD)}& \multicolumn{1}{c}{Ponderado (\%)}        & \multicolumn{1}{c}{Ponderado Real (\%)}&\multicolumn{1}{c}{Remanente (días)} \\
+   \midrule
+    \input{tablas/iess_inv_corte_ces.tex}
+    \bottomrule
+  \end{tabular}
+    }
+\caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS y Dirección de Tesorería - BIESS.\\
+Elaborado: DAIE.}
+  \end{center}
+\end{table}
+
+% --------------------------------------------------------------------------------------------------
+\subsection{Rendimiento neto de las inversiones del Fondo del Seguro de Cesantía}
+ 
+
+La Dirección de Tesorería del BIESS envió a través del oficio Nro. BIESS-OF-GGEN-0591-2019 de 17 de junio de 2019 los resultados de la metodología: ``Cálculo de rendimientos financieros de los Fondos Previsionales administrados por el Banco del Instituto Ecuatoriano de Seguridad Social''. Para el cálculo de los rendimientos netos, se utilizaron: los ingresos, gastos operativos y gastos administrativos, el fondo administrado promedio (desde diciembre del año anterior). Además, en la tabla \ref{tab:iess_inv_rend_ces}, se presentan la tasa de rendimiento bruta antes de gastos y la tasa de rendimiento neta, la cual es el rendimiento después de gastos. Los ingresos se detallan más tarde en la tabla \ref{tab:iess_inv_ingre_ces} y los egresos en la tabla \ref{tab:iess_inv_gastos_ces}.
+
+En promedio, la diferencia entre rendimientos brutos y netos de este fondo es 2,93\%; es decir, los gastos (operativos y administrativos) producen una reducción del 2,93\% del rendimiento bruto y, además, los rendimientos netos presentan una alta volatilidad (desviación estándar igual a 2,20\%). 
+
+La reducción de los rendimientos netos del portafolio de inversiones del Fondo del Seguro de Cesantía en el año 2018 (5,29\%) se debe a que se realizaron provisiones por USD 145 millones por impagos en el proyecto Toachi Pilatón en octubre de 2018. En 2019, el Fideicomiso se puso al día en los pagos; sin embargo, la Superintendencia de Bancos no autorizó la reversa de la provisión (Según la Dirección de Tesorería del BIESS en los insumos enviados en el Oficio Nro. BIESS-OF-GGEN-0591-2019).
+
+Además, la Dirección de Tesorería del BIESS estima el escenario: si la Superintendencia de Bancos hubiese regresado los valores por provisiones del proyecto Toachi Pilatón durante el año 2018, el rendimiento neto en el año 2018 sería 7,23\% (y no 5,29\%), debido que los ingresos habrían aumentado en USD 145 millones en ese año. 
+\begin{table}[H]
+  \begin{center}
+  \caption{Evolución de los ingresos, gastos operativos, gastos administrativos, rendimiento bruto y rendimiento neto del portafolio de inversiones del Fondo del Seguro de Cesantía}
+  \label{tab:iess_inv_rend_ces}
+  \resizebox{\columnwidth}{!}{%
+  \begin{tabular}{lrrrrrr}
+    \toprule
+   \multicolumn{1}{c}{Corte a:} & \multicolumn{1}{c}{Ingresos} & \multicolumn{1}{c}{Gastos}& \multicolumn{1}{c}{Gastos} & \multicolumn{1}{c}{Fondo Administrado} & \multicolumn{1}{c}{Rendimiento}  & \multicolumn{1}{c}{Rendimiento} \\
+            & \multicolumn{1}{c}{(USD)} &\multicolumn{1}{c}{Operativos (USD)} & \multicolumn{1}{c}{Administrativos (USD)} &\multicolumn{1}{c}{Promedio (USD)}     & \multicolumn{1}{c}{Bruto (\%)}   & \multicolumn{1}{c}{Neto (\%)} \\
+    \midrule
+    \input{tablas/iess_inv_rend_ces.tex}
+    \bottomrule
+  \end{tabular}
+    }
+\caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS y Dirección de Tesorería - BIESS. \\
+Elaborado: DAIE.}
+  \end{center}
+\end{table}
+
+Los ingresos por inversiones del Fondo del Seguro de Cesantía presentados en la tabla \ref{tab:iess_inv_ingre_ces} fueron tomados de los estados de pérdidas y ganancias con corte a diciembre de los respectivos años. Los ingresos financieros generados por las inversiones de este fondo tuvieron una tendencia a crecer de USD 244.153.424,87 a USD 667.841.956,96 entre los años 2012 y 2018, respectivamente. Las inversiones en renta fija en el sector público (Bonos del Estado Ecuatoriano) generan mayores ingresos para el fondo entre los años 2012 a 2015, siendo su ingreso máximo por este concepto en el año 2018 (USD 193.883.236,37) y su menor en el año 2012 (USD 115.387.274,84). Desde el año 2016, los ingresos por préstamos hipotecarios han generado los mayores ingresos, logrando crecer de USD 22.003.252,12 a USD 239.692.957,80 entre el año 2012 a 2018, respectivamente. En cambio, los ingresos por préstamos quirografarios pasaron de generar USD 24.802.793,29 en el 2012 a USD 151.455.118,75 en el 2018, y, de esta manera, se convierten en la tercera forma de ingresos del fondo en el 2018, después de los préstamos hipotecarios y bonos del Estado.
+\begin{table}[H]
+  \begin{center}
+  \caption{Evolución de los ingresos financieros generados por las inversiones del Fondo del Seguro de Cesantía}
+  \label{tab:iess_inv_ingre_ces}
+  \resizebox{\columnwidth}{!}{%
+  \begin{tabular}{{l}r*{7}{r}}
+    \toprule
+  \multicolumn{1}{c}{Ingresos por} & \multicolumn{1}{c}{2012} & \multicolumn{1}{c}{2013} &\multicolumn{1}{c}{2014} &\multicolumn{1}{c}{2015} &\multicolumn{1}{c}{2016} & \multicolumn{1}{c}{2017}  &  \multicolumn{1}{c}{2018}\\
+    \midrule
+    \input{tablas/iess_inv_ingre_ces.tex}
+    \bottomrule
+  \end{tabular}
+    }
+\caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS y Dirección de Tesorería - BIESS. \\
+Elaborado: DAIE}
+  \end{center}
+\end{table}
+
+Los gastos operativos de las inversiones del portafolio de inversiones del Fondo del Seguro de Cesantía se detallan en la tabla \ref{tab:iess_inv_gastos_ces} y se puede apreciar que mantienen una tendencia a crecer de forma descontrolada de USD 36.748.979,72 a USD 267.073.726,84 entre los años 2012 a 2018, respectivamente, lo que implica un crecimiento de 626,75\% en ese período de tiempo, mientras que los ingresos solo crecieron en 173,53\% durante el mismo período de tiempo.
+
+\begin{table}[H]
+  \begin{center}
+  \caption{Evolución de los gastos operativos producidos por las inversiones del Fondo del Seguro de Cesantía}
+  \label{tab:iess_inv_gastos_ces}
+  \resizebox{\columnwidth}{!}{%
+  \begin{tabular}{{l}r*{7}{r}}
+    \toprule
+    \multicolumn{1}{c}{Gastos por} &   \multicolumn{1}{c}{2012} &   \multicolumn{1}{c}{2013} &  \multicolumn{1}{c}{2014} &  \multicolumn{1}{c}{2015} &  \multicolumn{1}{c}{2016} &   \multicolumn{1}{c}{2017}&  \multicolumn{1}{c}{2018}\\
+    \midrule
+    \input{tablas/iess_inv_gastos_ces.tex}
+    \bottomrule
+  \end{tabular}
+    }
+  \caption*{\scriptsize Fuente: Dirección de Tesorería - BIESS y Balances Financieros del BIESS. \\
+  Elaborado: DAIE.}
+  \end{center}
+\end{table}
+
+Los mayores gastos operativos hasta el año 2016 correspondían a reversos de interés, después a gastos de liquidación de fidecomisos en el 2017 (USD 103.659.126,32) y por provisión para valuación inversiones de capital (proyecto Toachi Pilatón) en el 2018 (USD 145.862.306,53 que representa el 54,61\% de los gastos operativos del 2018). En segundo lugar, en gastos operativos en el año 2018, se encuentra la provisión para valuación de préstamos (USD 53.898.937,99) y, en el tercer puesto, los gastos por liquidación de fideicomisos (USD 31.876.016,03).
+% --------------------------------------------------------------------------------------------------
+\subsection{Inversiones privativas (préstamos)}
+De acuerdo con el numeral 1 del artículo 9 del Capítulo V ``Normas para regular las operaciones del
+Banco del Instituto Ecuatoriano de Seguridad Social'' del Libro I ``Normas generales para las
+instituciones del sistema financiero''\footnote{Esta normativa se encuentra derogada, pero estaba
+vigente en la mayoría del período de valuación de este estudio.}, las inversiones privativas
+abarcan:  préstamos hipotecarios; préstamos quirografarios, préstamos prendarios a través de los
+servicios de los Montes de Piedad; las colocaciones financieras de las cuentas de menores
+beneficiarios del Instituto Ecuatoriano de Seguridad Social; operaciones de descuento de cartera
+hipotecaria; y adquisición, conservación y enajenación de bienes inmuebles, de acuerdo a las
+resoluciones que emita el directorio del Banco del Instituto Ecuatoriano de Seguridad Social.
+
+En la tabla \ref{tab:iess_inv_creditos_ces} y figura \ref{fig:inv_creditos_ces}, se muestra la
+evolución histórica de las inversiones en préstamos quirografarios e hipotecarios, en valor nominal,
+con su respectivo rendimiento y plazo promedio ponderado durante el período 2012 a 2018.
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica del saldo en valor nominal de las inversiones en préstamos pertenecientes 
+al Seguro de Cesantía y su rendimiento promedio ponderado}
+\label{fig:inv_creditos_ces}
+\includegraphics[scale=1]{graficos/inv_creditos_ces.png}
+  \caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS. \\
+  Elaborado: DAIE.}
+\end{figure}
+
+\begin{table}[H]
+  \begin{center}
+  \caption{Evolución de las inversiones del Fondo del Seguro de Cesantía en préstamos}
+  \label{tab:iess_inv_creditos_ces}
+  \resizebox{\columnwidth}{!}{%
+  \begin{tabular}{crrrccc}
+    \toprule
+     \multicolumn{1}{c}{Año} &  \multicolumn{1}{c}{Préstamos}&  \multicolumn{1}{c}{Préstamos}  &  \multicolumn{1}{c}{Total}&  \multicolumn{1}{c}{Rendimiento} &  \multicolumn{1}{c}{Rendimiento Promedio}&  \multicolumn{1}{c}{Plazo} \\
+      &   \multicolumn{1}{c}{Quirografarios (USD)}&  \multicolumn{1}{c}{Hipotecarios (USD)}&   \multicolumn{1}{c}{(USD)}  &   \multicolumn{1}{c}{Promedio Ponderado (\%)} &   \multicolumn{1}{c}{Ponderado Real (\%)} &    \multicolumn{1}{c}{Promedio Ponderado (días)}\\
+    \midrule
+    \input{tablas/iess_inv_creditos_ces.tex}
+    \bottomrule
+  \end{tabular}
+    }
+  \caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS y Balances Financieros del BIESS. \\
+  Elaborado: DAIE.}
+  \end{center}
+\end{table}
+
+El portafolio de inversiones del Fondo del Seguro de Cesantía no registra inversiones en préstamos prendarios. La mayoría de sus inversiones se dedican a préstamos son hipotecarios (72,80\% en 2018). La evolución del saldo remanente invertido en préstamos tuvo una tendencia creciente entre el año 2012 a 2018, años en los que su cartera creció de USD 600.556.613,90 a USD 4.098.648.875,69, respectivamente, lo que significó un crecimiento del 582,48\% de la cartera de crédito.
+
+En cambio, su tasa de rendimiento ponderada registró su máximo en 2018 (9,37\%) y su mínimo en 2013
+(8,84\%) y, además, su promedio es 9,06\% y una baja volatilidad (0,20\%). Cabe mencionar que este rendimiento es un promedio ponderado por
+tanto no considera los gastos por provisiones que estipulan la autoridad de control para este tipo
+de inversión como se pueden apreciar en la tabla \ref{tab:iess_inv_gastos_ces}; por consiguiente, es
+necesario establecer una metodología para calcular los rendimientos netos de las inversiones en
+préstamos.
+
+% --------------------------------------------------------------------------------------------------
+\subsection{Inversiones no privativas con renta fija en el sector público}
+
+De acuerdo al numeral 1 del artículo 9 del Capítulo V ``Normas para regular las operaciones del
+Banco del Instituto Ecuatoriano de Seguridad Social'' del Libro I ``Normas Generales para las instituciones del Sistema Financiero'', las inversiones no privativas abarcan:  títulos de renta
+fija; títulos de renta variable; valores que se emiten como consecuencia de procesos de
+titularización; inversiones en el exterior dentro de los términos de la Ley de Seguridad Social; y  fideicomisos mercantiles, cuyo beneficiario sea el Banco del Instituto Ecuatoriano de Seguridad
+Social. (Reformado con Resolución No. JB-2014-3029 de 6 de agosto del 2014).
+
+% --------------------------------------------------------------------------------------------------
+\subsubsection{Inversiones en Bonos del Estado Ecuatoriano}
+
+En la tabla \ref{tab:iess_inv_bonos_ces} y figura \ref{fig:iess_inv_bonos_ces}, se muestra la evolución histórica de las inversiones del Fondo del Seguro de Cesantía en bonos del Estado, en valor nominal (barras) a diciembre de cada año y sus tasas de rendimiento (líneas) durante el período 2011 a 2018. Como se puede observar el rendimiento promedio ponderado creció en el tiempo, de 6,54\% a 7,47\% entre los años 2011 y 2018, respectivamente.
+
+En cambio, el saldo en valor nominal creció de USD 1.317.656.345,00 en diciembre de 2011 a USD 2.770.006.632,00 en diciembre de 2018, crecimiento del 110,22\% entre 2011 a 2018, año en el cual obtuvo su máximo. Su tasa de rendimiento promedio ponderado de estas inversiones es 7,10\% y presenta una baja volatilidad (0,35\%) para el período 2011 a 2018.
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica del saldo en valor nominal de las inversiones en Bonos del Estado del
+Fondo del Seguro de Cesantía y su rendimiento promedio ponderado}
+\label{fig:iess_inv_bonos_ces}
+\includegraphics[scale=1]{graficos/iess_inv_bonos_ces.png}
+  \caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS. \\
+  Elaborado: DAIE.}
+\end{figure}
+
+\begin{table}[H]
+  \begin{center}
+  \caption{Evolución de las inversiones del Fondo del Seguro de Cesantía en Bonos del Estado Ecuatoriano}
+  \label{tab:iess_inv_bonos_ces}
+  {\fontsize{10}{12}\selectfont
+  \begin{tabular}{crccr}
+    \toprule
+   \multicolumn{1}{c}{Año} &   \multicolumn{1}{c}{Saldo}         &   \multicolumn{1}{c}{Rendimiento Promedio} &   \multicolumn{1}{c}{Rendimiento Promedio} &   \multicolumn{1}{c}{Plazo} \\
+     &   \multicolumn{1}{c}{Valor Nominal (USD)} &   \multicolumn{1}{c}{Ponderado (\%)}        &   \multicolumn{1}{c}{Ponderado Real (\%)} &   \multicolumn{1}{c}{(días)}   \\
+    \midrule
+    \input{tablas/iess_inv_bonos_ces.tex}
+    \bottomrule
+  \end{tabular}
+    }
+  \caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS y Balances Financieros del BIESS. \\
+  Elaborado: DAIE.}
+  \end{center}
+\end{table}
+
+A continuación, en la tabla \ref{tab:iess_inv_det_bonos_ces}, se presentan a detalle la lista de bonos del Estado del portafolio de inversiones del Fondo del Seguro de Cesantía a la fecha de corte (31 de diciembre de 2018).
+
+{\fontsize{8.3}{9.1}\selectfont
+\begin{longtable}[H]{lrrccr}
+\caption{Detalle de las inversiones del Fondo del Seguro de Cesantía en Bonos del Estado Ecuatoriano a 31
+de diciembre de 2018} \\
+\label{tab:iess_inv_det_bonos_ces} \\
+\toprule
+   \multicolumn{1}{l}{Referencia del} &   \multicolumn{1}{c}{Valor Nominal} &   \multicolumn{1}{c}{Saldo Valor}  &   \multicolumn{1}{c}{Tasa Cupón} &   \multicolumn{1}{c}{Plazo Remanente} &  \multicolumn{1}{c}{Amortización}\\
+   \multicolumn{1}{c}{Título}  &  \multicolumn{1}{c}{de Compra (USD)}&  \multicolumn{1}{c}{Nominal (USD)}&        \multicolumn{1}{c}{(\%)}  &   \multicolumn{1}{c}{(días)}          &              \\
+\midrule
+\endfirsthead
+
+\toprule
+   \multicolumn{1}{l}{Referencia del} &   \multicolumn{1}{c}{Valor Nominal} &   \multicolumn{1}{c}{Saldo Valor}  &   \multicolumn{1}{c}{Tasa Cupón} &   \multicolumn{1}{c}{Plazo Remanente} &  \multicolumn{1}{c}{Amortización}\\
+   \multicolumn{1}{c}{Título}  &  \multicolumn{1}{c}{de Compra (USD)}&  \multicolumn{1}{c}{Nominal (USD)}&        \multicolumn{1}{c}{(\%)}  &   \multicolumn{1}{c}{(días)}          &              \\
+\midrule
+\endhead
+\bottomrule \multicolumn{6}{r}{continúa...} \\
+\endfoot
+\bottomrule
+\caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS y Balances Financieros del BIESS. \\
+  Elaborado: DAIE.}
+\endlastfoot
+  \input{tablas/iess_inv_det_bonos_ces.tex}
+\end{longtable}
+}
+
+
+% --------------------------------------------------------------------------------------------------
+\subsubsection{Certificados de Inversión de la CFN}
+
+El Seguro de Cesantía registró inversiones en certificados de inversiones de la CFN entre los años 2011 a 2015 (ver tabla \ref{tab:iess_inv_cert_CFN_ces} y figura \ref{fig:iess_inv_cert_cfn_des}). El saldo remanente en estos certificados decreció de USD 139.333.333,00 el año 2011 a USD 1.000.000,00 a diciembre de 2015. De igual manera, su rendimiento promedio ponderado creció de 6,16\% a 6,94\% entre los años 2011 a 2015, respectivamente.
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica del saldo remanente, en valor nominal, de las inversiones en Certificados de Inversión de la CFN del Fondo del Seguro de Cesantía y su rendimiento promedio ponderado}
+\label{fig:iess_inv_cert_cfn_des}
+\includegraphics[scale=1]{graficos/iess_inv_cert_cfn_des.png}
+\end{figure}
+
+\begin{table}[H]
+  \begin{center}
+  \caption{Evolución de las inversiones del Fondo del Seguro de Cesantía en Certificados de Inversión de la CFN}
+  \label{tab:iess_inv_cert_CFN_ces}
+  %\resizebox{\columnwidth}{!}{%
+  \begin{tabular}{crccr}
+    \toprule
+  \multicolumn{1}{c}{Año} &  \multicolumn{1}{c}{Saldo} &  \multicolumn{1}{c}{Rendimiento Promedio} &  \multicolumn{1}{c}{Rendimiento Promedio}&  \multicolumn{1}{c}{Plazo} \\
+  &  \multicolumn{1}{c}{Valor Nominal (USD)} &  \multicolumn{1}{c}{Ponderado (\%)} &  \multicolumn{1}{c}{Ponderado Real (\%)} &  \multicolumn{1}{c}{(días)}   \\
+    \midrule
+    \input{tablas/iess_inv_cert_CFN_ces.tex}
+    \bottomrule
+  \end{tabular}
+   %}
+  \caption*{\scriptsize Fuente: Tesorería BIESS y Balances Financieros del BIESS. \\
+  Elaborado: DAIE.}
+  \end{center}
+\end{table}
+% --------------------------------------------------------------------------------------------------
+\subsection{Inversiones no privativas con renta fija en el sector privado}
+
+% --------------------------------------------------------------------------------------------------
+\subsubsection{Inversiones en obligaciones en renta fija}
+
+En la siguiente tabla \ref{tab:iess_inv_obligaciones_inv_des} y figura \ref{fig:iess_inv_obligaciones_des} se muestra la evolución histórica del
+saldo remanente de las inversiones en obligaciones en renta fija (barras), en valor nominal, y sus
+rendimientos (líneas) durante el período 2011 a 2018.
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica nominal del saldo remanente de las inversiones en obligaciones
+en renta fija del Fondo del Seguro de Cesantía y su rendimiento promedio ponderado}
+\label{fig:iess_inv_obligaciones_des}
+\includegraphics[scale=1]{graficos/iess_inv_obligaciones_des.png}
+  \caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS.\\
+  Elaborado: DAIE.}
+\end{figure}
+
+\begin{table}[H]
+  \begin{center}
+  \caption{Evolución de las inversiones del Fondo del Seguro de Cesantía en Obligaciones en renta fija}
+  \label{tab:iess_inv_obligaciones_inv_des}
+  {\fontsize{10}{12}\selectfont
+  \begin{tabular}{crccr}
+    \toprule
+  \multicolumn{1}{c}{Año} &  \multicolumn{1}{c}{Saldo} &  \multicolumn{1}{c}{Rendimiento Promedio} &  \multicolumn{1}{c}{Rendimiento Promedio}&  \multicolumn{1}{c}{Plazo} \\
+  &  \multicolumn{1}{c}{Valor Nominal (USD)} &  \multicolumn{1}{c}{Ponderado (\%)} &  \multicolumn{1}{c}{Ponderado Real (\%)} &  \multicolumn{1}{c}{(días)}\\
+    \midrule
+    \input{tablas/iess_inv_obligaciones_inv_des.tex}
+    \bottomrule
+  \end{tabular}
+   }
+  \caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS. \\
+  Elaborado: DAIE.}
+  \end{center}
+\end{table}
+
+El saldo remanente, en valor nominal, de las inversiones en obligaciones de Seguro de Cesantía creció de USD 32.978.613,00 a USD 47.042.011,00 entre el año 2011 a 2013; más tarde, estas inversiones decrecieron hasta situarse en solo USD 1.665.000,00 a 31 de diciembre de 2018, lo cual representó un decremento del 96,46\% respecto al año 2015 (año donde alcanzó su máximo). En cambio, el rendimiento promedio ponderado ha tendido al alza desde 2011 (7,85\%) hasta 2018 (9\%) y registra un promedio igual a 8,24\% con una baja volatilidad (desviación estándar 0,35\%) para el período 2011 a 2018. El portafolio de inversiones en obligaciones en renta fija a fecha corte (31 de diciembre de 2018) se muestra el valor nominal de compra de estos bonos corporativos, el nombre del emisor, el saldo remanente, la tasa de cupón anual y el plazo remanente en días en la tabla \ref{tab:iess_inv_det_obligaciones_inv_des}.
+
+
+\begin{table}[H]
+  \begin{center}
+  \caption{Detalle de las inversiones del Fondo del Seguro de Cesantía en obligaciones en renta fija a 31
+  de diciembre de 2018}
+  \label{tab:iess_inv_det_obligaciones_inv_des}
+   \resizebox{\columnwidth}{!}{%
+   \begin{tabular}{lrrccc}
+    \toprule
+ \multicolumn{1}{l}{Emisor:} & \multicolumn{1}{c}{Valor Nominal} & \multicolumn{1}{c}{Saldo Valor}    & \multicolumn{1}{c}{Tasa Cupón} & \multicolumn{1}{c}{Plazo Remanente} & \multicolumn{1}{c}{Amortización}\\
+        & \multicolumn{1}{c}{de Compra (USD)} & \multicolumn{1}{c}{Nominal (USD)} & \multicolumn{1}{c}{(\%)}      & \multicolumn{1}{c}{(días)} &   \\
+    \midrule
+    \input{tablas/iess_inv_det_obligaciones_inv_des.tex}
+    \bottomrule
+  \end{tabular}
+   }
+  \caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS. \\
+  Elaborado: DAIE.}
+  \end{center}
+\end{table}
+
+% --------------------------------------------------------------------------------------------------
+\subsubsection{Inversiones en Titularizaciones}
+
+La Titularización es un mecanismo de financiamiento que consiste en: transformar activos o bienes,
+actuales o futuros, en valores negociables en el Mercado de Valores, para obtener liquidez en
+condiciones competitivas de mercado, con la consecuente reducción de los costos financieros. 
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica del saldo remanente, en valor nominal, de las inversiones en
+titularizaciones en renta fija del Fondo del Seguro de Cesantía y su rendimiento promedio ponderado}
+\label{fig:iess_inv_titularizaciones_ces}
+\includegraphics[scale=1]{graficos/iess_inv_titularizaciones_ces.png}
+  \caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS. \\
+  Elaborado: DAIE.}
+\end{figure}
+
+En la figura \ref{fig:iess_inv_titularizaciones_ces} y la tabla
+\ref{tab:iess_inv_titularizaciones_des}, se muestra la evolución histórica del saldo (barras), en
+valor nominal, de las inversiones del Fondo del Seguro de Cesantía en titularizaciones a 31 diciembre de
+cada año y su rendimiento promedio ponderado (líneas) durante el período 2011 a 2018.
+
+\begin{table}[H]
+  \begin{center}
+  \caption{Evolución de las inversiones del Fondo del Seguro de Cesantía en titularizaciones en renta fija}
+  \label{tab:iess_inv_titularizaciones_des}
+  {\fontsize{10}{12}\selectfont
+  \begin{tabular}{crccr}
+    \toprule
+ \multicolumn{1}{c}{Año} & \multicolumn{1}{c}{Saldo} & \multicolumn{1}{c}{Rendimiento Promedio} & \multicolumn{1}{c}{Rendimiento  Promedio}& \multicolumn{1}{c}{Plazo} \\
+  & \multicolumn{1}{c}{Valor Nominal (USD)} & \multicolumn{1}{c}{Ponderado (\%)} & \multicolumn{1}{c}{Ponderado Real (\%)} & \multicolumn{1}{c}{(días)}   \\
+    \midrule
+    \input{tablas/iess_inv_titularizaciones_des.tex}
+    \bottomrule
+  \end{tabular}
+    }
+  \caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS. \\
+  Elaborado: DAIE.}
+  \end{center}
+\end{table}
+
+El saldo remanente en inversiones en titularizaciones muestra una tendencia a decrecer en el tiempo, puesto que ha decrecido de USD 267.838.961,00 en 2011 a apenas USD 1.100.277,99 en el año 2018. En cambio, su rendimiento promedio ponderado se ha mantenido estable (desviación estándar igual a 0,25\%) y su promedio es 8,24\% para el período 2011 a 2018.
+
+A continuación, se muestra el portafolio de inversiones en titularizaciones a 31 de
+diciembre de 2018. En la tabla \ref{tab:iess_inv_det_titularizaciones_des}, se
+presentan a detalle: el valor nominal de la Titularización, saldo a fecha corte (31 de diciembre de 2018) en valor nominal, la tasa
+cupón trimestral y el plazo remanente en días.
+\begin{table}[H]
+  \begin{center}
+  \caption{Detalle del portafolio de las inversiones del Fondo del Seguro de Cesantía en titularizaciones
+  en renta fija a 31 de diciembre de 2018}
+  \label{tab:iess_inv_det_titularizaciones_des}
+  \resizebox{\columnwidth}{!}{%
+  \begin{tabular}{lrrcrc}
+    \toprule
+ \multicolumn{1}{c}{Emisor:} & \multicolumn{1}{c}{Valor Nominal}& \multicolumn{1}{c}{Saldo Valor}   & \multicolumn{1}{c}{Tasa Cupón} & \multicolumn{1}{c}{Plazo Remanente} & \multicolumn{1}{c}{Amortización}\\
+        & \multicolumn{1}{c}{de Compra (USD)} & \multicolumn{1}{c}{Nominal (USD)} &  \multicolumn{1}{c}{trimestral (\%)}   & \multicolumn{1}{c}{(días)} &  \\
+    \midrule
+    \input{tablas/iess_inv_det_titularizaciones_des.tex}
+    \bottomrule
+  \end{tabular}
+    }
+    \caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS. \\
+  Elaborado: DAIE.}
+  \end{center}
+\end{table}
+
+A 31 de diciembre de 2018, se encuentran invertidos USD 1.100.277,99, de los cuales USD 673.150,38 se encuentra invertidos en titularizaciones de la empresa PROAMERICA y lo restante (USD 427.127,61) en la empresa VOLARE; la primera tiene un plazo remanente de 2.044 días y, la segunda , en 1.187 días.
+
+% % --------------------------------------------------------------------------------------------------
+\subsection{Inversiones no privativas con renta variable}
+
+La renta variable es un tipo de inversión formada por todos aquellos activos financieros en los que
+la rentabilidad es incierta. Es decir, la rentabilidad no está garantizada ni la devolución del
+capital invertido ni la rentabilidad del activo. En la renta variable, al contrario que en la renta
+fija, no conocemos los flujos de caja que vamos a recibir por parte de la empresa. Incluso, puede
+que la rentabilidad sea negativa.
+
+Las inversiones no privativas en renta variable del Fondo del Seguro de Cesantía pueden realizar las
+siguientes operaciones en fideicomisos mercantiles de inversión, inmobiliarios y  administración de
+acciones de cuotas  de  participación  en fondos de inversión.
+
+% --------------------------------------------------------------------------------------------------
+\subsubsection{Inversiones en fideicomisos y negocios fiduciarios}
+
+Se entiende por fideicomiso mercantil el contrato por el cual una o más personas llamadas
+constituyentes o fideicomitentes transfieren, de manera temporal e irrevocable, la propiedad de
+bienes muebles o inmuebles corporales o incorporales, que existen o se espera que existan, a un
+patrimonio autónomo, dotado de personalidad jurídica para que la sociedad administradora de fondos y
+fideicomisos, que es su fiduciaria y en tal calidad su representante legal, cumpla con las
+finalidades específicas instituidas en el contrato de constitución, bien en favor del propio
+constituyente o de un tercero llamado beneficiario.  En términos legales LA FIDUCIA MERCANTIL es
+definida como ``un negocio jurídico en virtud de la cual una persona, llamada fiduciante o
+fideicomiso, transmite uno o más bienes especificados a otra, llamado fiduciario, quien se obliga a
+administrarlos o enajenarlos para cumplir una finalidad determinada por el constituyente, en
+provecho de este o de un tercero llamado beneficiario o fideicomisario''.
+
+En la figura \ref{fig:iess_inv_fidecomisos_des} y la tabla \ref{tab:iess_inv_fidecomisos_des}, se
+muestra la evolución histórica de las inversiones en fideicomisos y negocios fiduciarios, en valor
+nominal, registrados en el portafolio de inversiones del Fondo del Seguro de Cesantía y su rendimiento
+promedio ponderado durante el período 2011 a 2018, a diciembre de cada año.
+
+\begin{table}[H]
+  \begin{center}
+  \caption{Evolución de las inversiones del Fondo del Seguro de Cesantía en Fideicomisos}
+  \label{tab:iess_inv_fidecomisos_des}
+  {\fontsize{10}{12}\selectfont
+  \begin{tabular}{crcc}
+    \toprule
+ \multicolumn{1}{c}{Año} & \multicolumn{1}{c}{Saldo} & \multicolumn{1}{c}{Rendimiento Promedio} & \multicolumn{1}{c}{Rendimiento Promedio}\\
+  & \multicolumn{1}{c}{Valor Nominal (USD)} & \multicolumn{1}{c}{Ponderado (\%)} & \multicolumn{1}{c}{Ponderado Real (\%)}\\
+    \midrule
+    \input{tablas/iess_inv_fidecomisos_des.tex}
+    \bottomrule
+  \end{tabular}
+    }
+  \caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS. \\
+  Elaborado: DAIE.}
+  \end{center}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica del saldo remanente, en valor nominal, de las inversiones en fideicomisos y negocios fiduciarios del Fondo del Seguro de Cesantía y su rendimiento promedio ponderado}
+\label{fig:iess_inv_fidecomisos_des}
+\includegraphics[scale=1]{graficos/iess_inv_fidecomisos_des.png}
+  \caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS. \\
+  Elaborado: DAIE.}
+\end{figure}
+
+Las inversiones del Seguro de Cesantía en fidecomisos se han mantenido estables, en comparación a otras inversiones, puesto que, a diciembre de 2011, se registró USD 475.714.374,00 y los valores por este concepto se redujeron a USD 385.720.171,50 a diciembre de 2018, lo cual implica una reducción de 18,92\% entre 2011 y 2018. En cambio, su rendimiento promedio ponderado ha registrado una alta volatilidad (desviación estándar 1,81\%) y una tendencia a la baja desde el año 2013; su promedio es igual a 7,08\% para el período 2011 a 2018.
+% --------------------------------------------------------------------------------------------------
+\subsubsection{Inversiones en acciones (en renta variable)}
+
+En la figura \ref{fig:iess_inv_rv_ces} y la tabla \ref{tab:iess_inv_renta_variable_des}, se muestra la
+evolución histórica del saldo remanente (valor del mercado de las acciones) de renta variable
+registrado en el portafolio de inversiones del Fondo del Seguro de Cesantía y su rendimiento promedio
+ponderado durante el período 2011 a 2018, a diciembre de cada año. 
+\begin{figure}[H]
+\centering
+\caption{Evolución de las inversiones del Fondo del Seguro de Cesantía en acciones de renta variable}
+\label{fig:iess_inv_rv_ces}
+\includegraphics[scale=1]{graficos/iess_inv_rv_ces.png}
+  \caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS. \\
+  Elaborado: DAIE.}
+\end{figure}
+
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{crrr}
+\caption{Evolución histórica del saldo remanente, en valor nominal, de las inversiones en acciones (en renta variable) del Fondo del Seguro de Cesantía y su rendimiento promedio ponderado} \\
+\label{tab:iess_inv_renta_variable_des} \\
+\toprule
+\multicolumn{1}{c}{Año} & \multicolumn{1}{c}{Saldo} & \multicolumn{1}{c}{Rendimiento Promedio} & \multicolumn{1}{c}{Rendimiento Promedio} \\
+  & \multicolumn{1}{c}{Valor Nominal (USD)} & \multicolumn{1}{c}{Ponderado (\%)} & \multicolumn{1}{c}{Ponderado Real (\%)} \\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{Año} & \multicolumn{1}{c}{Saldo} & \multicolumn{1}{c}{Rendimiento Promedio} & \multicolumn{1}{c}{Rendimiento Promedio} \\
+  & \multicolumn{1}{c}{Valor Nominal (USD)} & \multicolumn{1}{c}{Ponderado (\%)} & \multicolumn{1}{c}{Ponderado Real (\%)} \\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{4}{r}{continúa...} \\
+\endfoot
+\bottomrule
+\caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS. \\
+Elaborado: DAIE.}
+\endlastfoot
+  \input{tablas/iess_inv_renta_variable_des.tex}
+\end{longtable}
+}
+
+% \begin{table}[H]
+%   \begin{center}
+%   \caption{Evolución de las inversiones del Fondo del Seguro de Cesantía en acciones de renta variable}
+%   \label{tab:iess_inv_renta_variable_des}
+%  {\fontsize{10}{12}\selectfont
+%   \begin{tabular}{crrr}
+%     \toprule
+%  \multicolumn{1}{c}{Año} & \multicolumn{1}{c}{Saldo} & \multicolumn{1}{c}{Rendimiento Promedio} & \multicolumn{1}{c}{Rendimiento Promedio} \\
+%   & \multicolumn{1}{c}{Valor Nominal (USD)} & \multicolumn{1}{c}{Ponderado (\%)} & \multicolumn{1}{c}{Ponderado Real (\%)} \\
+%     \midrule
+%     \input{tablas/iess_inv_renta_variable_des.tex}
+%     \bottomrule
+%   \end{tabular}
+%     }
+%   \caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS. \\
+%   Elaborado: DAIE.}
+%   \end{center}
+% \end{table}
+
+% Se puede observar como el rendimiento promedio ponderado, primeramente, ha tendido a crecer de 9,73\% a 20,02\% entre los años 2011 y 2013, respectivamente,  más tarde, ha tendido a decrecer de 20,02\% a -4,49\% entre los años 2013 y 2016, respectivamente; y, finalmente, su rendimiento promedio ponderado creció de 7,77\% a 19,05\% entre los años 2011 y 2013; más tarde, han decrecido a -5,45\% en el año 2016; y por último han vuelto a crecer a 28,78\%, lo cual muestra que las inversiones en renta variable tienen un alto riesgo, debido a su alta volatilidad en el rendimiento (desviación estándar igual a 12,05\% y promedio igual a 10,28\%).
+% 
+% El valor del mercado de las acciones evolucionó de la siguiente manera: primero, creció de USD 56.278.303,00 en diciembre de 2011 a USD 121.413.740,00 en diciembre de 2015 (creció 115,76\%); luego, sucede una abrupta caída del fondo a USD 82.818.786,85 entre 2015 y 2016, respectivamente; por último, el valor de mercado de las acciones en renta variable se situó en USD 96.418.346,17 a diciembre de 2018.
+
+Las inversiones en renta variable del Seguro de Cesantía han crecido de USD 125.143.575,00 en 2011 a USD 171.056.475,40 en 2018, lo que representa un crecimiento de 36,69\%. El detalle de las acciones a 31 de diciembre de 2018 se encuentra la tabla \ref{tab:iess_inv_det_renta_variable_des}, en la cual se detalla: el valor nominal de una acción (es el valor total inicial o de emisión que tienen las acciones, es decir, es el resultado de multiplicar el número de acciones compradas por el valor  nominal de emisión por acción), valor efectivo total (valor de compra de la totalidad de las acciones), precio de compra por acción, número de acciones compradas, valor nominal por acción (es el valor inicial o de emisión que tienen las acciones, es decir, es el resultado de dividir el capital de una sociedad por el número de acciones de la misma), precio a fecha corte (31 de diciembre de 2018) y valor de mercado de las acciones (es el precio a fecha corte por acción multiplicado por el número de acciones).
+
+El portafolio del Fondo del Seguro de Cesantía en renta variable abarca acciones de catorce (14) empresas, entre las más importantes están: 54.677.048 acciones de LA FAVORITA con un valor en el mercado igual a USD 133.411.997,12 (77,99\% de las inversiones en este instrumento financiero) y 194.168 acciones de CIA CERVEZAS NACIONAL con un valor en el mercado igual a USD 17.863.456 (10,44\% de las inversiones en este instrumento financiero).
+
+Las inversiones en acciones que han producido rendimientos positivos al Fondo del Seguro de Cesantía son: CIA DE CERVEZAS NACIONALES, HOLCIM, CLUB DE EJECUTIVOS, LA FAVORITA y IANCEM. En cambio, las acciones de INDUSTRIAS ALES, HOTEL COLON y SAN CARLOS SOC. AG han desvalorizado su precio en el mercado. Cabe mencionar que las inversiones en renta variable conllevan un riesgo de mercado que no se puede predecir fácilmente, que como puede generar grades ganancias, también puede generar grandes pérdidas (ver años 2015 y 2016 en la tabla \ref{tab:iess_inv_renta_variable_des}).
+
+
+
+
+\begin{landscape}
+{\fontsize{9}{10}\selectfont
+\begin{longtable}[h]{cl*{7}{r}}
+\caption{Detalle de las inversiones del Fondo del Seguro de Cesantía en acciones en renta variable a 31 de diciembre de 2018} \\
+\label{tab:iess_inv_det_renta_variable_des} \\
+\toprule
+\multicolumn{1}{l}{Fecha de compra} &\multicolumn{1}{l}{Nombre del emisor de las acciones:} & \multicolumn{1}{c}{Valor Nominal} & \multicolumn{1}{c}{Valor efectivo}  & \multicolumn{1}{c}{Precio de}    & \multicolumn{1}{c}{No.}                        & \multicolumn{1}{c}{Valor nominal}   & \multicolumn{1}{c}{Precio}      & \multicolumn{1}{c}{Valor de}\\
+   &     &  \multicolumn{1}{c}{(USD)}        &    \multicolumn{1}{c}{total (USD)}& \multicolumn{1}{c}{compra (USD)} & \multicolumn{1}{c}{acciones} & \multicolumn{1}{c}{por acción (USD)}& \multicolumn{1}{c}{actual (USD)}& \multicolumn{1}{c}{mercado (USD)}\\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{l}{Fecha de compra} &\multicolumn{1}{l}{Nombre del emisor de las acciones:} & \multicolumn{1}{c}{Valor Nominal} & \multicolumn{1}{c}{Valor efectivo}  & \multicolumn{1}{c}{Precio de}    & \multicolumn{1}{c}{No.}                        & \multicolumn{1}{c}{Valor nominal}   & \multicolumn{1}{c}{Precio}      & \multicolumn{1}{c}{Valor de}\\
+   &     &  \multicolumn{1}{c}{(USD)}        &    \multicolumn{1}{c}{total (USD)}& \multicolumn{1}{c}{compra (USD)} & \multicolumn{1}{c}{acciones} & \multicolumn{1}{c}{por acción (USD)}& \multicolumn{1}{c}{actual (USD)}& \multicolumn{1}{c}{mercado (USD)}\\
+\midrule
+\endhead
+\bottomrule \multicolumn{9}{c}{continúa...} \\
+\endfoot
+\bottomrule
+  \caption*{\scriptsize Fuente: Subgerencia de Banca de Inversión - BIESS. \\
+  Elaborado: DAIE.}
+\endlastfoot
+\input{tablas/iess_inv_det_renta_variable_des.tex}
+\end{longtable}
+}
+\end{landscape}
+
+% --------------------------------------------------------------------------------------------------
+\subsection{Otras inversiones menores}
+El portafolio del Fondo del Seguro de Cesantía también registró otras inversiones; además de las expuestas
+anteriormente, que se enumeran, a continuación:
+\begin{enumerate}[label=\arabic*.,topsep=0pt,itemsep=1ex,parsep=1ex,partopsep=1ex]
+\item Inversiones en Cupones de Capital Bonos del Estado registradas con saldo remanente en valor nominal por USD 20.280.000 a diciembre de 2011, 2012 y 2013, con rendimiento promedio ponderado igual a 6,43\% para los tres años.
+
+\item Inversiones en Cupones de Interés Bonos del Estado registradas con saldo en valor nominal por USD 3.107.940, USD 2.399.210 y USD 1.690.480 a diciembre de los años 2011, 2012 y 2013, respectivamente, con rendimiento promedio ponderado igual a 6,42\%, 6,40\% y 6,35\% para los años citados.
+\item Inversiones en Papel Comercial por USD 1.400.000 y USD 6.200.000 a diciembre de 2013 y 2014, respectivamente, y rendimientos promedio ponderados iguales a 5,75\% y 5,10\% para los mismos años.
+\end{enumerate}
+
+

@@ -1,0 +1,975 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Modelo actuarial}
+\label{chp_modelo}
+
+El modelo actuarial es la base técnica fundamental de este estudio. Para su desarrollo se ha
+considerado las técnicas actuariales más actualizadas a nivel internacional, que se describen 
+en esta sección.
+
+%---------------------------------------------------------------------------------------------------
+\section{Notación}
+\label{chap_Intro:notacion}
+
+Antes de proceder con los análisis, es necesario consolidar la notación que se utilizará a lo
+largo del presente documento.  Muchos de los símbolos aquí presentados, son parte de la notación
+actuarial aceptada a nivel internacional\footnote{Más detalles al respecto se pueden consultar en 
+obras como \textcite{ActMath:1997, ActMathLifContRisk:2013, MLCManual:2014, Prob:Ross:2015} o 
+\textcite{ReaAnaProb:1972}.}.
+\begingroup
+\hspace*{1cm}
+\renewcommand\arraystretch{1.5}
+\begin{longtable}{rp{12cm}}
+\endfirsthead
+
+\endhead
+
+\endfoot
+
+\endlastfoot
+$\sum\limits_{i=1}^n x_i$ & Sumatoria de los objetos $x_i$ indexados por $i$ desde $1$ hasta $n$.\\
+
+$X$, $Y$ & Variables aleatorias a valores reales.\\
+
+$U'$ & Traspuesta de la matriz $U$. \\
+
+$\mathbb{E}[X]$ & Esperanza matemática de la variable aleatoria $X$.\\
+
+$\mathbb{E}[X \mid Y]$ & Esperanza matemática condicional de $X$ dado $Y$.\\
+
+$\mathbb{V}[X]$ & Varianza matemática de la variable aleatoria $X$.\\
+
+$\mathbb{V}[X \mid Y]$ & Varianza matemática condicional de $X$ dado $Y$.\\
+
+$\mathbb{P}(A)$ & Medida de probabilidad del evento $A$.\\
+
+$\overline{X}$ & Esperanza empírica (valor promedio) de las observaciones de la variable 
+aleatoria $X$. \\
+
+$\sigma^2_X$ & Varianza empírica de las observaciones de la variable aleatoria $X$. \\
+
+$X_{pn}$ & Percentil $n$-ésimo de las observaciones de la variable aleatoria $X$. \\
+
+$\mathds{1}_A(u)$ & Función indicatriz que toma el valor 1 cuando 
+$u \in A$ y 0 cuando $u \notin A$.\\
+
+$x$ & Edad de una persona.\\
+
+$\omega$ & Edad máxima que puede alcanzar cualquier persona considerada en el análisis.\\
+
+$g$ & Variable indicadora del sexo de una persona: mujer = 1, hombre = 2.\\
+
+$t$ & Variable que representa el tiempo, usualmente medido en años. \\
+
+$T$ & Horizonte de proyección, usualmente medido en años.\\
+
+$\mu^{i,j}_{t,g,x}$ & Fuerza de transición inmediata desde el estado $i$ hacia el estado $j$, 
+en el tiempo $t$, para una persona de sexo $g$ y edad $x$. \\
+
+$U_{t,g,x}$ & Matriz compuesta por las fuerzas de transición inmediata en el 
+tiempo $t$, para una persona de sexo $g$ y edad $x$: \\ 
+& \multicolumn{1}{c}{$U_{t,g,x} = [\mu^{i,j}_{t,g,x}]$} \\
+
+$p^{i,j}_{t,g,x}(s)$ & Probabilidad de transición del estado $i$ al estado $j$ en $s$ años, medida 
+en el tiempo $t$ para una persona de sexo $g$ y edad $x$. \\
+
+$N^{i,j}_{t,g,x}$ & Número de transiciones del estado $i$ al estado $j$ en el año $t$, de las 
+personas de sexo $g$ y edad $x$. \\
+
+$P_{t,g,x}(s)$ & Matriz de probabilidades de transición en $s$ años, medida en el 
+tiempo $t$ para una persona de sexo $g$ con edad $x$. \\
+& \multicolumn{1}{c}{$P_{t,g,x}(s) = [p^{i,j}_{t,g,x}(s)]$} \\
+
+$l^i_{t,g,x}$ & Número de personas de sexo $g$ y edad $x$, en el estado $i$ en el tiempo $t$, .\\
+
+$l_{t,g,x}$ & Vector del número de personas de sexo $g$ y edad $x$, en el estado $i$, en el 
+tiempo $t$.\\
+& \multicolumn{1}{c}{$l_{t,g,x} = (l^1_{t,g,x}, \ldots, l^n_{t,g,x})'$} \\
+
+$p_{i,g,x}$ & Probabilidad de realizar un pago $i$ de la parte fija del Seguro de Desempleo a una persona de edad $x$ y sexo $g$ que es cotizante a este seguro.\\
+
+$\phi_{g,x}$ & Probabilidad de cotizar al Seguro de Cesantía y Desempleo, dado que cotiza al SGO. \\
+
+$\alpha_{i,g}$ & Promedio del porcentaje cubierto del 70\% del SBU por la parte fija en el pago $i$ de una persona de sexo $g$. \\
+
+$i_a$ & Tasa actuarial utilizada para el cálculo de los factores de actualización 
+financiera--actuarial, considerando la ley de interés compuesto.\\
+
+$i_r$ & Tasa de crecimiento de salarios. \\
+
+$i_s$ & Tasa de crecimiento del salario básico unificado. \\
+
+$i_p$ & Tasa de crecimiento de las pensiones. \\
+
+$i_f$ & Tasa de crecimiento auxilio para funerales. \\
+
+$v$ & Factor anual de actualización financiera. \\
+& \multicolumn{1}{c}{$v = \frac{1}{1+i_a}$} \\
+
+$u$ & Factor anual de capitalización financiera. \\
+& \multicolumn{1}{c}{$u = 1+i_a$} \\
+
+$A_t$ & Total de ingresos por aportes en el tiempo $t$.\\
+
+$B_t$ & Total de egresos por pago de beneficios en el tiempo $t$.\\
+
+$G_t$ & Total de egresos por gastos administrativos en el tiempo $t$.\\
+
+$V_t$ & Balance actuarial en el tiempo $t$. \\
+
+\end{longtable}
+\endgroup
+%---------------------------------------------------------------------------------------------------
+\section{Selección del modelo actuarial}
+\label{chp_modelo:sec_mod_act}
+Durante el transcurso natural de la vida, la población amparada por el \Sexpr{REP_seg} puede  atravesar
+diferentes situaciones que denominamos \emph{estados}, tales como afiliación, no-afiliación,
+jubilación por vejez, jubilación por invalidez y muerte.
+
+El cambio de un individuo, desde un estado a otro, lo denominamos \textit{transición} y el proceso
+se realiza con la \textit{salida} de un estado y \textit{entrada} a otro. Una hipótesis
+importante --verificada con la información estadística disponible-- es que el cambio de estados
+se realiza de forma aleatoria para de cada uno de los individuos observados.
+
+En nuestro modelo, medimos el paso de un estado a otro, mediante las \textit{tasas de transición},
+que permiten cuantificar el número aleatorio de entradas y salidas de cada estado considerado.
+
+Las tasas de transición están principalmente determinadas por tres variables:
+\begin{itemize}
+  \item tiempo en el cual ocurre el evento, % (e.g. hoy vs. 20 años después)
+  \item sexo, y
+  \item edad.
+\end{itemize}
+
+Con base en las tasas de transición, construimos un modelo matemático actuarial conocido como
+\emph{modelo markoviano a tiempo continuo}. Este tipo de modelo es ampliamente utilizado en el
+análisis de muchos tipos de seguros sociales que cubren contingencias relacionadas con el proceso
+de la vida humana, como se puede constatar en referencias bibliográficas que soportan su aplicación
+y sustento teórico, entre estas \textcite{ActMathLifContRisk:2013,
+MLCManual:2014, ActMath:1997, ActAssuPer:2007, BasLifInsMat:2002} o \textcite{MarkovChain:1997}.
+
+Los \emph{estados} que describirán nuestro modelo, los definimos y notamos de la manera siguiente:
+\begin{itemize}
+\item 1: económicamente activo no afiliado al sgo;
+\item 2: afiliado activo al sgo;
+\item 3: jubilado por vejez;
+\item 4: jubilado por invalidez; y
+\item 5: muerto.
+\end{itemize}
+
+Y por lo tanto, las \emph{transiciones} que definirán el modelo son las siguientes:
+\begin{itemize}
+  \item $1 \rightarrow 2$: Transición desde económicamente activo no afiliado hacia
+ afiliado activo.
+  \item $1 \rightarrow 5$: Transición desde económicamente activo no afiliado hacia muerto.
+  \item $2 \rightarrow 3$: Transición desde afiliado hacia pensionado por vejez.
+  \item $2 \rightarrow 4$: Transición desde afiliado hacia pensionado por invalidez.
+  \item $2 \rightarrow 5$: Transición desde afiliado hacia muerto.
+  \item $3 \rightarrow 5$: Transición desde pensionado por vejez hacia muerto.
+  \item $4 \rightarrow 5$: Transición desde pensionado por invalidez hacia muerto.
+\end{itemize}
+
+%---------------------------------------------------------------------------------------------------
+\section{Modelo markoviano continuo}
+\label{chp_modelo:sec_cad_markov_cont}
+El modelo markoviano continuo está basado en un conjunto de \textit{matrices de transición},
+construidas en base a las tasas de transición de estados, las cuales satisfacen la ecuación
+diferencial de Kolmogorov--Chapman\footnote{Ver por ejemplo \textcite{MarkovChain:1997} o
+\textcite{ActAssuPer:2007}.}.
+
+Este modelo está completamente determinado cuando la \emph{matriz de fuerzas de transición
+$U_{t,g,x}$} es especificada y la condición inicial $P_{t,g,x}( 0 ) = I$ es establecida:
+\begin{equation}\label{chp_modelo:kolmoeq}
+\frac{d P_{t,g,x}}{ds}( s ) = U_{t,g,x}\, P_{t,g,x}(s), \qquad \forall s \in [0,1)
+\end{equation}
+
+La matriz de fuerzas de transición, según lo observado tendrá la siguiente estructura triangular
+superior:
+\begin{equation}
+U_{t,g,x} =
+\begingroup
+\renewcommand\arraystretch{1.5}
+\left[
+\begin{array}{lllll}
+\mu^{1,1}_{t,g,x} & \mu^{1,2}_{t,g,x} & 0 & 0 & \mu^{1,5}_{t,g,x} \\
+0 & \mu^{2,2}_{t,g,x} & \mu^{2,3}_{t,g,x} & \mu^{2,4}_{t,g,x} & \mu^{2,5}_{t,g,x} \\
+0 & 0 & \mu^{3,3}_{t,g,x} & 0 & \mu^{3,5}_{t,g,x} \\
+0 & 0 & 0 & \mu^{4,4}_{t,g,x} & \mu^{4,5}_{t,g,x} \\
+0 & 0 & 0 & 0 & 0 \\
+\end{array}
+\right]
+\endgroup
+\end{equation}
+
+Entonces, la solución de la ecuación \ref{chp_modelo:kolmoeq} se calcula aplicando el método de
+Cox--Miller\footnote{Ibídem.}, basado en
+la descomposición en valores propios de la matriz $U_{t,g,x}$:
+
+\begin{equation}
+U_{t,g,x} = V_{t,g,x}\, D_{t,g,x}\, W_{t,g,x}.
+\end{equation}
+
+en donde $D_{t,g,x}$ es la matriz diagonal compuesta por los valores propios de $U_{t,g,x}$.
+
+Así también, se obtiene la solución de tipo exponencial para las probabilidades de transición:
+\begin{equation}
+P_{t,g,x}(s) = \exp( s \, U_{t,g,x}) = V_{t,g,x} \exp( s \, D_{t,g,x} ) W_{t,g,x}.
+\end{equation}
+
+Para simplificar la notación, en donde no haya lugar a confusión, representamos $P_{t,g,x}(1)$
+como $P_{t,g,x}\,$; y, la probabilidad $p^{i,j}_{t,g,x}(1)\,$, de cualquier transición desde el
+estado $i$ hacia el estado $j$  se simplifica con $p^{i,j}_{t,g,x}$
+
+Las fuerzas de transición pueden ser estimadas mediante un proceso de maximización del logaritmo
+de la función de verosimilitud (\textit{log-likelihood}) que después de algunas simplificaciones
+se reduce a la expresión siguiente:
+\begin{equation}
+\ell\left( \mu^{i,j}_{t,g,x} \right) = \sum\limits_{t,g,x} \sum\limits_{j \neq i}
+\log\left( \mu^{i,j}_{t,g,x} \right) \, N^{i,j}_{t,g,x} - \mu^{i,j}_{t,g,x} \, ER^i_{t,g,x}.
+\end{equation}
+
+Como resultado de maximizar la función $\ell$ respecto de las fuerzas de transición
+$\mu^{i,j}_{t,g,x}$ resulta el estimador:
+\begin{equation}\label{est_fuer_tran}
+\hat{\mu}^{i,j}_{t,g,x} = \frac{N^{i,j}_{t,g,x}}{ER^i_{t,g,x}}.
+\end{equation}
+
+Usualmente, los estimadores de $\mu^{i,j}_{t,g,x}$ no presentan un comportamiento adecuado, que
+por ejemplo, preserve  criterios de monotonía con respecto a la edad $x$. Por tal razón,
+utilizaremos algunos métodos numéricos de alisamiento basados en modelos de regresión local o
+splines cúbicos. Más adelante, se detallarán algunos resultados de la estimación de fuerzas de
+transición y su alisamiento para cada uno de los casos en estudio.
+
+La estimación de fuerzas de transición de manera dinámica en el tiempo requiere disponer de bases
+de datos consistentes que mantengan información histórica de períodos extensos. Sin embargo, la
+información disponible para este estudio no presenta un nivel adecuado de consistencia en años
+pasados, en el mejor de los casos se dispone de datos sólidos de diez años atrás, lo cual no es
+suficiente para construir un modelo dinámico. Por tal razón, para ciertas tasas de transición hemos
+optado por asumir que las fuerzas de transición constantes en el tiempo.
+
+Las fuerzas de transición se consideran estáticas, eliminando la variable $t$ ya que no
+dependerán del tiempo, corresponden a:
+\begin{itemize}\label{fuer_const_tran}
+  \item Fuerza de transición desde económicamente activo no afiliado hacia
+  afiliado activo: $\mu^{1,2}_{t,g,x} = \mu^{1,2}_{g,x}$;
+  \item Fuerza de transición desde afiliado activo hacia pensionado por vejez:
+  $\mu^{2,3}_{t,g,x} = \mu^{2,3}_{g,x}$; y
+  \item Fuerza de transición desde afiliado activo hacia pensionado por invalidez:
+  $\mu^{2,4}_{t,g,x}=\mu^{2,4}_{g,x}$
+\end{itemize}
+
+En cambio, las fuerzas de transición de mortalidad (transiciones hacia el estado muerto), se
+consideran bajo un modelo dinámico como se explica más adelante.
+
+El estimador de las fuerzas de transición que se introduce en la ecuación \ref{est_fuer_tran},
+como cualquier estimador, está sujeto a variaciones por falta de información o valores extremos
+observados que no marcan la tendencia del grupo de fuerzas de transición. Por tanto, adicionalmente
+a la estimación se realiza un proceso de alisamiento de las tasas; y, así asegurar comportamientos
+según la tendencia de valores observados.
+
+En este estudio se ha utilizado ampliamente el alisamiento basado en splines cúbicos, así como está
+descrito en \textcite{GenLinMod:1990}. Para mantener cierto comportamiento de positividad en la
+fuerza de transición se ha optado por alisar el logaritmo de la fuerza de transición
+$\log( \hat{\mu}^{i,j}_{g,x} )$. Así para cada sexo $g$ se ha resuelto el problema de optimización
+asociado a los splines cúbicos, tomando como fuerza de transición el minimizador del problema de
+optimización.
+\begin{equation}
+\log\left( \tilde{\mu}^{i,j}_{g,x} \right) = \underset{f}{\argmin}
+\sum\limits_{x=0}^\omega w_{g,x} \left( \log\left( \hat{\mu}^{i,j}_{g,x} \right) - f( x ) \right)^2 +
+\lambda \int\limits_0^\omega \left( \frac{d^2f}{dx^2}( x ) \right)^2\, dx.
+\end{equation}
+
+El problema anterior es discretizado y la selección del tamaño de la base en la aproximación es
+realizada en función del número de puntos a interpolar, el nivel de alisamiento en derivadas de
+orden superior y del comportamiento monótono esperado en la fuerza de transición. Los pesos
+$w_{g,x}$ son iguales al valor de exposición al riesgo $ER_{g,x}$ para ese sexo $g$ y edad $x$.
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Fuerza de transición de económicamente activo no afiliado a afiliado activo}
+\label{chp_modelo:fuer_nafi_afi}
+La estimación de la fuerza de transición requiere conocer el porcentaje de la \emph{población
+económicamente activa} (PEA) que no está afiliada. Para hacer este cálculo se necesita un
+estimador de la PEA y el porcentaje de afiliados activos. Se considera que un buen estimador
+de la PEA es provisto por la ONU, siendo este un indicador robusto sustentado en reportes de
+estadísticas nacionales.
+
+Se dispone de información de ingresos a partir del año 2010 hasta el 2018, esta información no es
+suficiente para crear una fuerza de transición dinámica de ingreso que dependa del tiempo, pero si
+es suficiente como para estimar una fuerza de transición constante.
+
+La población de expuestos al riesgo que es susceptible de ser afiliada $ER^1_{t,g,x}$ con
+$t \in \{2010,\ldots,2018\}$ es estimada a partir de la PEA descontando el número de afiliados
+activos.
+\begin{equation}
+ER^1_{t,g,x} = PEA_{t,g,x} - l^{2,act}_{t,g,x}
+\end{equation}
+
+Para el numerador se toma el número de nuevos ingresos $N^{1,2}_{t,g,x}$ en el tiempo
+$t \in \{2010,\ldots,2018\}$, por cada sexo $g$ y edad $x$. El estimador constante en el tiempo de la fuerza de transición viene dado por la siguiente relación:
+\begin{equation}
+\hat{\mu}^{1,2}_{g,x} =
+\frac{\displaystyle\sum\limits_{t=2010}^{2018} N^{1,2}_{t,g,x}}{\displaystyle\sum\limits_{t=2010}^{2018} ER^1_{t,g,x}}.
+\end{equation}
+
+\clearpage
+
+A continuación, en las siguientes figuras se muestran los resultados de la estimación de la fuerza de
+transición de entradas $\hat{\mu}^{1,2}_{g,x}$ y su respectivo alisamiento $\tilde{\mu}^{1,2}_{g,x}$.
+\begin{figure}[H]
+\caption{Fuerza de entrada para mujeres, $\mu^{1,2}_{1,x}$}
+\begin{center}
+\includegraphics[scale=1.0]{graficos/iess_fuer_ent_f.png}
+\caption*{\scriptsize  Elaborado: DAIE.}
+\end{center}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[H]
+\caption{Fuerza de entrada para hombres, $\mu^{1,2}_{2,x}$}
+\begin{center}
+\includegraphics[scale=1.0]{graficos/iess_fuer_ent_m.png}
+\caption*{\scriptsize  Elaborado: DAIE.}
+\end{center}
+\end{figure}
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Fuerza de transición de económicamente activo no afiliado a muerto}
+\label{chp_modelo:fuer_nafi_mue}
+Para modelar la mortalidad de no afiliados, esto incluyendo a dependientes y futuros montepíos,
+se ha considerado prudente utilizar las tablas de mortalidad estimadas por la ONU,
+\textcite{UNWorldPop:2019}.
+
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Fuerza de transición de afiliado activo a pensionista por vejez}
+Para el caso de este estimador la exposición al riesgo $ER^2_{t,g,x}$ y el número de transiciones
+$N^{2,3}_{t,g,x}$ son obtenidos directamente de la población afiliada. Bajo las consideraciones antes
+descritas en \ref{fuer_const_tran}, resulta el estimador.
+\begin{equation}
+\hat{\mu}^{2,3}_{g,x} =
+\frac{\displaystyle\sum\limits_{t=2010}^{2018} N^{2,3}_{t,g,x}}{\displaystyle\sum\limits_{t=2010}^{2018} ER^2_{t,g,x}}
+\end{equation}
+
+\label{chp_modelo:fuer_afi_vej}
+\begin{figure}[H]
+\caption{Logaritmo de la fuerza de transición de afiliado activo a pensionista por vejez,
+estimada y alisada para mujeres, $\mu^{2,3}_{t,1,x}$}
+\begin{center}
+\includegraphics[scale=1.0]{graficos/iess_fuer_vej_f.png}
+\caption*{\scriptsize  Elaborado: DAIE.}
+\end{center}
+\end{figure}
+
+%\vspace{-1cm}
+\begin{figure}[h]
+\caption{Logaritmo de la fuerza de transición de afiliado activo a pensionista por vejez,
+estimada y alisada para hombres, $\mu^{2,3}_{t,2,x}$}
+\begin{center}
+\includegraphics[scale=1.0]{graficos/iess_fuer_vej_m.png}
+\caption*{\scriptsize  Elaborado: DAIE.}
+\end{center}
+\end{figure}
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Fuerza de transición de afiliado activo a pensionista por invalidez}
+\label{chp_modelo:fuer_afi_inv}
+Para el caso de este estimador la exposición al riesgo $ER^2_{t,g,x}$ y el número de transiciones
+$N^{2,4}_{t,g,x}$ son obtenidos directamente de la población afiliada. Bajos las consideraciones antes
+descritas en la sección \ref{chp_modelo:sec_cad_markov_cont}, resulta el estimador.
+
+\begin{equation}
+\hat{\mu}^{2,4}_{g,x} =
+\frac{\displaystyle\sum\limits_{t=2010}^{2018} N^{2,4}_{t,g,x}}{\displaystyle\sum\limits_{t=2010}^{2018} ER^2_{t,g,x}}
+\end{equation}
+
+\begin{figure}[p]
+\caption{Logaritmo de la fuerza de transición de afiliado activo a pensionista por invalidez,
+estimada y alisada para mujeres, $\mu^{2,4}_{t,1,x}$}
+\begin{center}
+\includegraphics[scale=1.0]{graficos/iess_fuer_inv_f.png}
+\caption*{\scriptsize  Elaborado: DAIE.}
+\end{center}
+\end{figure}
+
+\begin{figure}[p]
+\caption{Logaritmo de la fuerza de transición de afiliado activo a pensionista por invalidez,
+estimada y alisada para hombres, $\mu^{2,4}_{t,2,x}$}
+\begin{center}
+\includegraphics[scale=1.0]{graficos/iess_fuer_inv_m.png}
+\caption*{\scriptsize  Elaborado: DAIE.}
+\end{center}
+\end{figure}
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Fuerza de transición de afiliado activo a muerto}
+\label{chp_modelo:fuer_afi_mue}
+
+\begin{figure}[h]
+\caption{Logaritmo de la fuerza de transición de afiliado activo a muerto, estimada y
+alisada para mujeres, $\mu^{2,5}_{t,1,x}$}
+\begin{center}
+\includegraphics[scale=1.0]{graficos/iess_fuer_mort_f.png}
+\caption*{\scriptsize  Elaborado: DAIE.}
+\end{center}
+\end{figure}
+%\vspace{-1cm}
+
+\begin{figure}[h]
+\caption{Logaritmo de la fuerza de transición de afiliado activo a muerto,
+estimada y alisada para hombres, $\mu^{2,5}_{t,2,x}$}
+\begin{center}
+\includegraphics[scale=1.0]{graficos/iess_fuer_mort_m.png}
+\caption*{\scriptsize  Elaborado: DAIE.}
+\end{center}
+\end{figure}
+
+La información provista por \textcite{UNWorldPop:2019} es interpolada utilizando Kriging
+simple y un núcleo exponencial \textcite{GaussProMachLear:2006}.
+
+Generación de tablas dinámicas de mortalidad utilizando las variaciones de las probabilidades de
+mortalidad generadas por la ONU.
+\begin{equation}
+\zeta_{t,x} = \frac{ q^{onu}_{t+1,x} }{ q^{onu}_{t,x} }
+\end{equation}
+
+Partiendo de la última tabla de mortalidad estática $q_{0,x} = q_x$, se genera
+\begin{equation}
+q_{t+1,x} = \zeta_{t,x}\, q_{t,x}, \qquad \forall t > 0.
+\end{equation}
+
+\begin{figure}[H]
+\caption{Mortalidad $q_{t,x}$ interpolada para sexo mujeres}
+\begin{center}
+\includegraphics[scale=1.0]{graficos/iess_onu_int_life_surv_f.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Mortalidad $q_{t,x}$ interpolada para sexo hombres}
+\begin{center}
+\includegraphics[scale=1.0]{graficos/iess_onu_int_life_surv_m.png}
+\end{center}
+\end{figure}
+
+% %---------------------------------------------------------------------------------------------------
+% \subsection{Fuerza de transición de pensionista por vejez a muerto}
+% \label{chp_modelo:fuer_pen_mue}
+%
+% %---------------------------------------------------------------------------------------------------
+% \subsection{Fuerza de transición de pensionista por invalidez a muerto}
+% \label{chp_modelo:fuer_inv_mue}
+
+%---------------------------------------------------------------------------------------------------
+\section{Modelo demográfico}
+\label{chp_modelo:mod_demog}
+
+Empleando el modelo markoviano de transición, se procede a generar la proyección de la población
+amparada por el \Sexpr{REP_seg}.
+
+El punto de partida es la estructura de la población inicial definida por $l_{0,g,x}$, para cada
+uno de los sexos $g$ y edades $x$ en el tiempo $t=0$. Esta población inicial es un dato conocido
+que proviene de las bases de datos estadísticos del IESS, para cada grupo de personas aseguradas
+a la fecha corte del estudio.
+
+Luego, se procede a realizar un proceso recursivo, partiendo con $t = 0$ y usando la siguiente
+iteración en el tiempo:
+\begin{equation}
+\begingroup
+\renewcommand\arraystretch{1.5}
+\left[
+\begin{array}{c}
+l^1_{t+1,g,x+1} \\
+l^2_{t+1,g,x+1} \\
+l^3_{t+1,g,x+1} \\
+l^4_{t+1,g,x+1} \\
+l^5_{t+1,g,x+1}
+\end{array}
+\right]
+=
+\left[
+\begin{array}{ccccc}
+p^{1,1}_{t,g,x} & 0 & 0 & 0 & 0 \\
+p^{1,2}_{t,g,x} & p^{2,2}_{t,g,x} & 0 & 0 & 0\\
+0 & p^{2,3}_{t,g,x} & p^{3,3}_{t,g,x} & 0 & 0\\
+0 & p^{2,4}_{t,g,x} & 0 & p^{4,4}_{t,g,x} & 0 \\
+p^{1,5}_{t,g,x} & p^{2,5}_{t,g,x} & p^{3,5}_{t,g,x} & p^{4,5}_{t,g,x} & 1 \\
+\end{array}
+\right]
+\left[
+\begin{array}{c}
+l^1_{t,g,x} \\
+l^2_{t,g,x} \\
+l^3_{t,g,x} \\
+l^4_{t,g,x} \\
+l^5_{t,g,x}
+\end{array}
+\right]
+\endgroup
+\end{equation}
+
+Seguidamente, se ajusta la población económicamente activa no afiliada tomando en cuenta la proyección
+de la PEA, utilizando la tasa de actividad sobre la población afiliada:
+\begin{equation}
+l^1_{t+1,g,x} = PEA_{t+1,g,x} - \tau_{t+1,g,x}\, l^2_{t+1,g,x}.
+\end{equation}
+
+Las siguientes variables se calculan para mantener un registro del número de transiciones, para
+luego poder estimar beneficios debidos por cambios de estado, e.g. cesantías o auxilio de funerales.
+Así para cada estado $i,j \in \{1,2,3,4,5\}$ con $i \neq j$:
+\begin{equation}
+l^{i,j}_{t,g,x} = p^{i,j}_{t,g,x}\, l^i_{t,g,x}.
+\end{equation}
+
+Además, la tasa de actividad $\tau_{t,g,x}$ permite determinar el número de afiliados que
+están cotizando $l^{2,cot}_{t,g,x}$, así como el número de afiliados que se encuentran cesantes
+$l^{2,ces}_{t,g,x}$:
+\begin{equation}
+l^{2,cot\; sgo}_{t,g,x} = \tau_{t,g,x}\, l^2_{t,g,x}\qquad \text{y}\qquad
+l^{2,ces}_{t,g,x} = ( 1 - \tau_{t,g,x} ) l^2_{t,g,x}
+\end{equation}
+
+A continuación, para calcular el número de cotizantes al \Sexpr{REP_seg} y el Fondo de Cesantía, se introduce la probabilidad de aportar al \Sexpr{REP_seg}, dado que cotiza al SGO, $\phi_{g,x}$. Debido a lo establecido en la segunda disposición general de la \legalcite{ResIESS_CD518}, la cual establece: ``Los trabajadores autónomos, sin relación de dependencia, los afiliados voluntarios residentes en el Ecuador, pasantes, becarios, internos rotativos, afiliados voluntarios ecuatorianos residentes en el exterior, miembros del clero secular, las trabajadoras no remuneradas del hogar; y las personas jubiladas que se afilien al IESS no aportarán al Seguro de Desempleo ni a la Cesantía (…)”. Esta tasa de cotización permite determinar el número de cotizantes al Seguro de Desempleo y a la Cesantía, utilizando la siguiente expresión matemática:
+
+\begin{equation}
+l^{2,cot\; des}=\phi_{g,x}\; l^{2,cot\; sgo}.
+\end{equation}
+
+Utilizando los datos históricos desde el año 2014 hasta 2018, se estima la probabilidad de aportar al \Sexpr{REP_seg} que tienen los afiliados al SGO observada, $\hat{\phi}_{g,x}$, para cada sexo ($g=1,2$) y edad ($x=15,\dots,115$), como se muestra a continuación:
+
+\begin{equation}
+\hat{\phi}_{g,x}=\frac{\sum_{t=2014}^{2018} l_{t,g,x}^{2,cot\;des}}{\sum_{t=2014}^{2018} l_{t,g,x}^{2,cot\;sgo}},
+\label{eq:tasa_aportacion}
+\end{equation}
+
+A partir de las $\hat{\phi}_{g,x}$ observadas, se obtienen las $\phi_{g,x}$ alisadas, mediante el uso de splines cúbicos. Las probabilidades de que un afiliado al SGO cotice al Seguro de Desempleo alisadas, $\phi_{g,x}$, se presentan en las figuras \ref{fig:iess_den_cot_m} y \ref{fig:iess_den_cot_f}, y la tabla \ref{tab:iess_den_aport_alisada_des}.
+
+
+\begin{figure}[H]
+\caption{Probabilidad de cotizar al \Sexpr{REP_seg}, dado que cotiza al SGO, interpolada para hombres}
+\label{fig:iess_den_cot_m}
+\begin{center}
+\includegraphics[scale=1.0]{graficos/iess_den_cot_m.png}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[H]
+\caption{Probabilidad de cotizar al \Sexpr{REP_seg}, dado que cotiza al SGO, interpolada para mujeres}
+\label{fig:iess_den_cot_f}
+\begin{center}
+\includegraphics[scale=1.0]{graficos/iess_den_cot_f.png}
+\end{center}
+\end{figure}
+
+\begin{center}
+{\fontsize{10}{12}\selectfont
+  \begin{longtable}[H]{lrr|rr}
+    \caption{Probabilidad de cotizar al \Sexpr{REP_seg}, dado que cotiza al SGO observada e interpolada por sexo}\\
+    \label{tab:iess_den_aport_alisada_des}\\
+    \toprule
+    \multicolumn{3}{c|}{Mujeres} & \multicolumn{2}{c}{Hombres} \\
+    \cmidrule{1-5}
+      $x$	& $\hat{\phi}_{1,x}$ & $\phi_{1,x}$ & $\hat{\phi}_{2,x}$ & $\phi_{2,x}$    \\
+    \midrule
+    \endfirsthead
+
+    \toprule
+    \multicolumn{3}{c|}{Mujeres} & \multicolumn{2}{c}{Hombres} \\
+    \cmidrule{1-5}
+      $x$	& $\hat{\phi}_{1,x}$ & $\phi_{1,x}$ & $\hat{\phi}_{2,x}$ & $\phi_{2,x}$    \\
+    \midrule
+    \endhead
+
+    \bottomrule \multicolumn{5}{r}{continúa...}
+    \endfoot
+
+    \bottomrule
+    \caption*{\scriptsize Fuente: IESS-Planillas. \\
+            Elaborado: DAIE.}
+    \endlastfoot
+           \input{tablas/iess_den_aport_alisada_des.tex}
+
+  \end{longtable}
+}
+\end{center}
+
+
+
+En los casos necesarios, la población proyectada puede ser agregada por sexo, edad o estado.
+Los valores agregados serán representados por las mismas variables, pero prescindiendo de un
+subíndice o superíndice de acuerdo con la variable de agregación. En particular será útil
+tener en cuenta las siguientes agregaciones:
+
+\begin{itemize}
+  \item Población total en el estado $i$, en cada año $t$ del horizonte de análisis:
+    \begin{equation}
+    l^i_{t} = \sum\limits_{g=1}^2 \sum\limits_{x=0}^\omega l^i_{t,g,x} \qquad\qquad
+    \forall i \in \{1,2,3,4,5\}.
+    \end{equation}
+
+  \item Población en el estado $i$, de sexo $g$, en cada año $t$ del horizonte
+  de análisis:
+    \begin{equation}
+    l^{i}_{t,g} = \sum\limits_{x=0}^{\omega} l^{i}_{t,g,x} \qquad\qquad
+    \forall i \in \{1,2,3,4,5\}.
+    \end{equation}
+\end{itemize}
+
+En la siguiente tabla \ref{tab:pob_proy_tot} y figura \ref{tab:pob_proy_tot_tran} se muestra la
+proyección de la población desagregada por sexo para cada uno de los estados. Adicionalmente se
+presentan las transiciones anuales de un estado a otro \ref{tab:pob_proy_tot_tran}; y, la
+desagregación de la población afiliada \ref{tab:pob_proy_tot_cot}.
+
+\begin{landscape}
+\begin{center}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{*{6}{r}|*{5}{r}}
+  \caption{Proyección de la población desagregada por sexo, en cada estado}\\
+  \label{tab:pob_proy_tot}\\
+
+  \toprule
+  & \multicolumn{5}{c|}{Mujeres} & \multicolumn{5}{c}{Hombres} \\
+  \midrule
+  $t$ & $l^1_{t,1}$ & $l^2_{t,1}$ & $l^3_{t,1}$ & $l^4_{t,1}$ & $l^5_{t,1}$ &
+  $l^1_{t,2}$ & $l^2_{t,2}$ & $l^3_{t,2}$ & $l^4_{t,2}$ & $l^5_{t,2}$ \\
+  \midrule
+  \endfirsthead
+
+  \toprule
+  & \multicolumn{5}{c|}{Mujeres} & \multicolumn{5}{c}{Hombres} \\
+  \midrule
+  $t$ & $l^1_{t,1}$ & $l^2_{t,1}$ & $l^3_{t,1}$ & $l^4_{t,1}$ & $l^5_{t,1}$ &
+  $l^1_{t,2}$ & $l^2_{t,2}$ & $l^3_{t,2}$ & $l^4_{t,2}$ & $l^5_{t,2}$ \\
+  \midrule
+  \endhead
+
+  \bottomrule
+  \multicolumn{11}{r}{continúa...} \\
+  \endfoot
+
+  \bottomrule
+  \caption*{\scriptsize  Elaborado: DAIE.}
+  \endlastfoot
+
+    \input{tablas/iess_tab_pob_proy.tex}
+
+  \end{longtable}
+}
+\end{center}
+
+\begin{figure}[H]
+\caption{Proyección de la población desagregada por sexo, en cada estado}
+\begin{center}
+\includegraphics[scale=1.0]{graficos/iess_pob_proy.png}
+\end{center}
+\end{figure}
+
+\begin{center}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{*{8}{r}|*{7}{r}}
+  \caption{Proyección de las transiciones anuales entre estados, desagregadas por sexo}\\
+  \label{tab:pob_proy_tot_tran}\\
+
+  \toprule
+  & \multicolumn{7}{c|}{Mujeres} & \multicolumn{7}{c}{Hombres} \\
+  \midrule
+  $t$ & $l^{1,2}_{t,1}$ & $l^{1,5}_{t,1}$ & $l^{2,3}_{t,1}$ & $l^{2,4}_{t,1}$ & $l^{2,5}_{t,1}$ &
+  $l^{3,5}_{t,1}$ & $l^{4,5}_{t,1}$ &
+  $l^{1,2}_{t,2}$ & $l^{1,5}_{t,2}$ & $l^{2,3}_{t,2}$ & $l^{2,4}_{t,2}$ & $l^{2,5}_{t,2}$ &
+  $l^{3,5}_{t,2}$ & $l^{4,5}_{t,2}$ \\
+  \midrule
+  \endfirsthead
+
+  \toprule
+  & \multicolumn{7}{c|}{Mujeres} & \multicolumn{7}{c}{Hombres} \\
+  \midrule
+  $t$ & $l^{1,2}_{t,1}$ & $l^{1,5}_{t,1}$ & $l^{2,3}_{t,1}$ & $l^{2,4}_{t,1}$ & $l^{2,5}_{t,1}$ &
+  $l^{3,5}_{t,1}$ & $l^{4,5}_{t,1}$ &
+  $l^{1,2}_{t,2}$ & $l^{1,5}_{t,2}$ & $l^{2,3}_{t,2}$ & $l^{2,4}_{t,2}$ & $l^{2,5}_{t,2}$ &
+  $l^{3,5}_{t,2}$ & $l^{4,5}_{t,2}$ \\
+  \midrule
+  \endhead
+
+  \bottomrule
+  \multicolumn{15}{r}{continúa...} \\
+  \endfoot
+
+  \bottomrule
+  \caption*{\scriptsize  Elaborado: DAIE.}
+  \endlastfoot
+
+    \input{tablas/iess_tab_pob_proy_tran.tex}
+
+  \end{longtable}
+}
+\end{center}
+
+\clearpage
+
+\begin{center}
+{\fontsize{9}{11}\selectfont
+\begin{longtable}[H]{*{5}{r}|*{4}{r}|*{4}{r}}
+  \caption{Proyección de la población afiliada desagregada en cotizantes al SGO, cotizantes al Seguro de Desempleo y a la Cesantía y cesantes}\\
+  \label{tab:pob_proy_tot_cot}\\
+
+  \toprule
+  & \multicolumn{4}{c|}{Mujeres} & \multicolumn{4}{c|}{Hombres} & \multicolumn{4}{c}{Total} \\
+  \midrule
+  $t$ & $l^{2}_{t,1}$ & $l^{2,cot\; sgo}_{t,1}$ &  $l^{2,cot\; des}_{t,1}$ & $l^{2,ces}_{t,1}$ &
+  $l^{2}_{t,2}$ & $l^{2,cot\; sgo}_{t,2}$ &  $l^{2,cot\; des}_{t,2}$ & $l^{2,ces}_{t,2}$ &
+  $l^{2}_{t}$ & $l^{2,cot\; sgo}_{t}$ & $l^{2,cot\; des}_{t}$ & $l^{2,ces}_{t}$ \\
+  \midrule
+  \endfirsthead
+
+   \toprule
+  & \multicolumn{4}{c|}{Mujeres} & \multicolumn{4}{c|}{Hombres} & \multicolumn{4}{c}{Total} \\
+  \midrule
+  $t$ & $l^{2}_{t,1}$ & $l^{2,cot\; sgo}_{t,1}$ &  $l^{2,cot\; des}_{t,1}$ & $l^{2,ces}_{t,1}$ &
+  $l^{2}_{t,2}$ & $l^{2,cot\; sgo}_{t,2}$ &  $l^{2,cot\; des}_{t,2}$ & $l^{2,ces}_{t,2}$ &
+  $l^{2}_{t}$ & $l^{2,cot\; sgo}_{t}$ & $l^{2,cot\; des}_{t}$ & $l^{2,ces}_{t}$ \\
+  \midrule
+  \endhead
+
+  \bottomrule
+  \multicolumn{13}{r}{continúa...} \\
+  \endfoot
+
+  \bottomrule
+  \caption*{\scriptsize  Elaborado: DAIE.}
+  \endlastfoot
+
+    \input{tablas/iess_tab_pob_proy_cot.tex}
+
+  \end{longtable}
+}
+\end{center}
+
+\end{landscape}
+ 
+%---------------------------------------------------------------------------------------------------
+\section{Estructura actuarial}
+\label{chp_modelo:actu}
+
+Para realizar los cálculos actuariales que nos permitan evaluar la situación financiera del
+\Sexpr{REP_seg}, en el horizonte de estudio, se define primeramente la estructura actuarial
+sustentada en tres componentes:
+\begin{enumerate}
+\item Sistema de financiamiento,
+\item Esquema de prestaciones; y,
+\item Régimen demográfico.
+\end{enumerate}
+
+A continuación, se detalla cada uno de estos componentes.
+
+%---------------------------------------------------------------------------------------------------
+\subsection[Sistema de financiamiento]{Sistema de financiamiento}
+\label{chp_modelo:sis_fin}
+A partir del análisis de los estados financieros del \Sexpr{REP_seg} (ver sección \ref{chp_infofinan}), se evidencia que los aportes de un ejercicio económico cualquiera, son mucho mayores a los egresos por prestaciones, de tal manera que la mayoría de los valores recaudados son destinados a conformar las reservas.
+
+Por tal razón, se vuelve imperante establecer una prima suficiente de tal manera que esta sea capaz de cubrir las obligaciones de este seguro en cada año en el horizonte de estudio y el sistema de financiamiento que permite mantener un nivel estable de cotizaciones en el horizonte de estudio y, por lo tanto, adecuado para esta valuación es el \emph{\textbf{sistema de reparto con capitalización parcial a prima media nivelada}}.
+
+
+
+%---------------------------------------------------------------------------------------------------
+\subsection[Esquema de prestaciones]{Esquema de prestaciones}
+\label{chp_modelo:esq_pres}
+
+De acuerdo con el artículo 19 del Reglamento General del Seguro de Cesantía y Seguro de Desempleo (\legalcite{ResIESS_CD518}), el fondo solidario entregará prestaciones definidas por una fórmula de cálculo.
+
+De punto de vista operativo, efectivamente, los niveles de las prestaciones dependen del 70\% del Salario Básico Unificado, sobre el cual se establece la base de cálculo de las prestaciones, tal como se muestra en la sección \ref{chp_reglamentacion:calc_benef}.
+
+Claramente entonces, el \Sexpr{REP_seg} se sustenta en un esquema de \textit{\textbf{beneficio definido}} o \textit{\textbf{prestaciones definidas}}.
+
+
+%---------------------------------------------------------------------------------------------------
+\subsection[Régimen demográfico]{Régimen demográfico}
+\label{chp_modelo:reg_dem}
+Siendo la seguridad social un derecho irrenunciable de todas las personas, se puede afirmar
+que su acceso es libre, estableciendo por tanto un
+\textit{\textbf{régimen demográfico de grupo abierto}}, por lo que no existen restricciones para
+afiliarse dentro de este régimen.
+
+Por lo tanto, el sistema a considerarse está sujeto a las variaciones de la demografía, influyendo
+así las tasas de natalidad, nupcialidad, mortalidad y rotación.
+
+%---------------------------------------------------------------------------------------------------
+\section{Flujos de ingresos y egresos financieros}
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Flujo de ingresos por aportaciones}
+\label{chp_modelo:aport}
+Los aportes son tomados según los porcentajes de contribución previamente establecidos en el artículo 13 de la \legalcite{ResIESS_CD518} (ver la sección \ref{chp_reglamentacion:calculo_aporte}). En la siguiente expresión se incluye los aportes de los afiliados cotizantes al \Sexpr{REP_seg}, $A^{2,act}_t$, y $\pi^{2,\, cot\, des}_t$ representa el porcentaje de aportación de los afiliados cotizantes activos a este seguro para cada año $t$:
+
+\begin{eqnarray}
+A^{2,act}_t & = & \sum\limits_{g=1}^2 \sum\limits_{x=0}^\omega \pi^{2,\, cot\, des}_t \, S_{t,g,x}\, l^{2,cot\;des}_{t,g,x},
+\end{eqnarray}
+donde $S_{0,g,x}$ es el salario promedio de genero $g$ y con edad $x$ cotizante al \Sexpr{REP_seg} en el año 2018.
+
+
+Para efectos de otros cálculos, como se verá más adelante, es importante mantener un registro de la
+evolución de la masa salarial al tiempo $t$ de los cotizantes al \Sexpr{REP_seg}, la cual está dada por:
+\begin{equation}
+M_t = \sum\limits_{g=1}^2 \sum\limits_{x=0}^\omega S_{t,g,x}\, l^{2, cot\; des}_{t,g,x}.
+\end{equation}
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Flujo de egresos por pago de beneficios}
+\label{chp_modelo:benef}
+
+El \Sexpr{REP_seg}, tal como fue descrito en las secciones \ref{chap_Intro:programa} y
+\ref{chp_reglamentacion:calc_benef} es la prestación económica que protege al afiliado que pierde su empleo y que cumple las condiciones establecidas en el artículo 15 de la \legalcite{ResIESS_CD518}.
+
+El afiliado que aplica a la prestación del \Sexpr{REP_seg} podrá voluntariamente escoger una de las siguientes opciones excluyentes:
+
+\begin{enumerate}
+\item Recibir el valor correspondiente al fondo solidario (Fondo del \Sexpr{REP_seg}) más el monto disponible en la cuenta individual de cesantía en la forma establecida por la ley; o,
+\item Recibir únicamente el porcentaje correspondiente al fondo solidario.
+\end{enumerate}
+
+En ambos casos, la prestación del \Sexpr{REP_seg} se calcula según lo establece en el artículo 19 de la \legalcite{ResIESS_CD518} (ver sección \ref{chp_reglamentacion:calc_benef}) y puede componerse de mínimo un (1) pago a máximo cinco (5) pagos mensuales, mientras el afiliado se encuentre desempleado.
+
+Los beneficios totales entregados, $B_{t}$, por esta prestación son iguales a la suma de los beneficios totales pagados en cada pago $i$, $B_{i,t,g,x}$, para $i=1, \ldots,5$.  En términos matemáticos, se puede expresar, como se sigue a continuación:
+\begin{equation}
+B_t =  B_{1,t} + B_{2,t}+B_{3,t}+B_{4,t} +B_{5,t}.
+\end{equation}
+
+Los beneficios de prestaciones son proporcionales al número de pagos realizados, $l_{i,t,g,x}$ para $i=1,\ldots, 5$), y al 70\% del SBU, según lo establece el artículo 19 de la \legalcite{ResIESS_CD518}. Su expresión matemática es la siguiente:
+
+\begin{equation}
+B_{i,t}= \sum\limits_{g=1}^2 \sum\limits_{x=0}^{\omega} 0.7 \,\alpha_{i,g} \, SBU_{t} \, l_{i,t,g,x},
+\end{equation}
+donde $\alpha_{i,g}$ es el coeficiente de la regresión lineal para determinar la relación entre los pagos realizados y el 70\% del SBU, puesto que el artículo 19 de la \legalcite{ResIESS_CD518} establece que los afiliados con materia gravada promedio de los últimos 12 meses previos al cese menor al SBU promedio de ese período cubrirá solo el 70\% de esta fracción correspondiente. Además, existe afiliados que volvieron a cotizar durante el trascurso de los cinco (5) meses del pago de esta prestación; en este caso solo se entregó la proporción de los días en el que afiliado se encontraba cesante. En las tablas \ref{tab:iess_mod_m_beneficios} y \ref{tab:iess_mod_f_beneficios}, se presentan las estimaciones de los coeficientes $\alpha_{i,2}$ y $\alpha_{i,1}$ para hombres y mujeres, respectivamente, para cada pago $i=1,\ldots,5$.
+
+% \begin{table}[H]
+% \centering
+% \caption{Estimación de los coeficientes $\alpha_{i,g}$ }
+% \label{tab:iess_estimacion_pago_des}
+% \begin{tabular}{lrr}
+%   \toprule
+%   %  \multicolumn{3}{Genero}\\
+%   % \midrule
+% \multicolumn{1}{l}{Coeficiente:} & \multicolumn{1}{c}{Mujeres} & \multicolumn{1}{c}{Hombres} \\
+% \midrule
+% \input{tablas/iess_estimacion_pago_des.tex}
+% \bottomrule
+% \end{tabular}
+% \caption*{\scriptsize Fuente: DAIE. \\
+% Elaborado: DAIE.}
+% \end{table}
+
+\begin{table}[H]
+\centering
+{\fontsize{8}{9}\selectfont
+\input{tablas/iess_mod_m_beneficios.tex}
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: DAIE. \\
+Elaborado: DAIE. \\
+Nota: $^{*}p<0,1$; $^{**}p<0,05$; $^{***}p<0,01$}
+\end{table}
+
+\begin{table}[H] \centering
+{\fontsize{8}{9}\selectfont
+\input{tablas/iess_mod_f_beneficios.tex}
+\end{tabular}
+\caption*{\scriptsize Fuente: DAIE. \\
+\scriptsize Elaborado: DAIE. \\
+Nota: $^{*}$p$<$0,1; $^{**}$p$<$0,05; $^{***}$p$<$0,01}
+}
+\end{table}
+
+En cambio, para los escenarios intermedio y extremo, que contemplan el pago extemporáneo de los aportes patronales (de tal modo que no se necesitarían que las últimas 6 aportaciones seguidas estén canceladas) (los requisitos del seguro se encuentran en la sección \ref{chp_reglamentacion:requisitos}), se utilizan los coeficientes $\alpha_{i,2}$ y $\alpha_{i,1}$ para hombres y mujeres, respectivamente, en cada pago $i=1,\ldots,5$ presentados en las tablas \ref{tab:iess_mod_m_beneficios_ind} y \ref{tab:iess_mod_f_beneficios_ind}.
+
+\begin{table}[H] \centering
+{\fontsize{8}{9}\selectfont
+\input{tablas/iess_mod_m_beneficios_ind.tex}
+\end{tabular}
+\caption*{\scriptsize Fuente: DAIE. \\
+Elaborado: DAIE. \\
+Nota: $^{*}$p$<$0,1; $^{**}$p$<$0,05; $^{***}$p$<$0,01}
+}
+\end{table}
+
+\begin{table}[H] \centering
+{\fontsize{8}{9}\selectfont
+\input{tablas/iess_mod_f_beneficios_ind.tex}
+\end{tabular}
+\caption*{\scriptsize Fuente: DAIE. \\
+\scriptsize Elaborado: DAIE. \\
+Nota: $^{*}$p$<$0,1; $^{**}$p$<$0,05; $^{***}$p$<$0,01}
+}
+\end{table}
+
+Mientras que $l_{i,t,g,x}$ es el número esperado de pagos $i$ al año, y se calcula utilizando la probabilidad de siniestralidad del seguro, como se sigue a continuación:
+
+\begin{equation}
+l_{i,t,g,x} = p_{i,g,x} \; l^{2,ces}_{t,g,x},  \quad \text{para} \;i=1,\ldots,5.
+\label{eq:proy_siniestros}
+\end{equation}
+
+Las probabilidades de siniestralidad ($p_{i,g,x}$), con su respectiva metodología de cálculo y su alisamiento basado en splines, se presentan en la sección \ref{chp_riesgos:tabsiniestralidad}; más específicamente, en la tabla \ref{tab:iess_tasa_uso}, para el escenario base; y en la tabla \ref{tab:iess_tasa_uso_ind}, para los escenarios intermedio y extremo. El número esperado de pagos de la parte fija del Seguro de Desempleo ($l_{i,t,g}$) para el período de valuación está en la tabla \ref{tab:iess_tab_pob_proy_ben_pagos} para el escenario base y en la tabla \ref{tab:iess_tab_pob_proy_ben_pagos_ind} para los escenarios intermedio y extremo.
+\newpage
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Flujo de gastos administrativos}
+\label{chp_modelo:gasto}
+
+Tal como se lo ha establecido en la sección \ref{chp_reglamentacion:egresos:gadmin}, se asume que los gastos administrativos de este seguro estarán incluidos dentro de los gastos administrativos del Seguro de Cesantía, los cuales son igual al 2\% de los ingresos por aportes de los afiliados al Seguro de Cesantía.
+
+%---------------------------------------------------------------------------------------------------
+\section{Balance actuarial}
+\label{chp_modelo:bal_act}
+
+Con el objeto de construir el balance actuarial del \Sexpr{REP_seg}, en primer lugar, se define la
+reserva inicial a la fecha de corte, $V_0$, y que equivale al saldo de la
+cuenta de patrimonio a esa fecha.
+
+En segundo lugar, se proyecta el balance corriente, $V^{cor}_t$, el cual corresponde
+a la diferencia de los ingresos menos los egresos de cada año $t>0$:
+\begin{equation}
+  V^{cor}_t = A_t - B_t - G_t
+\end{equation}
+
+Para $t=0$, se define el balance corriente $V^{cor}_0 = 0$, pues a la fecha de corte nos interesamos solamente en la reserva inicial $V_0$.
+
+En tercer lugar, se calcula el balance capitalizado $V^{cap}_t$ para cada año $t$ del
+horizonte de análisis. Este balance representa la evolución proyectada de la reserva
+actual hasta el final del horizonte de análisis. Por lo tanto, $V^{cap}_0=V_0$ y utilizando el factor
+de capitalización $u$; para $t>0$, se obtiene:
+\begin{equation}
+V^{cap}_t = u\, V^{cap}_{t-1} + V^{cor}_t,
+\end{equation}
+o de manera equivalente:
+
+\begin{equation}
+\label{eq:balance}
+  V^{cap}_t = u^t\, V_0 + \sum\limits_{s=0}^t u^{t-s} \left( A_s  - B_s - G_s \right).
+\end{equation}
+
+Finalmente, el balance actuarial del fondo, calculado en la fecha de corte $t=0$ y con un horizonte
+de proyección $T$, se denotará por $V_T$, y corresponde a la reserva inicial más el valor actuarial
+presente de los ingresos futuros y menos el valor actuarial presente de los egresos futuros.
+En consecuencia, se tiene:
+\begin{equation}
+\label{eq:balance_act}
+V_T = V_0 + \sum\limits_{t=0}^T v^t \left( A_t - B_t - G_t \right).
+\end{equation}
+
+Esta formulación corresponde a la reserva matemática prospectiva que permite determinar la
+situación actuarial del \Sexpr{REP_seg} hasta el horizonte $T$.  El valor $V_T$ se expresa en
+valor actuarial presente (VAP), haciendo uso del factor de actualización $v$, que a su vez
+está determinado por la tasa actuarial.
+
+En base a lo anterior, la situación actuarial del \Sexpr{REP_seg} se establece como sigue:
+\begin{itemize}
+    \item Si el balance actuarial es negativo, $V_T<0$, se concluye que, a la fecha de corte,
+    el \Sexpr{REP_seg} presenta un déficit actuarial en el horizonte $T$;
+    \item Si, por el contrario, $V_T>0$, entonces, a la fecha de corte, el seguro presenta
+    un superávit actuarial con horizonte $T$; y,
+    \item Si $V_T=0$, a la fecha de corte, el seguro está en una situación de equilibrio
+    actuarial con horizonte $T$.
+\end{itemize}
+
+En este estudio nos interesa determinar la situación actuarial del \Sexpr{REP_seg}
+hasta el horizonte $T = \Sexpr{REP_hor}$.
+

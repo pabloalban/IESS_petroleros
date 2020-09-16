@@ -1,0 +1,7 @@
+source( 'R/300_calculo_tabla_decrementos.R', encoding = 'UTF-8', echo = FALSE )
+source( 'R/301_estimacion_tasa_entrada.R', encoding = 'UTF-8', echo = FALSE )
+source( 'R/302_ajuste_mortalidad_dinamica.R', encoding = 'UTF-8', echo = FALSE )
+source( 'R/303_ajuste_mortalidad_pensionistas.R', encoding = 'UTF-8', echo = FALSE )
+source( 'R/304_ajuste_tasa_actividad.R', encoding = 'UTF-8', echo = FALSE )
+source( 'R/306_probabilidades_transicion.R', encoding = 'UTF-8', echo = FALSE )
+source( 'R/309_tablas_mortalidad_estados.R', encoding = 'UTF-8', echo = FALSE )

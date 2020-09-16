@@ -1,0 +1,822 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Valuación actuarial del \Sexpr{REP_seg}}
+\label{chp_valuacionactu}
+
+Tomando en cuenta el modelo actuarial presentado en el capítulo \ref{chp_modelo} y las hipótesis
+actuariales definidas en el capítulo \ref{chp_hipotesis}, en esta sección se presentan los resultados
+que reflejan la situación actuarial y financiera del \Sexpr{REP_seg}, generados bajo diferentes
+escenarios de proyección. A partir de esos balances, en cada escenario se puede apreciar la situación actuarial y financiera
+del \Sexpr{REP_seg} de forma dinámica, para cada año desde la fecha de corte y hasta el horizonte de
+estudio ($T = \Sexpr{REP_hor}$ años).   
+
+Para el análisis se han definido cuatro escenarios: 
+\begin{enumerate}
+  \item \textbf{Escenario 1:} es el escenario base y constituye el escenario más probable, aplicando parámetros financieros
+  conservadores y realistas, en base a valores proyectados promedio. Principalmente en este escenario
+  se asume: tasa actuarial \Sexpr{REP$tasa_act_esc_1}\% y tasa de crecimiento del SBU 2,5339\%. Además, considerando los requisitos al acceso al \Sexpr{REP_seg} establecidos en el artículo 15 de la \legalcite{ResIESS_CD518}.
+  
+  \item \textbf{Escenario 2:} considera una tasa actuarial del \Sexpr{REP$tasa_act_esc_2}\% y asume que se entregará la prestación a afiliados que cumplan los requisitos establecidos en el reglamento del seguro, pero sin necesidad que el empleador esté al día con las aportaciones; de esta manera, se cumple con el pedido solicitado por la  Dirección Nacional de Fondos de Terceros y Seguro de Desempleo, a través del memorando Nro. IESS-DNFTSD-2019-1132-M.
+
+  \item \textbf{Escenario 3:} Escenario con las mismas hipótesis del escenario base, pero con una prima igual a \Sexpr{REP$tasa_aporte_esc_3}\%.
+\end{enumerate}
+
+Los parámetros que definen cada escenario se presentan en la tabla \ref{tab:par_escenarios}.
+
+ {\fontsize{9}{10}\selectfont
+\begin{longtable}[H]{lccc}
+\caption{Escenarios de análisis}\\
+\label{tab:par_escenarios} \\
+\toprule
+\multirow{1}{*}{Parámetros o componentes:} & \multicolumn{1}{c}{Escenario 1} & \multicolumn{1}{c}{Escenario 2}             & \multicolumn{1}{c}{Escenario 3}\\
+% \cline{2-4}
+%                              & \multicolumn{1}{c}{Base}        & \multicolumn{1}{c}{Con aportes extemporáneos} & \multicolumn{1}{c}{Reducción de prima}\\
+\midrule
+\endfirsthead
+
+\toprule
+\multirow{1}{*}{Parámetros:} & \multicolumn{1}{c}{Escenario 1} & \multicolumn{1}{c}{Escenario 2}             & \multicolumn{1}{c}{Escenario 3}\\
+% \cline{2-4}
+%                              & \multicolumn{1}{c}{Base}        & \multicolumn{1}{c}{Con aportes extemporáneos} & \multicolumn{1}{c}{Reducción de prima}\\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{4}{r}{continúa...}
+\endfoot
+
+    \bottomrule
+\caption*{\scriptsize Nota: El escenario 1 considera la entrega de prestaciones solo a afiliados que estén al día en sus aportes patronales.\\
+ Nota: El escenario 2 considera la entrega de prestaciones a afiliados, los cuales cumplan requisitos; pero sus empleadores no estén al día con los aportes.\\
+ Nota: El escenario 3 considera una prima igual a $\Sexpr{REP$tasa_aporte_esc_3}$\%}
+    \endlastfoot
+
+\input{tablas/iess_tab_conf_escenarios.tex}
+
+\end{longtable}
+}
+
+En todos los escenarios, hemos considerado la misma estructura actuarial del \Sexpr{REP_seg}, definida por un sistema de financiamiento de reparto con prima media nivelada, un esquema de prestaciones de beneficio definido y un régimen demográfico en grupo abierto, acorde a lo expuesto en la sección \ref{chp_modelo:actu}.
+
+Por pedido de la Dirección de Fondos de Terceros y Seguro de Desempleo (memorando Nro. IESS-DNFTSD-2019-1132-M), se añadió el escenario 2, el cual considera el pago de prestaciones a afiliados que cumplan los requisitos establecidos en el artículo 15 de la \legalcite{ResIESS_CD518}, pero que sus empleadores no hayan realizado el pago respectivo de sus aportaciones. Para este fin, el escenario 2 es el único que utiliza la tabla de siniestralidad \ref{tab:iess_tasa_uso_ind} (Los otros dos escenarios utilizan la tabla de siniestralidad \ref{tab:iess_tasa_uso}).
+
+ Además, en todos los escenarios, aplicamos los porcentajes de aportación dispuestos por la \legalcite{ResIESS_CD515}, excepto en el escenario 3, el cual propone una prima igual a \Sexpr{REP$tasa_aporte_esc_3}\%.
+
+Las proyecciones que se exponen a continuación permiten visualizar de manera dinámica, la evolución
+anual de los respectivos balances corrientes y balances actuariales, calculados conforme al modelo
+actuarial presentado en la sección \ref{chp_modelo}.
+
+% Escenario 1 --------------------------------------------------------------------------------------
+\section[Valuación actuarial bajo el escenario 1]{Valuación actuarial bajo el escenario base}
+\label{chp_valuacion:esc_base}
+
+El escenario base es el más probable o verosímil. En este escenario se utilizan las siguientes hipótesis: tasa actuarial,  $i_a=\Sexpr{REP$tasa_act_esc_1}$\% ; tasa de crecimiento de los salarios, $i_r=2,1540$\%; y tasa de crecimiento del salario básico unificado, $i_s=2,5339$\%. El aporte patronal del seguro, $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_1}\%$, es el establecido en la \legalcite{ResIESS_CD515}. Además, se asume que los gastos administrativos de este seguro están incluidos dentro de los gastos administrativos del Seguro de Cesantía, los cuales son igual al 2\% de los ingresos por aportes de los afiliados al Seguro de Cesantía. 
+
+
+El número de beneficios por pagos y sexo se encuentran en la tabla \ref{tab:iess_tab_pob_proy_ben_pagos} y la probabilidad de siniestralidad del seguro está en la tabla \ref{tab:iess_tasa_uso} y el patrimonio inicial del fondo solidario es USD \Sexpr{REP$cap_ini}.
+
+Este escenario considera la entrega de prestaciones, siempre y cuando se cumplan los requisitos establecidos en el artículo 15 de la \legalcite{ResIESS_CD518} (ver sección \ref{chp_reglamentacion:requisitos}); y, por lo tanto, no se entregarán prestaciones a afiliados que acumulen las aportaciones correspondientes, pero el empleador no haya realizado el pago respectivo, debido a que la Dirección de Fondos de Terceros y Seguro de Desempleo junto a la DNTI tomaron las medidas correspondientes para que no se entreguen prestaciones en estos casos desde el mes de octubre de 2018.
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Balance actuarial para el escenario 1}
+\label{chp_valuacionactu:esc_1:balactu}
+
+La tabla \ref{tab:iess_bal_act_vap_escenario_1} presenta el balance actuarial para el año 2058 del escenario base. El escenario 1 presenta un superávit igual a USD \Sexpr{REP$bal_act_esc_1}, en términos actuariales, en el año 2058, el cual se obtiene de la diferencia entre su activo actuarial (USD \Sexpr{REP$bal_sum_act_1}) y su pasivo actuarial (USD \Sexpr{REP$bal_sum_pas_1}), en valor presente. Por último, su prima suficiente alcanza el \Sexpr{REP$pri_med_niv_esc_1}\%.
+
+ % En cambio, su superávit en términos corrientes es USD \Sexpr{REP$bal_cap_esc_1}.
+
+\begin{table}[H]
+\centering
+\caption{Balance actuarial en el escenario base}
+\label{tab:iess_bal_act_vap_escenario_1}
+\caption*{\textbf{Instituto Ecuatoriano de Seguridad Social}}
+\caption*{\textbf{ Balance actuarial del \Sexpr{REP_nom_seg}}}
+\caption*{Fecha de valuación: al \Sexpr{REP_fec_fin}}
+{\fontsize{10}{12}\selectfont
+%\scalebox{0.8}{
+%\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lr}
+\toprule
+Componente:	& Valor (USD) \\
+\midrule
+\multicolumn{2}{c}{\textbf{Activo actuarial}} \\
+\hline
+\input{tablas/iess_bal_act_vap_escenario_1.tex}
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+% Escenario 1 balance actuarial dinámico -----------------------------------------------------------
+
+La tabla \ref{tab:bal_act_tot_esc_1} y la figura \ref{graf:bal_vap_esc_1} presentan la evolución del balance actuarial dinámico para horizontes $T \in \{0,\ldots,40\}$. En la tabla \ref{tab:bal_ben_esc_1}, se observa el detalle de los beneficios por pago de prestaciones; en cambio, en la tabla \ref{tab:iess_bal_act_vap_escenario_1}, se presenta la reserva, $V_t$, del \Sexpr{REP_seg} para cada año hasta el 2058. El gráfico \ref{graf:apo_ben_bal_din_esc_1} presenta la comparación entre los aportes
+(línea azul) y los beneficios (línea verde).
+
+
+\begin{center}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{crrrrrr}
+\caption{Escenario base: balance actuarial dinámico, $T \in \{0,\ldots,40\}$}\\
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_1}\%$ y $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_1}\%$}
+\label{tab:bal_act_tot_esc_1} \\
+\toprule
+Año & Horizonte & Aportes & Beneficios & Gasto administrativo & Reserva inicial & Balance actuarial\\
+& $T$ & $\sum_{t=0}^T v^t A_t$ & $\sum\limits_{t=0}^T v^t B_t$ & $\sum\limits_{t=0}^T v^t G_t$& $V_0$ & $V_T$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año & Horizonte & Aportes & Beneficios & Gasto administrativo & Reserva inicial & Balance actuarial\\
+& $T$ & $\sum\limits_{t=0}^T v^t A_t$ & $\sum\limits_{t=0}^T v^t B_t$ & $\sum\limits_{t=0}^T v^t G_t$& $V_0$ & $V_T$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{7}{r}{continúa...} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+\input{tablas/iess_balance_actuarial_escenario_1.tex}
+
+\end{longtable}
+}
+\end{center}
+
+\clearpage
+
+\begin{figure}[H]
+\begin{center}
+\caption{Escenario base: evolución del balance actuarial $V_T$}
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_1}\%$ y $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_1}\%$}
+\label{graf:bal_vap_esc_1}
+\includegraphics[scale=1]{graficos/iess_balance_vap_rv_escenario_1.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\caption{Escenario base: aportes y beneficios del balance actuarial $V_T$}
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_1}\%$ y $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_1}\%$}
+\label{graf:apo_ben_bal_din_esc_1}
+\includegraphics[scale=1]{graficos/iess_apo_ben_bal_dinamico_escenario_1.png}
+\end{center}
+\end{figure}
+
+% Escenario 1 tabla beneficios dinámico ------------------------------------------------------------
+
+\begin{landscape}
+\begin{center}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{cr*{7}{R{3cm}}}
+\caption{Escenario base: beneficios balance actuarial dinámico, $T \in \{0,\ldots,\Sexpr{REP_hor}\}$}\\
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_1}\%$ y $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_1}\%$}
+\label{tab:bal_ben_esc_1}\\
+
+\toprule
+Año & $t$ &Beneficios pago 1 & Beneficios pago 2 &
+Beneficios pago 3 & Beneficios pago 4 &
+Beneficios pago 5 & Beneficios totales \\
+    &  & $\sum\limits_{t=0}^T v^t B_{1,t}$ & $\sum\limits_{t=0}^T v^t B_{2,t}$ & $\sum\limits_{t=0}^T v^t B_{3,t}$ & $\sum\limits_{t=0}^T v^t B_{4,t}$ & $\sum\limits_{t=0}^T v^t B_{5,t}$ & $\sum\limits_{t=0}^T v^t B_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año & $t$ &Beneficios pago 1 & Beneficios pago 2 &
+Beneficios pago 3 & Beneficios pago 4 &
+Beneficios pago 5 & Beneficios totales \\
+    &  & $\sum\limits_{t=0}^T v^t B_{1,t}$ & $\sum\limits_{t=0}^T v^t B_{2,t}$ & $\sum\limits_{t=0}^T v^t B_{3,t}$ & $\sum\limits_{t=0}^T v^t B_{4,t}$ & $\sum\limits_{t=0}^T v^t B_{5,t}$ & $\sum\limits_{t=0}^T v^t B_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{8}{r}{continúa...} \\
+\endfoot
+
+    \bottomrule
+     \endlastfoot
+
+\input{tablas/iess_balance_beneficios_vap_escenario_1.tex}
+
+\end{longtable}
+}
+\end{center}
+\end{landscape}
+%\clearpage
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Balance corriente y evolución de la reserva para el escenario 1}
+\label{chp_valuacionactu:esc_1:balcorr}
+
+La tabla \ref{tab:bal_corr_tot_esc_1} y la figura \ref{graf:bal_cap_esc_1} presentan la evolución
+del balance corriente y evolución de la reserva para horizontes $T \in \{0,\ldots,40\}$. En la
+tabla \ref{tab:bal_corr_ben_esc_1}, se observa el detalle de los
+beneficios. El gráfico \ref{graf:apo_ben_bal_cap_esc_1} presenta la
+evolución de los aportes (línea azul) y la evolución de los beneficios (línea verde).
+
+% Escenario 1 balance corriente  -------------------------------------------------------------------
+\begin{center}
+{\fontsize{9}{12}\selectfont
+%\begin{longtable}[H]{r*{5}{R{2.5cm}}}
+\begin{longtable}[H]{rrrrrr}
+\caption{Escenario base: balance corriente (financiero), $T \in \{0,\ldots,\Sexpr{REP_hor}\}$}\\
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_1}\%$ y $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_1}\%$}
+\label{tab:bal_corr_tot_esc_1} \\
+\toprule
+Año & Aportes & Beneficios & Gasto administrativo & Balance corriente &
+Balance capitalizado \\
+$t$ & $A_t$ & $B_t$ & $G_t$ & $V^{cor}_t$ & $V^{cap}_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año & Aportes & Beneficios & Gasto administrativo & Balance corriente &
+Balance capitalizado \\
+$t$ & $A_t$ & $B_t$ & $G_t$ & $V^{cor}_t$ & $V^{cap}_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{6}{r}{continúa...} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+\input{tablas/iess_balance_corriente_escenario_1.tex}
+
+\end{longtable}
+}
+\end{center}
+
+\begin{figure}[H]
+\begin{center}
+\caption{Escenario base: reserva $V^{cap}_t$ (términos corrientes), $T \in \{0,\ldots,40\}$}
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_1}\%$ y $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_1}\%$}
+\label{graf:bal_cap_esc_1}
+\includegraphics[scale=1]{graficos/iess_balance_capitalizado_escenario_1.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\caption{Escenario base: aportes y beneficios del balance capitalizado (términos corrientes)}
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_1}\%$ y $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_1}\%$}
+\label{graf:apo_ben_bal_cap_esc_1}
+\includegraphics[scale=1]{graficos/iess_apo_ben_bal_capitalizado_escenario_1.png}
+\end{center}
+\end{figure}
+
+% Escenario 1 tabla beneficios balance corriente ---------------------------------------------------
+\begin{landscape}
+\begin{center}
+{\fontsize{10}{12}\selectfont
+
+\begin{longtable}[H]{r*{6}{R{3cm}}}
+\caption{Escenario base: beneficios balance corriente, $T \in \{0,\ldots,\Sexpr{REP_hor}\}$}\\
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_1}\%$ y $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_1}\%$}
+\label{tab:bal_corr_ben_esc_1}\\
+
+\toprule
+Año & Beneficios pago 1 & Beneficios pago 2 &
+Beneficios pago 3 & Beneficios pago 4 &
+Beneficios pago 5 & Beneficios totales \\
+$t$ & $B_{1,t}$ & $B_{2,t}$ & $B_{3,t}$ & $B_{4,t}$ & $B_{5,t}$ & $B_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año & Beneficios pago 1 & Beneficios pago 2 &
+Beneficios pago 3 & Beneficios pago 4 &
+Beneficios pago 5 & Beneficios totales \\
+$t$ & $B_{1,t}$ & $B_{2,t}$ & $B_{3,t}$ & $B_{4,t}$ & $B_{5,t}$ & $B_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{7}{r}{continúa...} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+\input{tablas/iess_balance_beneficios_escenario_1.tex}
+
+\end{longtable}
+}
+\end{center}
+\end{landscape}
+
+% Escenario 2 --------------------------------------------------------------------------------------
+\section[Valuación actuarial bajo el escenario 2]{Valuación actuarial bajo el Escenario 2}
+
+El escenario 2 considera la tasa actuarial igual a \Sexpr{REP$tasa_act_esc_2}\%; incremento salarial, 2,1540\%; y tasa de incremento del SBU, 2,5339\%, de igual manera que el escenario base.
+
+A diferencia del escenario base, el escenario 2 supone que se entregarán prestaciones a afiliados que acumulen las aportaciones correspondientes, sin necesidad que el empleador esté al día en sus obligaciones; y, de esta manera, se da cumplimento al pedido realizado por la Dirección de Fondos de Terceros y Seguro de Desempleo a través del Memorando Nro. IESS-DNFTSD-2019-1132-M.
+
+El número de beneficios por pagos y sexo se encuentran en la tabla \ref{tab:iess_tab_pob_proy_ben_pagos_ind} y la probabilidad de siniestralidad del seguro está en la tabla \ref{tab:iess_tasa_uso_ind} y el patrimonio inicial del fondo solidario es USD \Sexpr{REP$cap_ini}.
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Balance actuarial para el escenario 2}
+\label{chp_valuacionactu:esc_2:balactu}
+
+La tabla \ref{tab:iess_bal_act_vap_escenario_2} presenta el balance actuarial para el año 2058 del escenario 2. El escenario 2 presenta un superávit igual a USD \Sexpr{REP$bal_act_esc_2}, en términos actuariales, en el año 2058, el cual se obtiene de la diferencia entre su activo actuarial (USD \Sexpr{REP$bal_sum_act_2}) y su pasivo actuarial (USD \Sexpr{ REP$bal_sum_pas_2}), en valor presente. Por último, su prima suficiente alcanza el \Sexpr{REP$pri_med_niv_esc_2}\%.
+
+\begin{table}[H]
+\centering
+\caption{Escenario 2: balance actuarial}
+\label{tab:iess_bal_act_vap_escenario_2}
+\caption*{\textbf{Instituto Ecuatoriano de Seguridad Social}}
+\caption*{\textbf{ Balance actuarial del \Sexpr{REP_nom_seg}}}
+\caption*{Fecha de valuación: al \Sexpr{REP_fec_fin}}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{lr}
+\toprule
+Componente:	& Valor (USD) \\
+\midrule
+\multicolumn{2}{c}{\textbf{Activo actuarial}} \\
+\hline
+\input{tablas/iess_bal_act_vap_escenario_2.tex}
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+La tabla \ref{tab:bal_act_tot_esc_2} y la figura \ref{graf:bal_vap_esc_2} presentan la evolución del
+balance actuarial dinámico para horizontes $T \in \{0,\ldots,40\}$.
+
+
+
+\begin{figure}[H]
+\begin{center}
+\caption{Escenario 2: evolución del balance actuarial $V_T$}
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_2}\%$, $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_2}\%$ y considera la entrega prestaciones a afiliados que no estén al día en sus aportes patronales.}
+\label{graf:bal_vap_esc_2}
+\includegraphics[scale=1]{graficos/iess_balance_vap_rv_escenario_2.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\caption{Escenario 2: aportes y beneficios del balance actuarial $V_T$}
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_2}\%$, $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_2}\%$ y considera la entrega prestaciones a afiliados que no estén al día en sus aportes patronales.}
+\label{graf:apo_ben_bal_din_esc_2}
+\includegraphics[scale=1]{graficos/iess_apo_ben_bal_dinamico_escenario_2.png}
+\end{center}
+\end{figure}
+ \newpage
+
+% Escenario 2 balance actuarial dinámico -----------------------------------------------------------
+
+\begin{center}
+{\fontsize{9}{11}\selectfont
+
+\begin{longtable}[H]{rrrrrrr}
+\caption{Escenario 2: balance actuarial dinámico, $T \in \{0,\ldots,40\}$}\\
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_2}\%$, $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_2}\%$ y considera la entrega prestaciones a afiliados que no estén al día en sus aportes patronales.}
+\label{tab:bal_act_tot_esc_2}\\
+
+\toprule
+Año & Horizonte & Aportes & Beneficios & Gasto administrativo & Reserva inicial &
+Balance actuarial \\ & $T$ & $\sum\limits_{t=0}^T v^t A_t$ &
+$\sum\limits_{t=0}^T v^t B_t$ & $\sum\limits_{t=0}^T v^t G_t$ & $V_0$ & $V_T$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año & Horizonte & Aportes & Beneficios & Gasto administrativo & Reserva inicial &
+Balance actuarial \\ & $T$ & $\sum\limits_{t=0}^T v^t A_t$ &
+$\sum\limits_{t=0}^T v^t B_t$ & $\sum\limits_{t=0}^T v^t G_t$ & $V_0$ & $V_T$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{7}{r}{continúa...} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+\input{tablas/iess_balance_actuarial_escenario_2.tex}
+
+\end{longtable}
+}
+\end{center}
+
+En la tabla \ref{tab:bal_ben_esc_2} se observa el detalle de las prestaciones de los pagos 1 a 5 de la parte fija, respectivamente. La evolución de las prestaciones de la parte variable, el cual proviene de las cuentas individuales, se presentará en la Valuación Actuarial del Seguro de Cesantía. El gráfico \ref{graf:apo_ben_bal_din_esc_2} presenta la evolución de los aportes (línea azul) y la evolución de los beneficios (línea verde).
+
+\clearpage
+
+
+% Escenario 2 tabla beneficios dinámico ------------------------------------------------------------
+\begin{landscape}
+\begin{center}
+{\fontsize{10}{12}\selectfont
+
+\begin{longtable}[H]{rr*{6}{R{3cm}}}
+\caption{Escenario 2: beneficios balance actuarial dinámico, $T \in \{0,\ldots,\Sexpr{REP_hor}\}$}\\
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_2}\%$, $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_2}\%$ y considera la entrega prestaciones a afiliados que no estén al día en sus aportes patronales.}
+\label{tab:bal_ben_esc_2}\\
+
+\toprule
+Año & $t$ &Beneficios pago 1 & Beneficios pago 2 &
+Beneficios pago 3 & Beneficios pago 4 &
+Beneficios pago 5 & Beneficios totales \\
+    &  & $\sum\limits_{t=0}^T v^t B_{1,t}$ & $\sum\limits_{t=0}^T v^t B_{2,t}$ & $\sum\limits_{t=0}^T v^t B_{3,t}$ & $\sum\limits_{t=0}^T v^t B_{4,t}$ & $\sum\limits_{t=0}^T v^t B_{5,t}$ & $\sum\limits_{t=0}^T v^t B_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año & $t$ &Beneficios pago 1 & Beneficios pago 2 &
+Beneficios pago 3 & Beneficios pago 4 &
+Beneficios pago 5 & Beneficios totales \\
+    &  & $\sum\limits_{t=0}^T v^t B_{1,t}$ & $\sum\limits_{t=0}^T v^t B_{2,t}$ & $\sum\limits_{t=0}^T v^t B_{3,t}$ & $\sum\limits_{t=0}^T v^t B_{4,t}$ & $\sum\limits_{t=0}^T v^t B_{5,t}$ & $\sum\limits_{t=0}^T v^t B_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{8}{r}{continúa...} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+\input{tablas/iess_balance_beneficios_vap_escenario_2.tex}
+
+\end{longtable}
+}
+\end{center}
+\end{landscape}
+
+% Escenario 2 balance corriente --------------------------------------------------------------------
+\subsection{Balance corriente y evolución de la reserva para el escenario 2}
+\label{chp_valuacionactu:esc_2:balcorr}
+
+La tabla \ref{tab:bal_corr_tot_esc_2} y la figura \ref{graf:bal_cap_esc_2} presentan la evolución
+del balance corriente y evolución de la reserva para horizontes $T \in \{0,\ldots,40\}$. En la
+tabla \ref{tab:bal_corr_ben_esc_2}, se observa el detalle de los
+los beneficios por cada pago de la parte fija. El gráfico \ref{graf:apo_ben_bal_cap_esc_2} presenta la
+evolución de los aportes (línea azul) y la evolución de los beneficios (línea verde).
+
+
+\begin{center}
+{\fontsize{9}{12}\selectfont
+
+\begin{longtable}[H]{rrrrrr}
+\caption{Escenario 2: balance corriente (financiero), $T \in \{0,\ldots,40\}$}\\
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_2}\%$, $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_2}\%$ y considera la entrega prestaciones a afiliados que no estén al día en sus aportes patronales.}
+\label{tab:bal_corr_tot_esc_2}\\
+
+\toprule
+Año & Aportes & Beneficios & Gasto administrativo & Balance corriente &
+Balance capitalizado \\
+$t$ & $A_t$ & $B_t$ & $G_t$ & $V^{cor}_t$ & $V^{cap}_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año & Aportes & Beneficios & Gasto administrativo & Balance corriente &
+Balance capitalizado \\
+$t$ & $A_t$ & $B_t$ & $G_t$ & $V^{cor}_t$ & $V^{cap}_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{6}{r}{continúa...} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+\input{tablas/iess_balance_corriente_escenario_2.tex}
+
+\end{longtable}
+}
+\end{center}
+
+
+\begin{figure}[H]
+\caption{Escenario 2: balance capitalizado $V^{cap}_t$ (términos corrientes), $T \in \{0,\ldots,40\}$ }
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_2}\%$, $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_2}\%$ y considera la entrega prestaciones a afiliados que no estén al día en sus aportes patronales.}
+\label{graf:bal_cap_esc_2}
+\begin{center}
+\includegraphics[scale=1]{graficos/iess_balance_capitalizado_escenario_2.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\caption{Escenario 2: aportes y beneficios del balance capitalizado (términos corrientes)}
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_2}\%$, $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_2}\%$ y con aportes extemporáneos}
+\label{graf:apo_ben_bal_cap_esc_2}
+\includegraphics[scale=1]{graficos/iess_apo_ben_bal_capitalizado_escenario_2.png}
+\end{center}
+\end{figure}
+
+% Escenario 2 beneficios balance corriente ---------------------------------------------------------
+\begin{landscape}
+\begin{center}
+{\fontsize{10}{12}\selectfont
+
+\begin{longtable}[H]{r*{6}{R{3cm}}}
+\caption{Escenario 2: beneficios balance corriente, $T \in \{0,\ldots,40\}$}\\
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_2}\%$, $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_2}\%$ y considera la entrega prestaciones a afiliados que no estén al día en sus aportes patronales.}
+\label{tab:bal_corr_ben_esc_2}\\
+
+\toprule
+Año & Beneficios pago 1 & Beneficios pago 2 &
+Beneficios pago 3 & Beneficios pago 4 &
+Beneficios pago 5 & Beneficios totales \\
+$t$ & $B_{1,t}$ & $B_{2,t}$ & $B_{3,t}$ & $B_{4,t}$ & $B_{5,t}$ & $B_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año & Beneficios pago 1 & Beneficios pago 2 &
+Beneficios pago 3 & Beneficios pago 4 &
+Beneficios pago 5 & Beneficios totales \\
+$t$ & $B_{1,t}$ & $B_{2,t}$ & $B_{3,t}$ & $B_{4,t}$ & $B_{5,t}$ & $B_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{7}{r}{continúa...} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+\input{tablas/iess_balance_beneficios_escenario_2.tex}
+
+\end{longtable}
+}
+\end{center}
+\end{landscape}
+
+% Escenario 3 --------------------------------------------------------------------------------------
+\section[Valuación actuarial bajo el escenario 3]{Valuación actuarial bajo el Escenario 3}
+
+El tercer y último escenario muestra una simulación del hipotético caso en él que se reduzca la prima del \Sexpr{REP_seg} de 1\% a \Sexpr{REP$tasa_aporte_esc_3}\%, debido que en el año 2018 se recaudó USD 243.907.164,94, pero solo se otorgaron prestaciones por USD 25.215.850,09 en la parte fija. Por esta razón, resulta imperiosa la necesidad de reducir el aporte de los afiliados a este seguro para que el excedente de sus aportaciones regrese a incrementar sus cuentas individuales de cesantía.
+
+El resto de sus suposiciones (tasa actuarial, tasa de incremento salarial y tasa de incremento del SBU) son idénticas al escenario base. Además, este escenario utiliza la tabla de siniestralidad \ref{tab:iess_tasa_uso} y el patrimonio inicial del fondo solidario es USD \Sexpr{REP$cap_ini}.
+
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Balance actuarial para el escenario 3}
+\label{chp_valuacionactu:esc_3:balactu}
+
+La tabla \ref{tab:iess_bal_act_vap_escenario_3} presenta el balance actuarial para el año 2058 del escenario 3, que considera una tasa actuarial $i_a=\Sexpr{REP$tasa_act_esc_3}\%$ y aporte de los afiliados $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_3}$\%.
+
+\begin{table}[H]
+\centering
+\caption{Escenario 3: balance actuarial}
+\label{tab:iess_bal_act_vap_escenario_3}
+\caption*{\textbf{Instituto Ecuatoriano de Seguridad Social}}
+\caption*{\textbf{ Balance actuarial del \Sexpr{REP_nom_seg}}}
+\caption*{Fecha de valuación: al \Sexpr{REP_fec_fin}}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{lr}
+\toprule
+Componente:	& Valor (USD) \\
+\midrule
+\multicolumn{2}{c}{\textbf{Activo actuarial}} \\
+\hline
+\input{tablas/iess_bal_act_vap_escenario_3.tex}
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+El escenario 3 presenta un superávit igual a USD \Sexpr{REP$bal_act_esc_3}, en términos actuariales, en el año 2058, el cual se obtiene de la diferencia entre su activo actuarial (USD \Sexpr{REP$bal_sum_act_3}) y su pasivo actuarial (USD \Sexpr{ REP$bal_sum_pas_3}), en valor presente. Por último, su prima suficiente alcanza el \Sexpr{REP$pri_med_niv_esc_3}\%.
+
+
+La tabla \ref{tab:bal_act_tot_esc_3} y la figura \ref{graf:bal_vap_esc_3} presentan la evolución del
+balance actuarial dinámico para horizontes $T \in \{0,\ldots,40\}$. En la tabla
+ \ref{tab:bal_ben_esc_3} se observa el detalle de los beneficios de la parte fija de esta prestación.
+
+
+\begin{figure}[H]
+\begin{center}
+\caption{Escenario 3: evolución del balance actuarial $V_T$}
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_3}\%$ y  $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_3}\%$}
+\label{graf:bal_vap_esc_3}
+\includegraphics[scale=1]{graficos/iess_balance_vap_rv_escenario_3.png}
+\end{center}
+\end{figure}
+
+El gráfico \ref{graf:apo_ben_bal_din_esc_3} presenta la evolución de los aportes
+(línea azul) y la evolución de los beneficios (línea verde).
+
+\begin{figure}[H]
+\begin{center}
+\caption{Escenario 3: aportes y beneficios del balance actuarial $V_T$}
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_3}\%$ y  $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_3}\%$}
+\label{graf:apo_ben_bal_din_esc_3}
+\includegraphics[scale=1]{graficos/iess_apo_ben_bal_dinamico_escenario_3.png}
+\end{center}
+\end{figure}
+
+% Escenario 3 balance actuarial dinámico -----------------------------------------------------------
+
+\begin{center}
+{\fontsize{9}{11}\selectfont
+
+\begin{longtable}[H]{rrrrrrr}
+\caption{Escenario 3: balance actuarial dinámico, $T \in \{0,\ldots,40\}$}\\
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_3}\%$ y  $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_3}\%$}
+\label{tab:bal_act_tot_esc_3}\\
+
+\toprule
+Año & Horizonte & Aportes & Beneficios & Gasto administrativo & Reserva inicial &
+Balance actuarial \\ & $T$ & $\sum\limits_{t=0}^T v^t A_t$ &
+$\sum\limits_{t=0}^T v^t B_t$ & $\sum\limits_{t=0}^T v^t G_t$ & $V_0$ & $V_T$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año & Horizonte & Aportes & Beneficios & Gasto administrativo & Reserva inicial &
+Balance actuarial \\ & $T$ & $\sum\limits_{t=0}^T v^t A_t$ &
+$\sum\limits_{t=0}^T v^t B_t$ & $\sum\limits_{t=0}^T v^t G_t$ & $V_0$ & $V_T$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{7}{r}{continúa...} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+\input{tablas/iess_balance_actuarial_escenario_3.tex}
+
+\end{longtable}
+}
+\end{center}
+\clearpage
+
+% Escenario 3 tabla beneficios dinámico ------------------------------------------------------------
+\begin{landscape}
+\begin{center}
+{\fontsize{10}{12}\selectfont
+
+\begin{longtable}[H]{rr*{6}{R{3cm}}}
+\caption{Escenario 3: beneficios balance actuarial dinámico, $T \in \{0,\ldots,\Sexpr{REP_hor}\}$}\\
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_3}\%$ y  $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_3}\%$}
+\label{tab:bal_ben_esc_3}\\
+
+\toprule
+Año & $t$ &Beneficios pago 1 & Beneficios pago 2 &
+Beneficios pago 3 & Beneficios pago 4 &
+Beneficios pago 5 & Beneficios totales \\
+    &  & $\sum\limits_{t=0}^T v^t B_{1,t}$ & $\sum\limits_{t=0}^T v^t B_{2,t}$ & $\sum\limits_{t=0}^T v^t B_{3,t}$ & $\sum\limits_{t=0}^T v^t B_{4,t}$ & $\sum\limits_{t=0}^T v^t B_{5,t}$ & $\sum\limits_{t=0}^T v^t B_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año & $t$ &Beneficios pago 1 & Beneficios pago 2 &
+Beneficios pago 3 & Beneficios pago 4 &
+Beneficios pago 5 & Beneficios totales \\
+    &  & $\sum\limits_{t=0}^T v^t B_{1,t}$ & $\sum\limits_{t=0}^T v^t B_{2,t}$ & $\sum\limits_{t=0}^T v^t B_{3,t}$ & $\sum\limits_{t=0}^T v^t B_{4,t}$ & $\sum\limits_{t=0}^T v^t B_{5,t}$ & $\sum\limits_{t=0}^T v^t B_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{8}{r}{continúa...} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+\input{tablas/iess_balance_beneficios_vap_escenario_3.tex}
+
+\end{longtable}
+}
+\end{center}
+\end{landscape}
+
+% Escenario 3 balance corriente --------------------------------------------------------------------
+\subsection{Balance corriente y evolución de la reserva para el escenario 3}
+\label{chp_valuacionactu:esc_3:balcorr}
+
+La tabla \ref{tab:bal_corr_tot_esc_3} y la figura \ref{graf:bal_cap_esc_3} presentan la evolución
+del balance corriente y evolución de la reserva para horizontes $T \in \{0,\ldots,40\}$. En la tabla \ref{tab:bal_corr_ben_esc_3}, se observa el detalle de los beneficios de la parte fija de esta prestación. El gráfico \ref{graf:apo_ben_bal_cap_esc_3} presenta la
+evolución de los aportes (línea azul) y la evolución de los beneficios (línea verde).
+
+
+
+\begin{center}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{rrrrrrr}
+\caption{Escenario 3: balance corriente (financiero), $T \in \{0,\ldots,40\}$}\\
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_3}\%$ y  $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_3}\%$}
+\label{tab:bal_corr_tot_esc_3}\\
+
+\toprule
+Año & Aportes &  Beneficios & Gasto administrativo & Balance corriente &
+Balance capitalizado \\
+$t$ & $A_t$ & $B_t$ & $G_t$ & $V^{cor}_t$ & $V^{cap}_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año & Aportes &  Beneficios & Gasto administrativo & Balance corriente &
+Balance capitalizado \\
+$t$ & $A_t$ & $B_t$ & $G_t$ & $V^{cor}_t$ & $V^{cap}_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{6}{r}{continúa...} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+\input{tablas/iess_balance_corriente_escenario_3.tex}
+
+\end{longtable}
+}
+\end{center}
+
+
+
+\begin{figure}[H]
+\caption{Escenario 3: balance capitalizado $V^{cap}_t$ (términos corrientes), $T \in \{0,\ldots,40\}$}
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_3}\%$ y  $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_3}\%$}
+\label{graf:bal_cap_esc_3}
+\begin{center}
+\includegraphics[scale=1]{graficos/iess_balance_capitalizado_escenario_3.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\caption{Escenario 3: aportes y beneficios del balance capitalizado (términos corrientes)}
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_3}\%$ y  $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_3}\%$}
+\label{graf:apo_ben_bal_cap_esc_3}
+\includegraphics[scale=1]{graficos/iess_apo_ben_bal_capitalizado_escenario_3.png}
+\end{center}
+\end{figure}
+
+% Escenario 3 beneficios balance corriente ---------------------------------------------------------
+
+\begin{landscape}
+\begin{center}
+{\fontsize{10}{12}\selectfont
+
+\begin{longtable}[H]{r*{6}{R{3cm}}}
+\caption{Escenario 3: beneficios balance corriente, $T \in \{0,\ldots,40\}$}\\
+\caption*{$i_a=\Sexpr{REP$tasa_act_esc_3}\%$ y  $\pi^{2,\, cot\, des}=\Sexpr{REP$tasa_aporte_esc_3}\%$}
+\label{tab:bal_corr_ben_esc_3}\\
+
+\toprule
+Año & Beneficios pago 1 & Beneficios pago 2 &
+Beneficios pago 3 & Beneficios pago 4 &
+Beneficios pago 5 & Beneficios totales \\
+$t$ & $B_{1,t}$ & $B_{2,t}$ & $B_{3,t}$ & $B_{4,t}$ & $B_{5,t}$ & $B_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año & Beneficios pago 1 & Beneficios pago 2 &
+Beneficios pago 3 & Beneficios pago 4 &
+Beneficios pago 5 & Beneficios totales \\
+$t$ & $B_{1,t}$ & $B_{2,t}$ & $B_{3,t}$ & $B_{4,t}$ & $B_{5,t}$ & $B_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{7}{r}{continúa...} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+\input{tablas/iess_balance_beneficios_escenario_3.tex}
+
+\end{longtable}
+}
+\end{center}
+\end{landscape}
+
+\section{Políticas de gestión de riesgos}
+\label{chp_valuacionactu:pol_riesgos}
+
+Considerando los resultados del presente estudio y el sistema de financiamiento del Seguro de Desempleo, es importante para el IESS, afrontar los desafíos propios del sistema de reparto con capitalización parcial, para establecer políticas de gestión de riesgos que permitan generar alertas tempranas y tomar las medidas oportunas, garantizando la sostenibilidad del Seguro de Desempleo en el corto, mediano y largo plazo. A continuación, se describen las siguientes políticas:
+
+\begin{itemize}
+\item El principal riesgo que impacta al Seguro de Desempleo es el siniestro es el operativo. La entrega de prestaciones a afiliados que no poseen los aportes depositados en forma oportuna por parte del patrono.
+
+\item Mantener el portafolio de inversiones junto con los valores del Seguro de Cesantía, esto pudo haber provocado que este seguro no cubra sus obligaciones, pero este seguro de conformidad al presente estudio, su prima de aportes (1\%) que recauda para financiar esta prestación es totalmente suficiente.
+
+\item La prima del 1\% sobre las aportaciones establecida en la \legalcite{ResIESS_CD515} generó mayores recursos que los necesarios para cubrir las obligaciones del Seguro de Desempleo; en cambio, redujo la acumulación individual en las cuentas del fondo de cesantía de cada uno de los afiliados.
+
+\item Del estudio, se puede visualizar que las causas económicas que podrían acarear problemas a este seguro, es el comportamiento por los cuales atraviesa el país: el desempleo, el subempleo, la recesión económica y el crecimiento inflacionario.
+
+\item	En los últimos años la crisis económica ha causado la pérdida de puestos de trabajo y el aparecimiento del trabajo formal trayendo consecuencias de menores ingresos y mayores egresos para este seguro. El crecimiento menor de lo esperado en el PIB ocasionaría que existan menos afiliados de los estimados por la pérdida o ausencia de sitios de trabajos, por ser una variable que está correlacionada con el crecimiento de la población afiliada.
+
+
+\item El BIESS debe buscar activamente oportunidades de inversión con la finalidad de diversificar el riesgo, maximizando su rentabilidad y minimizando el riesgo. Adicionalmente, el IESS debe separar el portafolio de inversiones del Seguro de Desempleo del de Cesantía, y transferir a las cuentas del Seguro de Desempleo los rendimientos obtenidos desde el año 2016, en proporción a sus capitales.
+
+\item Las Directrices de la AISS determinan que el trabajo actuarial debe enmarcarse en parámetros técnicos actuariales, empleando metodologías internacionalmente aceptadas para el tema actuarial; así como garantizar la suficiente independencia de los profesionales que realizan los estudios para emitir sus resultados, conclusiones y recomendaciones. Por lo que es imprescindible generar mecanismos de fortalecimiento técnico actuarial y su independencia en la emisión de los resultados y recomendaciones, y, posterior aplicación.
+\end{itemize}

@@ -1,0 +1,105 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Conclusiones y recomendaciones}
+\label{chp_conclusion}
+
+%-------------------------------------------------------------------------------------------------
+\section{Situación actual}
+\label{chp_conclusion:sitactual}
+
+Conforme a los estados financieros con corte al 31 de diciembre de 2018, el \Sexpr{REP_seg} cuenta con un patrimonio de USD \Sexpr{REP$cap_ini}, el mismo que tiene un crecimiento a partir de 2016, debido a la aplicación de la \legalcite{ResIESS_CD515} de 30 de marzo de 2016.
+
+Desde su creación hasta la fecha, no se ha realizado un estudio actuarial que permita conocer la prima media nivelada, que sea suficiente para financiar este seguro, acorde con su siniestralidad, puesto que la prima original del 1\%, se elaboró bajo supuestos macroeconómicos y considerando el peor escenario posible. Por lo cual, es indispensable obtener una nueva prima al disponer de estadísticas con las que se pueden calcular la tasa de uso de este seguro y repartir las aportaciones de los afiliados al seguro original de desempleo que es la Cesantía.
+
+La creación del \Sexpr{REP_seg} redujo la tasa de aportación del Seguro de Cesantía del 3\% al 2\%. Esta prestación se compone de una parte fija y otra variable. La parte fija se financia con el aporte del 1\% y conforma el Fondo Solidario; en cambio, la parte variable proviene de la cuenta individual de cesantía del afiliado.
+
+El número de beneficiarios de este seguro se detalla en la sección \ref{chp_demog:beneficiarios}, desglosado por edad y sexo. Además, se presenta el beneficio total y promedio entregado por cada pago (de uno (1) a cinco (5)) de manera anual.
+
+\section{Conclusiones}
+\label{chp_conclusion:conclusiones}
+Del presente estudio se obtienen las siguientes conclusiones:
+
+\begin{enumerate}
+
+\item La población del estudio, con que se realiza la base demográfica y masa salarial correspondiente a los aportantes al IESS, no incluyen a los afiliados pertenecientes a los sectores de los trabajadores autónomos, TNRH, voluntarios y otros sectores señalados en la segunda disposición general de la \legalcite{ResIESS_CD518}, puesto que estos no cotizan al Seguro de Cesantía y Desempleo.
+
+ \item Bajo el escenario base, el superávit actuarial alcanza USD \Sexpr{REP$bal_act_esc_1}, su prima suficiente que mantiene el equilibrio financiero en el tiempo es \Sexpr{REP$pri_med_niv_esc_1}\%, resultado que se obtiene con una tasa de actualización \Sexpr{REP$tasa_act_esc_1}\%.
+ 
+ 
+  \item El superávit actuarial perteneciente al escenario 2 alcanza USD \Sexpr{REP$bal_act_esc_2}. La prima suficiente que mantiene el equilibrio financiero en el tiempo es \Sexpr{REP$pri_med_niv_esc_2}\%, resultado que se obtiene con una tasa de interés actuarial igual a \Sexpr{REP$tasa_act_esc_2}\%. Es necesario aclarar que este escenario contempla el pago de beneficios a afiliados con 24 imposiciones, de las cuales las últimas 6 son consecutivas; pero su patrono no canceló oportunamente los aportes patronales. De esta manera, se demuestra que el otorgamiento del \Sexpr{REP_seg} a afiliados que acumulen las aportaciones correspondientes, pero que el empleador no haya realizado el pago respectivo de las aportaciones, no afecta en su sostenibilidad. 
+
+  \item En el tercer escenario, se consigue un superávit de USD \Sexpr{REP$bal_act_esc_3} al reducir la prima de este seguro de 1\% a \Sexpr{REP$tasa_aporte_esc_3}\% y siguiendo el resto de las suposiciones del escenario base. Esto demuestra que la prima calculada en este escenario es suficiente.
+
+
+\item No existe el Balance financiero a 2016, las transacciones de ese año se registraban en el Seguro de Cesantía. A partir de la emisión de la Resolución SB-2017-019 de la Superintendencia de Bancos de fecha 06 de enero de 2017, se creó el Catálogo de Cuentas del Fondo Administrado por el \Sexpr{REP_seg}.
+
+\item En los balances financieros, no se registran los ingresos por el rendimiento de las inversiones de este seguro. A la fecha de corte solo se han separado USD 120.373.000,00 invertidos en certificados de tesorería (CETES) con un rendimiento igual a 2,1\%, que no se compadece con la exigencia de la tasa de interés actuarial de ese entonces (4\%); pero los estados financieros señalan USD 515.000.000,00 en fondos administrados por el BIESS.
+
+\item Entre el 19 de abril de 2016 y 31 de diciembre de 2018, accedieron a los beneficios que entrega este seguro 76.003 afiliados siniestrados, esto al menos al primer pago del \Sexpr{REP_seg}, pero solo 17.759 accedieron a los beneficios de la parte variable, población que representa el 23,37\%. Observando la población beneficiaria por sexo, 47.245 beneficiarios son hombres (62,16\%) con una edad promedio 37,90 años y 28.758 son mujeres (37,84\%) con una edad promedio de 37,23 años. A partir de la creación de este seguro, se han entregado USD 105.749.094,96, de los cuales USD 84.371.363,68 eran de la parte fija y USD 21.377.731,28 correspondieron a la parte variable.
+
+\item Durante los tres (3) años del período 2016 a 2018, la mayoría del monto cancelado por la parte fija del \Sexpr{REP_seg} se pagó a afiliados de sexo masculino (USD 52.173.853,97 (61,84\%)) y USD 32.197.509,71 a las afiliadas mujeres, lo que representa el 38,16\% del total pagado.
+
+\item Durante el año 2018, se recaudaron USD 243.907.164,94 por aporte patronal del 1\% y solo se gastó USD 25.101.120,79; es decir, en el año 2018, se entregó USD 1 por cada USD 9,72 recaudados. El resto de estos valores no utilizados pasaron a formar parte de la reserva.
+
+\item Durante el año 2018, cotizaron al \Sexpr{REP_seg} 2.691.507 afiliados, de los cuales solo 20.745 accedieron a sus beneficios; es decir, existen 129,74 cotizantes por cada beneficiario del \Sexpr{REP_seg} en este año. 
+
+\item En el año 2018, solo accedieron a este seguro 20.745 afiliados, pero 348.001 cumplían los requisitos establecidos en su reglamento (sin diferenciar si el cese fue voluntario o no); es decir, una tasa de uso igual al 5,96\%.
+
+\item No está determinado el porcentaje (\%) correspondiente para gastos de administración de este seguro en la Normativa Legal vigente. Este estudio asume que este gasto se financia de los gastos administrativos del Seguro de Cesantía.
+
+\item Del estudio se desprenden los siguientes resultados:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{Concepto:}                                      & \multicolumn{1}{c}{\textbf{Valor}} \\ \midrule
+Patrimonio al 31/12/2018                                & USD 528.515.073,38                 \\
+Prestaciones pagadas entre 2016 y 2018 (parte fija)     & USD 84.371.363,68                  \\
+Beneficiarios hasta 31/12/2018                       & 76.003                             \\
+Prestación por cada pago de parte fija en 2018          & USD 261,87                         \\
+Total por 5 pagos de la parte fija en 2018              & USD 1309,35                        \\
+Afiliados que se podría otorgar el seguro al 31/12/2018 & 403.647                            \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\end{enumerate}
+
+%---------------------------------------------------------------------------------------------------
+\section{Recomendaciones}
+\label{chp_conclusion:recomendacion}
+
+La principal recomendación de este estudio es:
+
+\begin{enumerate}
+\item En el escenario 2, se puede evidenciar que aun siendo este el pesimista existe un superávit hasta el año 2058 de USD \Sexpr{REP$bal_act_esc_2}, siendo la prima suficiente \Sexpr{REP$pri_med_niv_esc_2}\%; por lo que recomendamos que se ponga a disposición del Seguro que más lo necesite la diferencia de prima.
+
+% \item El escenario post COVID-19 presenta un superávit igual a USD \Sexpr{REP$bal_act_esc_2}, en términos actuariales, en el año 2060, el cual se obtiene de la diferencia entre su activo actuarial (USD \Sexpr{REP$bal_sum_act_2}) y su pasivo actuarial (USD \Sexpr{REP$bal_sum_pas_2}), en valor presente. Por último, su prima suficiente alcanza el \Sexpr{REP$pri_med_niv_esc_2}\%.
+
+% \item Establecer una comisión encargada de identificar y separar las inversiones pertenecientes al Seguro de Desempleo, y cuantificar los rendimientos financieros generados por estas inversiones en los años 2016, 2017 y 2018. En caso de que no fuese posible identificar las inversiones y rendimientos de los años citados, se sugiere separar las inversiones del \Sexpr{REP_seg} y Seguro de Cesantía de manera proporcional a cada uno de los aportes de estos seguros, utilizando los ingresos registrados por la Dirección Nacional de Recaudación y Gestión de Cartera y a la vez determinar los rendimientos, basándose en la rentabilidad obtenida del Seguro de Cesantía (ver tabla \ref{tab:iess_total_ces}).
+
+% \item Se sugiere que la comisión conformada entre el BIESS y el IESS, de acuerdo con el ámbito de su competencia, diferencie lo valores que se encuentran invertidos del resto de los valores administrados por el BIESS del \Sexpr{REP_seg}.
+
+% \item Recaudar los valores determinados por responsabilidad patronal, según lo establece la \legalcite{ResIESS_CD518}, generada por los pagos de beneficios del Seguro de Desempleo, a afiliados que acumulen las aportaciones correspondientes, pero el empleador no haya realizado el pago respectivo al momento de ocurrencia del siniestro para el período abril 2016 a octubre de 2018.
+
+% \item La Dirección Económico Financiera debe confirmar el ingreso de USD 146.454.700,05 en las cuentas del Seguro de Desempleo, correspondientes a ingresos patronales por el 1\% del año 2016. Además, en el futuro debe emplear el método del devengado en la elaboración de los estados financieros.
+
+% \item El BIESS a través del CAIR\footnote{CAIR: Comité de Administración Integral de Riesgos} y la Subgerencia de Banca de Inversión debe transparentar las políticas de administración de portafolio, incluyendo mejoras en la gestión del riesgo y diversificación del mismo, para así asegurar mejores rendimientos, acorde con la tasa de rendimiento definida anualmente por la Dirección Actuarial, de Investigación y Estadística.
+% 
+% \item Las unidades de negocio del IESS deben depurar permanentemente sus bases de datos a fin de que las mismas sean consistentes, garantizando la información que consta en las diversas fuentes como por ejemplo el Cubo BI y guarden armonía con lo registrado en los estados financieros. Adicionalmente, con la finalidad de optimizar el tiempo para la entrega de los estudios actuariales, es indispensable que los negocios estructuren la entrega de información en la forma y periodicidad que determine la DAIE.
+% 
+% \item Promocionar a través de medios de comunicación y redes sociales los beneficios otorgados por el Seguro de Desempleo, puesto que el desconocimiento de estos ha producido una baja tasa de uso de este seguro (en el año 2018, solo accedieron a este seguro 20.745 afiliados, pero 348.001 cumplían los requisitos establecidos en su reglamento (sin diferenciar si fue voluntario o no el cese); es decir, solo una tasa de uso igual al 5,96\%).
+% 
+% \item Flexibilizar los requisitos de acceso al beneficio que otorga el Seguro de Desempleo con el fin de proteger a un mayor número de afiliados y a sus familias, tanto en el número de meses de aportaciones acumuladas y continuas, y, especialmente, eliminar la exigencia que el cese
+% temporal de actividades productivas debe ser debido a causas ajenas a su voluntad.
+
+% \item Es necesario que se distingan las inversiones, tasas de rendimientos, sistema contable, patrimonio y que se creen cuentas contables de este seguro amparados en dictámenes de los organismos de control.
+
+% \item Procurar la modificación de la ley, con la finalidad que este seguro nuevamente pase a formar parte del Seguro de Cesantía, porque este es el auxilio en el desempleo; la diferencia, es que el Seguro de Cesantía entrega el beneficio en una sola exposición. 
+
+% \item Finalmente, se recomienda que tanto el patrimonio como los aportes futuros pertenecientes al Seguro de Desempleo pasen a formar parte del Seguro de Cesantía, ya que este último, nació como una protección en forma de capital único para aquellos afiliados que se quedaban sin trabajo, y a su vez con este capital puedan protegerse del desempleo.
+
+% \item La diferencia entre la prima recomendada, 0,20\%, y la prima media nivelada suficiente de cada uno de los escenarios debe asentarse de forma independiente de este seguro, como una reserva de contingencia.
+
+\end{enumerate}
+% \afterpage{\null\newpage}
+% \newpage

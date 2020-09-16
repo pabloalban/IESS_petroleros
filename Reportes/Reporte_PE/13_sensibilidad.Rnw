@@ -1,0 +1,78 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Presentación de resultados}
+\label{chp_resultados}
+
+\section{Resultados de la evaluación actuarial}
+\label{chp_valuacionactu:est_apo}
+
+La Dirección Actuarial, de Investigación y Estadística plantea 3 escenarios para realizar la valuación actuarial del Seguro de Desempleo, con un horizonte de proyección de 40 años. Los resultados de este estudio, en sus 3 escenarios, se encuentran descritos en las tablas \ref{tab:iess_bal_act_vap_escenario_1}, \ref{tab:iess_bal_act_vap_escenario_2} y \ref{tab:iess_bal_act_vap_escenario_3}, respectivamente.
+
+Adicionalmente, las tablas de siniestralidad del \Sexpr{REP_seg} para el escenario 1 y 3 se encuentran en la tabla \ref{tab:iess_tasa_uso} y para el escenario 2 en la tabla \ref{tab:iess_tasa_uso_ind}. La proyección del número de beneficios otorgados por pago se encuentra en la tabla \ref{tab:iess_tab_pob_proy_ben_pagos} para los escenarios 1 y 3; para el escenario 2, estos resultados se describen en la tabla \ref{tab:iess_tab_pob_proy_ben_pagos_ind}.
+
+En cada uno de los escenarios, se utiliza la tasa de interés actuarial igual a \Sexpr{REP$tasa_act_esc_1}\%, la cual fue aprobada en reunión del Consejo Directivo del IESS el 04 de marzo de 2020, mediante \legalcite{ResIESS_CD596}. Todos los escenarios suponen una tasa de crecimiento anual del salario básico unificado igual a 2,53395\%, mencionamos esta tasa por ser el referente para el cálculo de los beneficios.
+
+En la siguiente tabla, se resumen las principales hipótesis, componentes y resultados del estudio actuarial.
+
+
+\begin{table}[H]
+\centering
+\caption{Resultado de los escenarios de la valuación actuarial}
+\label{tab:iess_resultados}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{lrrr}
+\toprule
+\multirow{1}{*}{Parámetro o componente:} &  \multicolumn{1}{c}{\textbf{Escenario 1}} &  \multicolumn{1}{c}{\textbf{Escenario 2}}  &  \multicolumn{1}{c}{\textbf{Escenario 3}} \\
+%               \cmidrule(r){2-4}
+% &\multicolumn{1}{c}{Base}  & \multicolumn{1}{c}{Con aportes extemporáneos} & \multicolumn{1}{c}{Prima \Sexpr{REP$tasa_aporte_esc_3}\%}\\
+\midrule
+\input{tablas/iess_resultados.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Nota: El escenario 1 considera la entrega de prestaciones solo a afiliados que estén al día en sus aportes patronales.\\
+ Nota: El escenario 2 considera la entrega de prestaciones a afiliados, los cuales cumplan requisitos; pero sus empleadores no estén al día con los aportes.\\
+ Nota: El escenario 3 considera una prima igual a $\Sexpr{REP$tasa_aporte_esc_3}$\%}
+\end{table}
+
+%---------------------------------------------------------------------------------------------------
+\section{Estimación del nivel óptimo de aportes}
+\label{chp_valuacionactu:est_apo}
+
+Mediante el análisis establecido en la sección \ref{chp_modelo:sis_fin} y considerando que el \Sexpr{REP_seg} tiene un sistema de financiamiento de reparto a prima media nivelada, para estimar esta estimar la prima media nivelada, se parte de los flujos de egresos por beneficios, $B_t$, la reserva inicial, $V_0$ y la masa salarial de los cotizantes al \Sexpr{REP_seg}, $M_t$. Así, la prima media nivelada para el horizonte $T$ se calculó de la siguiente forma:
+
+\begin{equation}
+\label{eq:prima_suficiente}
+\pi^2_T = \frac{ \sum\limits_{t=0}^T v^t \left( B_t - \gamma \, V_0 \right) }
+{\sum\limits_{t=0}^T v^t M_t}
+\end{equation}
+
+
+Al determinar el valor de la prima suficiente, no se considera el importe de la reserva inicial del fondo; es decir, se establece $\gamma=0$, puesto que la prima actual (1\%) de este seguro recaudó suficientes recursos para pagar las obligaciones futuras. Además, no se consideran los gastos administrativos, puesto que estos se financian en la actualidad con el 2\% de los aportes al Seguro de Cesantía.
+
+Al término de la valuación actuarial de este seguro, cuyo resultado final se presenta en la tabla \ref{tab:iess_resultados}, se obtiene el valor de la prima suficiente para cada uno de los tres (3) escenarios planteados, siguiendo la ecuación \ref{eq:prima_suficiente}. El valor de estas primas, multiplicadas por la masa salarial de los cotizantes a este seguro, deben formar una reserva la misma que pretende ser suficiente para atender la siniestralidad presente y futura en cada uno de los escenarios planteados (ver tabla \ref{tab:iess_prima_suficiente}).
+
+
+\begin{table}[H]
+\centering
+\caption{Prima suficiente para cada uno de los escenarios}
+\label{tab:iess_prima_suficiente}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{lccccc}
+\toprule
+\multirow{3}{*}{\textbf{Escenario:}} & \multicolumn{1}{c}{\textbf{Tasa}}     &  \multicolumn{1}{c}{\textbf{Aporte de}} & \multicolumn{1}{c}{\textbf{Acepta aportes}} & \multicolumn{1}{c}{\textbf{Tabla de}} & \multicolumn{1}{c}{\textbf{Prima media}} \\
+                    & \multicolumn{1}{c}{\textbf{actuarial}}& \multicolumn{1}{c}{\textbf{afiliados}} &  \multicolumn{1}{c}{\textbf{extemporáneos}}  & \multicolumn{1}{c}{\textbf{siniestralidad}} & \multicolumn{1}{c}{\textbf{nivelada}} \\
+                                     & \multicolumn{1}{c}{($i_a$)}            &    \multicolumn{1}{c}{($\pi^{2,\,cot\,des}_t$)}&                                               &  &\multicolumn{1}{c}{($\pi^2_T$)}  \\
+\midrule
+\input{tablas/iess_tab_primas.tex}
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+%---------------------------------------------------------------------------------------------------
+\section{Causas de posibles desfinanciamientos}
+\label{chp_resultados:caus_desf}
+
+Todos los escenarios contemplados en este estudio presentan superávit (ver tabla \ref{tab:iess_resultados}), debido a su que prima tiene holgura, la cual recaudó USD 243.907.164,94 y solo se entregaron USD 25.101.120,79 por prestaciones en el año 2018; por lo cual, el único riesgo que asecha al Seguro de Desempleo es el operativo.
+
+Gracias a sus reservas (USD 528.515.073,38) el \Sexpr{REP_seg} no corre el riesgo de presentar déficit en varias décadas; pero la falta ingresos financieros por rendimiento de las inversiones puede reducir el crecimiento de sus reservas, debido que a la fecha de emisión de este estudio no se han separado las inversiones del Seguro de Desempleo del de Cesantía; y, aún no han ingresado los rendimientos de estas inversiones en las cuentas de este seguro.

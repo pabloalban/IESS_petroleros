@@ -1,0 +1,162 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Resumen ejecutivo}
+\label{chp_res_ejec}
+
+%---------------------------------------------------------------------------------------------------
+\section{Definición clara del objeto del estudio}
+\label{chp_res_ejec:objeto}
+
+El objetivo del estudio actuarial del \Sexpr{REP_seg} es establecer la situación financiera actual de los beneficios que ofrece este seguro, evaluar la sostenibilidad financiera en el horizonte del estudio (40 años), de conformidad a las hipótesis planteadas, los beneficios y el sistema de financiamiento escogido para este seguro, a la vez que ofrecer los elementos  necesarios para preservar o restablecer el equilibrio financiero y actuarial, recomendar cambios en el sistema tanto financiero como de financiamiento y determinar la prima suficiente dentro de los resultados y contexto de normas legales y restricciones que enfrenta.
+
+%---------------------------------------------------------------------------------------------------
+\section{Descripción concisa de las características regulatorias del fondo o seguro}
+\label{chp_res_ejec:descripcion}
+
+La Constitución de la República del Ecuador determina en el artículo 367 que: “El sistema de seguridad social es público y universal, no podrá privatizarse y atenderá las necesidades contingentes de la población. (...) El sistema se guiará por los principios del sistema nacional de inclusión y equidad social y por lo de obligatoriedad, suficiencia, integración, solidaridad y subsidiaridad”. La Ley de Seguridad Social en su artículo 1 establece los principios del Seguro General Obligatorio, entre ellos: solidaridad, obligatoriedad, universalidad, equidad, eficiencia, subsidiariedad y suficiencia. El artículo 3 de la Ley de Seguridad Social señala que: “Art. 3.RIESGOS CUBIERTOS.- El Seguro General Obligatorio protegerá a las personas afiliadas, en las condiciones establecidas en la presente Ley y demás normativa aplicable, de acuerdo con las características de la actividad realizada, en casos de:
+
+\begin{enumerate}[label=\alph*.]
+	\item Enfermedad;
+	\item Maternidad;
+	\item Riesgos del trabajo;
+	\item Vejez, muerte, e invalidez, que incluye discapacidad; y,
+	\item Cesantía.
+	\item Seguro de Desempleo (...)''. 
+\end{enumerate}
+
+Conforme lo estipula el artículo 12 de la \legalcite{ResIESS_CD518}: ``El Seguro de Desempleo es la prestación económica que protege a los afiliados al IESS que pierden su empleo bajo relación de dependencia por causas ajenas a su voluntad y se rige por los principios de obligatoriedad, suficiencia, integración, solidaridad y subsidiaridad''.
+
+La segunda disposición general de la \legalcite{ResIESS_CD518} establece: ``Los trabajadores autónomos, sin relación de dependencia, los afiliados voluntarios residentes en el Ecuador, pasantes, becarios, internos rotativos, afiliados voluntarios ecuatorianos residentes en el exterior, miembros del clero secular, las
+trabajadoras no remuneradas del hogar; y las personas jubiladas que se afilien al IESS; no aportarán al Seguro de Desempleo ni a la Cesantía y por lo tanto no podrán acceder a estas prestaciones ni a las que de estas se derivan''.
+
+Mediante \legalcite{ResIESS_CD515}, se dispone la reforma de los porcentajes de aportación del Seguro de Cesantía, de los establecidos en la \legalcite{ResIESS_CD501} del 13 de noviembre del 2015. Las nuevas tasas de aportación son: aporte personal de 2\% para cesantía y aporte patronal de 1\% para el fondo solidario (Seguro de Desempleo).
+
+De conformidad al artículo 6 de la Ley Orgánica para la Promoción de Trabajo Juvenil, Regulación Excepcional de la jornada de Trabajo, Cesantía y Seguro de Desempleo, accederán a la prestación de desempleo, los afiliados que, dentro del periodo comprendido entre el primero de enero de 2016 hasta el mes de la entrada en vigor de la mencionada ley; y cumplan con los siguientes requisitos:
+
+\begin{enumerate}[label=\alph*.]
+  \item	Acreditar 24 aportaciones acumuladas y no simultáneas en relación de dependencia, de las cuales al menos 6 deberán ser continuas e inmediatamente anteriores a la contingencia;
+ \item Encontrarse en situación de desempleo por un período no menor a 60 días;
+ \item Realizar la solicitud para el pago de la prestación a partir del día 61 de encontrarse desempleado, y hasta en un plazo máximo de 45 días posteriores al plazo establecido en este literal; y,
+ \item No ser jubilado.
+
+\end{enumerate}
+
+%---------------------------------------------------------------------------------------------------
+\section{Resumen de prestaciones que otorga el fondo o seguro }
+\label{chp_res_ejec:resumen}
+
+El Financiamiento del Seguro de Desempleo se financia con los aportes del empleador del 1\% de la remuneración del trabajador, obrero o servidor privados y públicos en relación de dependencia; con los que se constituye un fondo de carácter solidario. Este Fondo Solidario cubrirá el 70\% del salario básico unificado vigente a la fecha del evento, el cual se cancelará de manera fija y mensual, por un período no mayor a cinco (5) meses.
+%---------------------------------------------------------------------------------------------------
+\section{Hipótesis y supuestos claves del estudio}
+\label{chp_res_ejec:hipotesis}
+A manera de resumen, se describen las principales hipótesis de este estudio: 
+
+ \begin{center}
+{\fontsize{11}{12}\selectfont
+%\begin{longtable}[H]{r*{5}{R{2.5cm}}}
+\begin{longtable}[H]{lc}
+\caption{Tasas utilizadas en el estudio (período 2019-2058)}
+\label{tab:iess_hip_macro_re} \\
+\toprule
+Ítem: & \multicolumn{1}{c}{Tasa}\\
+\midrule
+\endfirsthead
+
+\toprule
+Ítem: & \multicolumn{1}{c}{Tasa}\\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{2}{r}{continúa...} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+\input{tablas/iess_hipotesis_macro.tex}
+
+\end{longtable}
+}
+\end{center}
+
+ 
+ 
+ %---------------------------------------------------------------------------------------------------
+\section{Escenarios del estudio}
+\label{chp_res_ejec:escenarios}
+Se enumeran los tres (3) diferentes escenarios abordados en este estudio:
+
+\begin{enumerate}
+  \item \textbf{Escenario 1:} es el escenario base y constituye el escenario más probable, aplicando parámetros financieros
+  conservadores y realistas, en base a valores proyectados promedio. Principalmente en este escenario
+  se asume: tasa actuarial \Sexpr{REP$tasa_act_esc_1}\% y tasa de crecimiento del SBU 2,5339\%. Además, considerando los requisitos al acceso al \Sexpr{REP_seg} establecidos en el artículo 15 de la \legalcite{ResIESS_CD518}.
+  
+  \item \textbf{Escenario 2:} considera una tasa actuarial del \Sexpr{REP$tasa_act_esc_2}\% y asume que se entregará la prestación a afiliados que cumplan los requisitos establecidos en el reglamento del seguro, pero sin necesidad que el empleador esté al día con las aportaciones; de esta manera, se cumple con el pedido solicitado por la  Dirección Nacional de Fondos de Terceros y Seguro de Desempleo, a través del memorando Nro. IESS-DNFTSD-2019-1132-M.
+
+  \item \textbf{Escenario 3:} Escenario con las mismas hipótesis del escenario base, pero con una prima igual a \Sexpr{REP$tasa_aporte_esc_3}\%.
+\end{enumerate}
+
+ %---------------------------------------------------------------------------------------------------
+\section{Principales resultados de las proyecciones actuariales}
+\label{chp_res_ejec:resultados}
+
+Del estudio actuarial se concluyen los siguientes resultados:
+
+\begin{table}[H]
+\centering
+\caption{Resultado de los escenarios de la valuación actuarial}
+\label{tab:iess_resultados_resumen_ejec}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{lrrr}
+\toprule
+% \begin{tabular}[c]{@{}l@{}@{}}Parámetro o\\ componente:\end{tabular} &  \multicolumn{3}{c}{\textbf{Escenarios}} \\
+\multirow{1}{*}{Parámetro o componente:} &  \multicolumn{1}{c}{\textbf{Escenario 1}} &  \multicolumn{1}{c}{\textbf{Escenario 2}}  &  \multicolumn{1}{c}{\textbf{Escenario 3}} \\
+%               \cmidrule(r){2-4}
+% &\multicolumn{1}{c}{Base}  & \multicolumn{1}{c}{Con aportes extemporáneos} & \multicolumn{1}{c}{Prima \Sexpr{REP$tasa_aporte_esc_3}\%}\\
+\midrule
+\input{tablas/iess_resultados.tex}
+\bottomrule
+\end{tabular}
+}
+ \caption*{\scriptsize Nota: El escenario 1 considera la entrega de prestaciones solo a afiliados que estén al día en sus aportes patronales.\\
+ Nota: El escenario 2 considera la entrega de prestaciones a afiliados, los cuales cumplan requisitos; pero sus empleadores no estén al día con los aportes.\\
+ Nota: El escenario 3 considera una prima igual a $\Sexpr{REP$tasa_aporte_esc_3}$\%}
+\end{table}
+
+%---------------------------------------------------------------------------------------------------
+\section{Principales conclusiones y recomendaciones.}
+\label{chp_res_ejec:conclusiones}
+
+Entre las principales conclusiones, se tiene:
+\begin{enumerate}
+
+\item La población del estudio, con que se realiza la base demográfica y masa salarial correspondiente a los aportantes al IESS, no incluyen a los afiliados pertenecientes a los sectores de los trabajadores autónomos, TNRH, voluntarios y otros sectores señalados en la segunda disposición general de la \legalcite{ResIESS_CD518}, puesto que estos no cotizan al Seguro de Cesantía y Desempleo.
+
+\item  Entre el 19 de abril de 2016 y 31 de diciembre de 2018, accedieron a los beneficios que entrega este seguro 76.003 afiliados siniestrados, esto al menos al primer pago del \Sexpr{REP_seg}, pero solo 17.759 accedieron a los beneficios de la parte variable, población que representa el 23,37\%. Observando la población beneficiaria por sexo, 47.245 beneficiarios son hombres (62,16\%) con una edad promedio 37,90 años y 28.758 son mujeres (37,84\%) con una edad promedio de 37,23 año. A partir de la creación de este seguro, se han entregado USD 105.749.094,96, de los cuales USD 84.371.363,68 eran de la parte fija y USD 21.377.731,28 correspondieron a la parte variable.
+
+\item Durante los tres (3) años del período 2016 a 2018, la mayoría de los montos cancelados por la parte fija del \Sexpr{REP_seg} se pagó a afiliados de sexo masculino (USD 52.173.853,97 (61,84\%)); en cambio, solo se pagó USD 32.197.509,71 a las afiliadas mujeres, lo que representa el 38,16\% del total pagado.
+
+\item Durante el año 2018, se recaudaron USD 243.907.164,94 por aporte patronal del 1\% y solo se gastó USD 25.101.120,79; es decir, en el año 2018, se entregó USD 1 por cada USD 9,72 recaudados. El resto de estos valores no utilizados pasaron a formar la reserva.
+
+\item Bajo el escenario base, el superávit actuarial alcanza USD \Sexpr{REP$bal_act_esc_1}, su prima suficiente que mantiene el equilibrio financiero en el tiempo es \Sexpr{REP$pri_med_niv_esc_1}\%, resultado que se obtiene con una tasa de actualización \Sexpr{REP$tasa_act_esc_1}\%.
+
+\end{enumerate}
+
+La principal recomendación de este estudio es:
+\begin{enumerate}
+
+\item En el escenario 2, se puede evidenciar que aun siendo este el pesimista existe un superávit hasta el año 2058 de USD \Sexpr{REP$bal_act_esc_2}, siendo la prima suficiente \Sexpr{REP$pri_med_niv_esc_2}\%; por lo que recomendamos que se ponga a disposición del Seguro que más lo necesite la diferencia de prima.
+% 
+% \item Realizar un estudio actuarial actualizado para el Seguro de Desempleo, que verifique si se mantiene la prima de equilibrio, de ser así la diferencia con la prima que actualmente se cobra, podría ser distribuida al fondo que presente mayor déficit y necesite de financiamiento.
+% 
+% \item Establecer una comisión encargada de separar e identificar las inversiones del Seguro de Desempleo y establecer los rendimientos financieros generados por estas inversiones en los años 2016, 2017 y 2018. En caso de que no fuese posible identificar las inversiones y rendimientos de los años del período en cuestión del Seguro de Desempleo, esta Dirección sugiere separar de manera proporcional las inversiones de Desempleo y Cesantía, empleando los ingresos registrados por la Dirección Nacional de Recaudación y Gestión de Cartera y calcular los rendimientos empleando los rendimientos netos del Seguro de Cesantía (ver tabla \ref{tab:iess_total_ces}).
+
+% \item Promocionar a través de medios de comunicación y redes sociales los beneficios otorgados por el Seguro de Desempleo, puesto que el desconocimiento de estos ha producido una baja tasa de uso de este seguro (en el año 2018, solo accedieron a este seguro 20.745 afiliados, pero 348.001 cumplían los requisitos establecidos en su reglamento (sin diferenciar si el cese fue voluntario o no); es decir, solo una tasa de uso igual al 5,96\%).
+% 
+% \item Flexibilizar los requisitos de acceso al beneficio que otorga el Seguro de Desempleo con el fin de proteger a un mayor número de afiliados y a sus familias, tanto en el número de meses de aportaciones acumuladas y continuas, y, especialmente, eliminar la exigencia que el cese
+% temporal de actividades productivas debe ser debido a causas ajenas a su voluntad.
+
+\end{enumerate}
+
+% \afterpage{\null\newpage}
+% \newpage

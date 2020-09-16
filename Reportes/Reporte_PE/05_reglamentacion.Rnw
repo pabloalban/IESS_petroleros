@@ -1,0 +1,281 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Reglamentación del seguro}
+\label{chp_reglamentacion}
+
+
+%---------------------------------------------------------------------------------------------------
+\section{Breve descripción de los reglamentos y leyes aplicables }
+\label{chp_reglamentacion:descrip}
+El marco normativo vigente a la fecha de elaboración de este estudio es el siguiente: 
+\begin{table}[H]
+\begin{center}
+\caption{Leyes y reglamentos}
+\label{tab:leyreg}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{p{7cm}p{8cm}}
+  \toprule
+  \multicolumn{1}{c}{\textbf{Normativa}} & \multicolumn{1}{c}{\textbf{Articulado}} \\ 
+  \midrule
+  \textbf{Constitución de la República del Ecuador} & Artículos 369 y 370.\\ \midrule
+  \textbf{Ley de Seguridad Social}& Artículo 283.  \\
+    \midrule
+  \textbf{Ley Orgánica para promoción del Trabajo Juvenil, Regulación Excepcional de la Jornada de Trabajo, Cesantía y Seguro de Desempleo} & Artículo 6.  \\
+  \bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Elaborado: DAIE}
+\end{center}
+\end{table}
+En cuanto a la normativa interna del IESS, se detalla a continuación:
+\begin{table}[H]
+\begin{center}
+\caption{Leyes y reglamentos}
+\label{tab:leyreg}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{p{7cm}p{8cm}}
+  \toprule
+  \multicolumn{1}{c}{\textbf{Resolución}} & \multicolumn{1}{c}{\textbf{Contenido}} \\
+  \midrule
+  \textbf{C.D. 515 de 11 de julio de 2016}& Reglamento para la aplicación de la Cesantía y Seguro de Desempleo.\\
+  \midrule
+  \textbf{C.D. 518 de 22 de julio de 2016}& Reglamento General del Seguro de Cesantía y Seguro de Desempleo.  \\
+  \bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Elaborado: DAIE}
+\end{center}
+\end{table}
+
+
+\subsection{Convenios de la OIT}
+\label{chp_reglamentacion:convenios}
+
+\subsubsection{Convenios de la OIT ratificados por Ecuador}
+
+El Ecuador ratificó el 5 de febrero de 1962 el convenio de la OIT C.002-Convenio sobre el desempleo y, hasta la fecha de expedición de este estudio, este es el único convenio internacional ratificado por nuestro país (la lista de convenios internacionales de la OIT y la fuente de este análisis se encuentran en la página web de la OIT \footnote{\url{https://www.ilo.org/dyn/normlex/es/f?p=1000:11200:0::NO:11200:P11200_COUNTRY_ID:102616}}).
+
+Convenio sobre el desempleo surge en la primera reunión de la Conferencia General de la Organización Internacional del Trabajo convocada en Washington por el Gobierno de los Estados Unidos de América el 29 de octubre de 1919, en el cual adoptan diversas disposiciones relativas a los medios de prevenir el desempleo y de remediar sus consecuencias.
+
+\subsubsection{Convenios de la OIT no ratificados por Ecuador}
+
+A la fecha de expedición de este estudio, el Ecuador no ha ratificado los siguientes convenios de la OIT referentes a prestaciones o referentes a el desempleo (ver tabla \ref{tab:convenios_no_ratificados}) :
+
+\begin{table}[H]
+\begin{center}
+\caption{ Convenios de la OIT no ratificados por Ecuador}
+\label{tab:convenios_no_ratificados}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Nro. Referencia} & \multicolumn{1}{c}{\textbf{Convenio}}                                                                                & \multicolumn{1}{c}{\textbf{Entrada en vigor}} & \multicolumn{1}{c}{\textbf{\begin{tabular}[c]{@{}c@{}}Artículos referentes\\  a desempleo\end{tabular}}} \\ \midrule
+C.102                    & \begin{tabular}[c]{@{}l@{}}Convenio sobre la seguridad\\  social (norma mínima)\end{tabular}                         & 27  abril 1955                                & Art. 19 a 24                                                                                             \\ \hline
+C.118                    & \begin{tabular}[c]{@{}l@{}}Convenio sobre la igualdad de trato\\  (seguridad social)\end{tabular}                    & 25 abril 1964                                 & Art. 2 y 4                                                                                               \\ \hline
+C.168                    & \begin{tabular}[c]{@{}l@{}}Convenio sobre el fomento del empleo\\  y la  protección contra el desempleo\end{tabular} & 17 octubre 1991                               & Todo el documento                                                                                        \\ \bottomrule
+
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+%---------------------------------------------------------------------------------------------------
+\section{Disposiciones pertinentes para las proyecciones }
+\label{chp_reglamentacion:disproyec}
+
+En la normativa actual no existen disposiciones expresas para las proyecciones de las diferentes
+variables que se incorporan al modelo actuarial; únicamente se determina en la \legalcite{ResIESS_CD459} de 1 de octubre de 2013, lo referente a la tasa actuarial la cual es del cuatro por ciento 
+(4\%) anual.
+
+Sin embargo, el artículo 6 de la “Norma para la Calificación de los profesionales que realizan
+estudios actuariales y requisitos técnicos que deben constar en sus informes” de la Resolución No.
+SB-2017-810 de la Superintendencia de Bancos, indica que un estudio actuarial constituye una
+herramienta que permite conocer la situación económica y financiera actual y su proyección hacia 
+el futuro, de un fondo o seguro de prestaciones sociales. 
+
+Por lo tanto, el estudio actuarial deberá proveer toda la información necesaria que permita 
+alcanzar este objetivo. Para esto, todo estudio actuarial deberá considerar variables económicas,
+financieras, demográficas y de cualquier otro tipo, que puedan afectar de alguna manera la 
+situación financiera del fondo o seguro.
+
+Para la realización del presente estudio actuarial, se observaron los principios de rigor científico, 
+objetividad, transparencia y la buena fe. 
+%---------------------------------------------------------------------------------------------------
+% \section{ Descripción del seguro}
+% \label{chp_reglamentacion:descripcion_seguro}
+% \subsection{Población asegurada}
+% La segunda disposición general de la \legalcite{ResIESS_CD518} establece que los trabajadores autónomos, sin relación de dependencia, los afiliados voluntarios residentes en el Ecuador, pasantes, becarios, internos rotativos, afiliados voluntarios ecuatorianos residentes en el exterior, miembros del clero secular, las trabajadoras no remuneradas del hogar; y las personas jubiladas que se afilien al IESS; no aportarán al Seguro de Desempleo ni a la Cesantía y por lo tanto no podrán acceder a estas prestaciones ni a las que de estas se derivan.
+% 
+% Además, el artículo 14 de la misma resolución establece que las personas jubiladas que retomen las actividades productivas y que se afilien al IESS, no aportarán para el Seguro de Desempleo, ni tendrán acceso a este beneficio, toda vez que cuentan con ingresos de su jubilación.
+% 
+% \subsection{Requisitos para acceder al beneficio}
+% \label{chp_reglamentacion:requisitos}
+% El artículo 15 de la \legalcite{ResIESS_CD518} establece los requisitos del acceso al Seguro de Desempleo. Para acceder a la prestación del Seguro de Desempleo, por cada evento, las personas afiliadas en relación de dependencia por pérdida de ingresos generada por un cese temporal de actividades productivas por causas ajenas a su voluntad deberán cumplir los siguientes requisitos:
+% 
+% \begin{enumerate}[label=\alph*.]
+% \item Acreditar al menos 24 aportaciones acumuladas y no simultáneas en relación de dependencia de las cuales al menos 6 deberán ser continuas e inmediatamente anteriores a la contingencia;
+% \item Encontrarse en situación de desempleo por un período no menor a 60 días; y,
+% \item Realizar la solicitud para el pago de la prestación a partir del día 61 de encontrarse desempleado y hasta en un plazo máximo de 45 días posteriores al plazo establecido en este literal. \end{enumerate}
+% 
+% \subsection{Solicitud del Seguro de Desempleo y Cesantía}
+% Para aplicar a la prestación del seguro de desempleo, el afiliado realizará la solicitud a través de la página web \url{www.iess.gob.ec}, y podrá voluntariamente escoger una de las siguientes opciones excluyentes:
+% \begin{enumerate}[label=\alph*.]
+% \item Retirar los fondos de cesantía acumulados y disponibles en su cuenta individual; o, 
+% \item Acogerse al Seguro de Desempleo y Cesantía, manifestando su voluntad entre: 
+% \begin{enumerate}[{b.}1.]
+% \item \label{b1} Recibir el valor correspondiente al fondo solidario más el monto disponible en la cuenta individual de cesantía en la forma establecida por la ley; o, 
+% \item \label{b2} Recibir únicamente el porcentaje correspondiente al fondo solidario.
+% \end{enumerate}
+% \end{enumerate}
+% En ambos casos, siempre que la prestación no haya terminado por las causas establecidas en la sección \ref{chp_reglamentacion:motivos_interrup}. Al final de haberse escogido la opción \ref{b1} o \ref{b2}, el beneficiario podrá solicitar el retiro del saldo de los fondos de cesantía acumulados que pudieran existir.
+% 
+% 
+% \subsection{Duración de la prestación}
+% Una vez cumplidos los requisitos establecidos en la sección \ref{chp_reglamentacion:requisitos}, los pagos correspondientes al Seguro de Desempleo se efectuarán de forma mensual a partir del día 91 del suscitado evento.
+% 
+% En el artículo 6 de la Ley Orgánica para promoción del Trabajo Juvenil, Cesantía Desempleo, se establece que la prestación por Seguro de Desempleo tendrá una duración máxima de cinco (5) meses por cada evento.
+% 
+% \subsection{Motivos para la interrupción del pago de la prestación}
+% \label{chp_reglamentacion:motivos_interrup}
+% A continuación, se enumeran los motivos, señalados en el artículo 20 de la \legalcite{ResIESS_CD518}, para la terminación del pago de la prestación de este seguro:
+% \begin{enumerate}
+% \item Cuando el afiliado ejerza nuevamente una actividad productiva que genere ingresos económicos;
+% \item Cuando se cumpla el período máximo de duración de la prestación;
+% \item Cuando se determine hechos fraudulentos; o,
+% \item Cuando se produjeran la muerte de su titular.
+% \end{enumerate}
+
+
+%---------------------------------------------------------------------------------------------------
+\section{Análisis de las fuentes de ingresos financieros y causas de los egresos financieros}
+\label{chp_reglamentacion:fuentes_ing_egr}
+
+La Constitución de la República del Ecuador en su artículo 371 determina que: 
+``Las prestaciones de la seguridad social se financiarán con el aporte de las personas aseguradas en relación de dependencia y de sus empleadoras o empleadores; con los aportes de las personas independientes aseguradas; con los aportes voluntarios de las ecuatorianas y ecuatorianos domiciliados en el exterior; y con los aportes y contribuciones del Estado''.
+
+Los ingresos de este fondo se establecen en la \legalcite{ResIESS_CD515} y \legalcite{ResIESS_CD518} de 30 de marzo de 2016 y 19 de abril de 2016, respectivamente; el Seguro de Desempleo se financia con el aporte patronal del 1\% de la remuneración del trabajador, obrero o servidor privados y públicos en relación de dependencia; rubro con el que se constituye un fondo de carácter solidario.
+
+Los egresos de este fondo se establecen mediante la \legalcite{ResIESS_CD518} de 19 de abril de 2016. El Fondo Solidario cubre el 70\% del salario básico unificado vigente a la fecha del evento, el cual se cancelará de manera mensual hasta máximo por cinco (5) meses. En cambio, lo valores correspondientes a la parte variable provienen del saldo acumulado en la cuenta individual de cesantía del afiliado.
+
+%---------------------------------------------------------------------------------------------------
+
+\section{Bases de cálculo de aportaciones y beneficios}
+\label{chp_reglamentacion:base_calc}
+El artículo 13 de la \legalcite{ResIESS_CD518}, establece que, el Seguro de Desempleo se financia con los aportes del empleador del 1\% de la remuneración del trabajador, obrero o servidor privados y públicos en relación de dependencia; con lo que se constituye un fondo de carácter solidario.
+
+Este Fondo Solidario cubrirá el 70\% del salario básico unificado vigente a la fecha del evento, el cual se cancelará de manera fija y mensual, por todo el período que dure la prestación.
+
+El artículo 6 de la Ley Orgánica para promoción del Trabajo Juvenil, Cesantía Desempleo en su reforma a la Ley de Seguridad Social establece que la prestación económica por Seguro de Desempleo será calculada sobre la base del promedio de la materia gravada percibida por el afiliado en los últimos 12 meses previos a haberse suscitado el evento y se cancelará hasta en los porcentajes constantes en la tabla \ref{tab:ley_porcent}.
+\begin{table}[H]
+\begin{center}
+\caption{Porcentaje de la remuneración promedio recibida por beneficio de la parte fija y variable junta}
+\label{tab:ley_porcent}
+\begin{tabular}{@{}clllll@{}}
+\toprule
+\textbf{\begin{tabular}[c]{@{}c@{}}3\% Aporte personal y \\ Aporte Patronal\end{tabular}}                                   & \textbf{\begin{tabular}[c]{@{}l@{}}Pago 1\\ (mes 4)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Pago 2\\ (mes 5)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Pago 3\\ (mes 6)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Pago 4\\ (mes 7)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Pago 5\\ (mes 8)\end{tabular}} \\ \midrule
+\begin{tabular}[c]{@{}c@{}}Remuneración promedio \\ (materia gravada)\\ 12 meses, previo suscitado\\ el evento\end{tabular} & \multicolumn{1}{c}{70\%}                                          & \multicolumn{1}{c}{65\%}                                          & \multicolumn{1}{c}{60\%}                                          & \multicolumn{1}{c}{55\%}                                          & \multicolumn{1}{c}{50\%}                                          \\ \bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+Los pagos mensuales determinados en la tabla \ref{tab:ley_porcent} se obtendrán de la siguiente manera:
+\begin{enumerate}[label=\alph*.]
+\item Parte Fija: Es el Fondo Solidario, correspondiente al 1\% del aporte patronal al Seguro de Desempleo, que constituye un fondo común de reparto.
+
+El Fondo Solidario cubrirá el 70\% del salario básico unificado vigente a la fecha del evento, en el cual se cancelará de manera fija y mensual, por todo el período que dure la prestación.
+
+Para los casos de las personas que aportan un valor menor al salario básico unificado se calculará sobre dicho valor. En el caso de tener aportes producto de haber contado con más de un empleador y por tanto haber cotizado simultáneamente, el pago mensual de la prestación no superará el 70\% del salario básico unificado vigente a la fecha del evento.
+
+\item Parte variable: La parte variable comprenderá el saldo acumulado en la cuenta individual de cesantía de existir; y el aporte personal del 2\% que se genere a partir de la vigencia de esta ley de los que se obtendrá la diferencia hasta alcanzar los valores determinados en los porcentajes de la tabla \ref{tab:ley_porcent}.
+\end{enumerate}
+
+En los casos en que el saldo disponible en la cuenta individual de cesantía de cada afiliado no cubra los porcentajes constantes de la tabla \ref{tab:ley_porcent}, el beneficiario recibirá hasta el saldo disponible en la cuenta individual de cesantía más el valor correspondiente al Fondo Solidario.
+
+%---------------------------------------------------------------------------------------------------
+\section{Fórmula de cálculo de aportaciones}
+\label{chp_reglamentacion:calculo_aporte}
+
+De conformidad con el artículo 11 de la Ley de Seguridad Social, para efecto de cálculo de las aportaciones se considera la materia gravada a todo ingreso susceptible de apreciación pecuniaria percibido por la persona afiliada.
+El Consejo Directivo del Instituto Ecuatoriano de Seguridad Social a través de la \legalcite{ResIESS_CD501} de 13 de noviembre de 2015, consolidó las tablas de aportación para los diferentes seguros, la misma que fue reformada por la \legalcite{ResIESS_CD515} de 30 de marzo de 2016.
+
+La \legalcite{ResIESS_CD515} determina la distribución de las contribuciones como aportes para el Seguro de Desempleo el 1\% de la aportación patronal de la remuneración del trabajador, obrero o servidor privados y públicos en relación de dependencia; este porcentaje de aportación es el mismo para el periodo marzo 2016 – 2019 y del 2020 en adelante. (\legalcite{ResIESS_CD515} de 30 de marzo de 2016, Artículo 1 y 2, Anexos). En la tabla \ref{tab:aportacion_desempleo}, se muestran las tasas de aportación al \Sexpr{REP_seg} por cada sector.
+
+
+{\fontsize{8}{12}\selectfont
+\begin{longtable}[H]{lccc}
+\caption{Aportes al Seguro de Desempleo, según la \legalcite{ResIESS_CD515}} \\
+\label{tab:aportacion_desempleo} \\
+\toprule
+\textbf{Sector afiliado:} & \textbf{Personal (\%)} & \textbf{Patronal (\%)} &
+  \textbf{Total (\%)} \\
+\midrule
+\endfirsthead
+
+\toprule
+\textbf{Sector afiliado:} & \textbf{Personal (\%)} & \textbf{Patronal (\%)} &
+  \textbf{Total (\%)} \\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{4}{c}{continúa...} \\
+\endfoot
+\bottomrule
+\caption*{\scriptsize Fuente: \legalcite{ResIESS_CD515} \\
+Elaborado: DAIE.}
+\endlastfoot
+\begin{tabular}[c]{@{}l@{}}De los trabajadores del sector privado bajo relación de\\ dependencia, así como los miembros del clero secular\end{tabular}                                                                                                                                                                                                                    & 0           & 1           & 1        \\
+\hline
+\begin{tabular}[c]{@{}l@{}}De los empleados bancarios, de los gobiernos autónomos\\ descentralizados, entidades públicas descentralizadas,\\ registradores de la propiedad y registradores mercantiles\end{tabular}                                                                                                                                                              & 0           & 1           & 1        \\
+\hline
+\begin{tabular}[c]{@{}l@{}}De los servidores públicos definidos en la Ley Orgánica\\ del Servicio Publico incluido el magisterio y los\\ servidores, funcionarios y empleados de la función\\ judicial otras dependencias que presten servicios\\ públicos incluidos notarios públicos, mediante\\ remuneración variable, en forma de aranceles o\\ similares\end{tabular} & 0           & 1           & 1        \\
+\hline
+\begin{tabular}[c]{@{}l@{}}De los funcionarios del servicio exterior residentes en el\\ extranjero\end{tabular}                                                                                                                                                                                                                                                           & 0           & 1           & 1        \\
+\hline
+De los trabajadores de la industria azucarera                                                                                                                                                                                                                                                                                                                             & 0           & 2           & 2       
+\end{longtable}
+}	
+		
+%---------------------------------------------------------------------------------------------------
+\section{Fórmula de cálculo de beneficios}
+\label{chp_reglamentacion:calc_benef}
+El fondo solidario cubre el 70\% del salario básico unificado vigente a la fecha del evento de cese de acuerdo con las siguientes condiciones:
+\begin{enumerate}[label=\alph*)]
+
+\item Si el promedio de la materia gravada recibida por el afiliado de los últimos 12 meses previos ha suscitado el evento es menor al promedio del salario básico unificado de ese periodo ($PMG<PSBU$), el fondo solidario cubrirá el 70\% de la fracción correspondiente. En este caso la parte fija se calcula de la siguiente manera:
+
+\begin{equation}
+\label{ecu:pf1}
+\text{Parte Fija}=70\%*\dfrac{PMG}{PSBU}*SBU,
+\end{equation}
+donde: $SBU$ es el salario básico unificado a la fecha de cese, $PMG$ es el promedio de la materia gravada y $PSBU$ es el promedio de los salarios básicos unificados.
+
+El promedio de la materia gravada, $PMG$, se calcula utilizando la siguiente fórmula:
+\begin{equation}
+  \label{ecu:pmg}
+PMG=\displaystyle \sum_{i=1}^{12}\dfrac{MG_i}{12},
+\end{equation}
+donde: $MG_{i}$ es la materia gravada del mes $i$.
+
+Para el promedio de los salarios básicos unificados, $PSBU$; en cambio, se utiliza la siguiente expresión:
+\begin{equation}
+  \label{ecu:psbu}
+PSBU=\displaystyle\sum_{i=1}^{12}\dfrac{SBU_i}{12},
+\end{equation}
+donde: $SBU$ es el salario básico unificado correspondiente al mes $i$.
+
+
+\item Si el promedio de la materia gravada de los últimos 12 meses previos a suscitado el evento es mayor o igual al promedio del salario básico unificado en ese mismo periodo ($PMG \geq PSBU$), se calcula la parte fija de la siguiente manera:
+
+\begin{equation}
+\label{ecu:pf2}
+\text{Parte Fija}=70\%*SBU
+\end{equation}
+donde: $SBU$ es el salario básico unificado a la fecha de cese.
+
+\end{enumerate}
+
+%-------------------------------------------------------------------------------
+\section{Gastos administrativos adicionales}
+ \label{chp_reglamentacion:egresos:gadmin}
+
+Para efecto de este estudio, se asume que los gastos administrativos de este seguro estarán incluidos dentro de los gastos administrativos del Seguro de Cesantía, los cuales son igual al 2\% de los ingresos por aportes de los afiliados al Seguro de Cesantía, debido a la falta de reglamentación respecto al tema. 
+
+El artículo 2 de la \legalcite{ResIESS_CD101} establece: ``Los fondos para gastos de administración del seguro de cesantía general estarán constituidos por la participación de una cuota de los rendimientos obtenidos de la inversión de los fondos de la cesantía general, de hasta el dos por ciento (2\%) del ingreso anual que se calcula sobre los aportes personales y patronales del mismo. De producirse excedentes entre el monto presupuestado para gasto administrativo y el costo real de la administración, el remanente ingresará al seguro de cesantía general, que se destinará a reducir el déficit actuarial de este seguro o a mejorar el rendimiento de la cuenta individual de cesantía general de los afiliados''.
+

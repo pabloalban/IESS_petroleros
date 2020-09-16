@@ -1,0 +1,111 @@
+%---------------------------------------------------------------------------------------------------
+\chapter[Antecedentes]{Antecedentes}
+\label{chap_Antecedentes}
+
+\begin{enumerate}[itemsep=1mm, topsep=0pt]
+
+\item Mediante oficio N° 1068-LDA-AN-18 de 24 de julio de 2018, la Presidenta de la Comisión Especializada Permanente de los Derechos de Trabajadores y Seguridad Social, de la Asamblea Nacional de la República del Ecuador, pone en conocimiento del señor Presidente del Consejo Directivo del Instituto Ecuatoriano de Seguridad Social, IESS, lo siguiente: ``(...) que dentro del tratamiento del ``Proyecto de Ley Reformatoria a la Ley de Seguridad Social que Establece la Jubilación Especial de las y los trabajadores del Sector Petrolero". calificado por el Consejo de Administración Legislativa con Resolución No. CAL-2017-2019-403, previo a la elaboración del informe para primer debate solicito se remita a esa Comisión un análisis y los criterios correspondientes por parte de la Entidad a su cargo. sobre este Proyecto de Ley".
+
+El artículo propuesto en el Proyecto de Ley de la referencia y requerido su análisis, consiste en: Agregar un artículo innumerado a continuación del artículo 231 de la Ley de Seguridad Social que disponga:
+
+``De la jubilación Especial de las y los trabajadores de la industria Hidrocarburífera pública y privada, el derecho a jubilación especial a cargo del Instituto Ecuatoriano de Seguridad Social, una vez que hayan acreditado, por lo menos, trescientas imposiciones (300), cualquiera se a su edad.
+
+Las imposiciones a las que se refiere el artículo 1 deberán provenir, exclusivamente, de las actividades ejercidas en la industria carburífera, en todas sus fases esto es, el conjunto de operaciones para su obtención, regularización, fiscalización, transformación, transporte y comercialización, incluyendo sus derivados y actividades conexas, siempre y cuando se realicen en instalaciones de campamentos, pozos e infraestructura destinadas a las operaciones de la industria Hidrocarburífera. Quienes se acojan al derecho de la jubilación especial establecido en este artículo, gozarán de una pensión mensual equivalente al ciento por ciento (100) de su última remuneración mensual que hubiere recibido".
+
+\item  Con sumilla electrónica mediante el Sistema de Gestión Documental `` Quipux" de 30 de julio de 2018, inserta en el oficio ibidem, el señor Director General del IESS, solicita a la procuraduría General institucional lo siguiente: ``Estimado Procurador. para el análisis correspondiente del proyecto de Ley de reforma a la Ley de Seguridad Social, e informar a esa DG".
+
+
+\item Luego del análisis realizado al Proyecto de Ley presentado, y con el fin de contar con los insumos e información que sustenten la solvencia y sostenibilidad del mismo, así como el impacto que podría generar a la Institución, esta Unidad Asesora requirió a través del memorando No. IESS-PG-2018-0706-M de 06 de agosto de 2018, a: a) Dirección Actuarial, de Investigación y Estadística, b) Dirección del Seguro General de Riesgos del Trabajo, c) Dirección Nacional de Fondos de Terceros y Seguro de Desempleo, y d} Dirección del Sistema de Pensiones, remitan los respectivos informes técnicos. 
+
+
+\item Mediante memorando Nro. ESS-SDNGCSRT-2018-07 12-M de 9 do agosto de 2018, el Subdirector Nacional de Gestión y Control de Seguro de Riesgos del Trabajo indica al señor Procurador General lo siguiente: `` En atención a esta solicitud y conforme lo revisado en el `` Proyecto de Ley Reformatoria a la Ley de Seguridad Social que establece la Jubilación Especial de las y los trabajadores del Sector Perolero'', expuesto en Resolución CAL-2017-2019-403, en lo que respecta a esta Dependencia se pue den emitir las siguientes observaciones:
+
+\textbf{\textit{De la justificación de la jubilación especial:}}
+
+Dentro de la exposición de motivos del Proyecto de Ley se señala: `` (...) El lnstituto Ecuatoriano de Seguridad Social de manera específica han calificado a la industria Petrolera como de alto riesgo (...) ''.
+
+Al respecto se puede señalar que en lo concerniente a esta Institución, no se ha calificado a esta Industria ni a ninguna actividad relacionada como de alto riesgo. De igual forma, la propuesta establece: `` Los trabajadores operativos de la industria petrolera están permanentemente expuestos a condiciones de trabajo insalubres en contacto con sustancias químicas consideradas cancerígenas por organismos científicos internacionales (…)''.
+
+De acuerdo al informe Técnico de la OIT: ``JUBILACIÓN ANTICIPADA POR TRABAJOS DE NATURALEZA PENOSA, TOXICA O INSALUBRE'' en el ámbito internacional, aunque si existen definiciones en las legislaciones de algunos países. Una clara definición de lo que son trabajos penosos, peligrosos, tóxicos o insalubres es muy difícil o prácticamente imposible (…).
+
+Bajo esta consideración, resulta necesario que la Entidad Rectora, manifieste un criterio técnico legal sobre actividades insalubres en el país.
+
+\textbf{\textit{De la población beneficiaria:}}
+
+El proyecto de Ley Reformatoria señala: `` (...) Las imposiciones a fas que se refiere el artículo deberán provenir exclusivamente de las actividades ejercidas en la industria Hidrocarburífera, en todas sus fases como es, el conjunto de operaciones para su obtención, regulación, fiscalización, transformación, transporte y comercialización, incluyendo sus derivados y actividades conexas, siempre y cuando se realicen en instalaciones de campamentos, pozos e infraestructura destinadas a las operaciones de la industria carburífera (…)
+
+Con lo expuesto en el inciso anterior resulta necesario aclarar si el beneficio de es la prestación especial, se direcciona a los trabajadores que realizan labores operativas de aquellos que realizan actividades administrativas pese a que se encuentren laborando en campos petroleros, en este sentido, se deben realizar un monitoreo las instalaciones de campo de la Industria Petrolera (…).''
+
+\textbf{\textit{De la fijación de la pensión mensual:}}
+
+En lo que se refiere a la fijación de la pensión mensual en el Proyecto manifiesta lo siguiente:
+``Quienes se acojan al derecho de jubilación especial establecido en este artículo, gozarán de una pensión mensual equivalente al ciento por ciento (100\%) de su última remuneración que hubiere percibido.
+
+Conforme lo señala la Resolución C.D. 100, de fecha 21 de febrero de 2006, existen nivelaciones de pensiones mínimas y máximas dentro del Seguro General del Sistema de Pensiones, mismas que deben contemplarse en el Proyecto de ley, considerando verificar la sostenibilidad, a mediano y largo plazo del fondo del Sistema de Pensiones (…).''
+
+\item  Mediante memorando Nro. IESS-DAIB-2018-0461-M, de 13 de agosto de 2018, el Director Actuarial, de Investigación y Estadística, a la época adjuntó en físico el "Informe Técnico sobre el Proyecto de Ley Reformatoria a la Ley de Seguridad Social que establece la Jubilación Especial de las y los Trabajadores del Sector Petrolero", mismo que en sus partes pertinentes señala:
+
+`` \textbf{\textit{3.2. FINANCIAMIENTO}}
+(…) La creación de la prestación de "jubilación especial" requiere de estudios actuariales que cuantifiquen: el impacto de los cinco (5) años que dejarla de aportar cada trabajador, que implicaría menos ingresos al sistema por aportes; los años adicionales de pensión que se otorgaría al eliminar el requisito de edad; la cuantía del 100\% de la última remuneración mensual, superior al 75\% del promedio de los mejores 5 años vigente; y, el impacto en las pensiones de invalidez y muerte (…).''
+
+\item  El 14 de agosto de 2018, a través del memorando No. IESS-DSP-2018-1006-M de 14 de agosto de 2018. el Director del Sistema de Pensiones, sobre el Proyecto de Ley indica:
+
+`` \textbf{PRONUNCIAMIENTO}
+\begin{enumerate}[itemsep=1mm, topsep=0pt, label=\arabic*.-]
+\item La prestación que se está queriendo incluir en la Ley de Seguridad Social, esto es la Jubilación especial de las y los trabajadores del sector petrolero, no cumple con las condiciones legales establecidas tanto en la Constitución de la República del Ecuador: ni con lo dispuesto en la Ley de Seguridad Social.
+\item (...) en la propuesta remitida por el Consejo de Administración Legislativa, no se indica de donde se obtendrá el financiamiento para esa nueva prestación, esto en consideración de que las condiciones determinadas para acceder a esta nueva jubilación son diferentes a las de una jubilación ordinaria; y por lo tanto es necesario que el financiamiento para cubrir la diferencia en imposiciones y edad se encuentre financiada de alguna manera.
+\item (..) es pertinente que se observe que las consideraciones para definir el grupo de personas que pueden beneficiarse de la jubilación especial de las y los trabajadores del Sector Petrolero, es muy amplio, incluyendo con ello a personal operativo y administrativo (..)
+\item (…) es indispensable que para la inclusión de una nueva prestación de la seguridad social, la misma se Encuentre respaldada con los estudios actuariales que garanticen la sostenibilidad del fondo del Seguro (...)"
+\end{enumerate}
+
+
+\item Por su parte, la Directora Nacional de Fondos de Terceros y Seguro de Desempleo, mediante memorando Nro. IESS-DNFTSD-2018-0939-M de 15 de agosto de 2018, señala que el Proyecto de Ley `` (...) no tiene ninguna implicación que pueda afectar la sostenibilidad de los Fondos de Reserva, Cesantía o Seguro de Desempleo, así como tampoco procedimientos relacionados".
+
+
+\item El 01 de octubre de 2018, con oficio No. 1ESS-DG-2018-0609-OF, el Director General, a la época, solicita a la señora Presidenta de la Comisión de los Derechos de los Trabajadores y Seguridad Social de la Asamblea Nacional, `` (...) se concerté una reunión de trabajo entre el equipo técnico conformado por la Institución y el equipo asesor de la Comisión que se encuentra a cargo del análisis del Proyecto de Ley (...) con el fin de poder analizar a fondo las observaciones que se han podido detectar, siendo menester que dicha reunión se !lleve a cabo previo a la emisión del análisis y criterio solicitados por su Autoridad".
+
+
+\item Con memorando No. IESS-DG-2018-0723-OF de 20 de noviembre de 2018, el señor General del IESS, remite el análisis y observaciones institucionales a la asambleísta Liliana Durán,  de la Comisión especializada Permanente de los Derechos de los Trabajadores y Seguridad Social, relativa al ``PROYECTO DE LEY REFORMATORIA A LA LEY DE SEGURIDAD SOCIAL QUE ESTABLECE LA JUBILACION ESPECIAL DE LAS Y LOS TRABAJADORES DEL SECTOR PETROLERO", entre las que se destacan las siguientes:
+
+`` \textbf{\III. Análisis}
+
+(...) Al tratarse de una nueva prestación, la Constitución de la República, dispone en su artículo 369, que deberá ser debidamente financiada, en concordancia con lo dispuesto en la Ley de Seguridad Social en el artículo 233, que no se creara prestación alguna ni se mejorarán las existentes a cargo del Seguro Social Obligatorio, sino se encontraran debidamente financiadas y respaldadas en los resultados de estudios actuariales que demuestren sus solvencias y sostenibilidad.
+
+En referencia al financiamiento para la creación de nuevas prestaciones y observando la propuesta remitida, no se indica de dónde se obtendrá el financiamiento para esa nueva prestación, puesto que las condiciones determinadas en la propuesta de reforma son diferentes a las de una jubilación ordinaria y por lo tanto es necesario que el financiamiento para cubrir la diferencia en imposiciones y en edad se encuentre financiada de alguna manera 
+
+(...) El Ministerio del Trabajo, no ha calificado a la Industria Hidrocarburífera ni a ninguna actividad relacionada como de alto riesgo; bajo esta consideración, resulta necesario que el Ministerio del Trabajo como entidad rectora, manifieste un criterio técnico legal sobre actividades insalubres en el país, con lo que podría establecerse las razones por las cuales se estaría otorgando una prestación especial a un grupo de trabajadores que puede acceder sin ningún inconveniente a una jubilación ordinaria por vejez, con el cumplimiento de los requisitos legales ya existentes.
+
+Adicionalmente, resulta necesario aclarar y establecer si el beneficio de esta prestación especial, se direcciona a los trabajadores que realizan labores operativas de aquellos que realizan actividades administrativas pese a que se encuentran laborando en campos petroleros, en este sentido, se debe realizar un monitoreo a las instalaciones de campo de la Industria Petrolera para definir las actividades realizadas.
+
+Por cuanto, no existe una fuente de financiamiento que respalde la aprobación de una nueva prestación, no estamos de acuerdo con el contenido propuesto en el Proyecto de ley Reformatoria (…), ya que el mismo estaría contraviniendo lo dispuesto en el artículo 368 de la Constitución de la República (...)". 
+
+
+\item En sesión No. 102-CEPDTSS-2018, de 21 de noviembre de 2018, de la Comisión Especializada Permanente de los Derechos de los Trabajadores y Seguridad Social, el Dr. Manolo Rodas Beltrán, Presidente del Consejo Directivo del instituto Ecuatoriano de Seguridad Social, a la fecha, informó el análisis y observaciones institucionales sobre varios proyectos de ley. entre ellos el ``PROYECTO DE LEY REFORMATORIA A LA LEY DE SEGURIDAD SOCIAL QUE ESTABLECE LA JUBILACIÓN ESPECIAL DE LAS Y LOS TRABAJADORES DEL SECTOR PETROLERO", enmarcado en el concepto establecido y señalado en el oficio detallado en el literal precedente, cuya base se sustenta en los informes técnicos de las áreas correspondientes.
+
+
+\end{enumerate}
+
+% Formas de citar\\
+% 
+% cita simple: \cite{AppMathDemo:2013}\\
+% 
+% varias citas simples: \cite{ActMathLifContRisk:2013,ActMath:1997}\\
+% 
+% cita texto: \textcite{ActMathLifContRisk:2013}\\
+% 
+% cita solo autor: \citeauthor{ActMathLifContRisk:2013}\\
+% 
+% cita solo autor comprimida: \citeauthor*{ActMathLifContRisk:2013}\\
+% 
+% cita simple comprimida: \cite*{ActMathLifContRisk:2013}\\
+% 
+% cita completa: \fullcite{ResIESS_CD100}\\
+% 
+% cita completa: \autocite{ResIESS_CD100}\\
+% 
+% cita texto: \textcite{ResIESS_CD100}\\
+% 
+% Nuevas citas:
+% \parencite{ResIESS_CD100}\\
+% \smartcite{ResIESS_CD100}\\
+% \supercite{ResIESS_CD100}\\

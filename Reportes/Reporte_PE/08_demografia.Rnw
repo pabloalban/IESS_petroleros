@@ -1,0 +1,437 @@
+%---------------------------------------------------------------------------------------------------
+\chapter[Análisis demográfico, de salarios y prestaciones]{Análisis demográfico, de salarios y prestaciones}
+\label{chp_demog}
+
+A continuación, se presenta un análisis tabular y gráfico de las principales variables demográficas, 
+salariales, aportes y beneficios pagados, de la población asegurada y beneficiaria del Seguro de Desempleo.
+
+\section{Estructura demográfica de la población cotizante}
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Cotizantes al Seguro de Desempleo}
+\label{chp_demog:afi}
+ 
+%---------------------------------------------------------------------------------------------------
+Para el presente estudio, se considera el número de afiliados cotizantes al Seguro de Desempleo por año; en la tabla \ref{tab:iess_pob_afi_ini} y figura \ref{fig:iess_pob_afi_ini} se muestra a la población cotizante de este seguro en el período 2006 y 2018. 
+
+\begin{figure}[H]
+\centering
+\caption{Evolución de la población afiliada al Seguro de Desempleo y Cesantía}
+\label{fig:iess_pob_afi_ini}
+\includegraphics[scale=1]{graficos/iess_pob_afi_ces_des.png}
+\caption*{\scriptsize Fuente: Base de datos de planillas. \\
+Elaborado: DAIE.}
+\end{figure}
+
+El número de cotizantes tuvo una tendencia creciente entre los años 2006 y 2015, período en cual pasaron de 1.288.875 a 2.989.932; en cambio, su número decreció en 10,48\% en el año 2016, y 0,81\% en el 2017. Para el año 2018, se registró a 2.691.507 cotizantes al Seguro de Desempleo y Cesantía, de los cuales solo el 41,77\% eran mujeres. Además, se observó un crecimiento promedio del 6,57\% anual para el período 2007 a 2018.
+
+{\fontsize{11}{12}\selectfont
+\begin{longtable}[H]{crrrrr}
+\caption{Evolución histórica de la población cotizante al Seguro de Desempleo y Cesantía entre 2006 y 2018}
+\label{tab:iess_pob_afi_ini} \\
+\toprule
+ \multicolumn{1}{c}{\multirow{2}[2]{*}{Año}}  & \multicolumn{3}{c}{Afiliados activos} & \multicolumn{1}{c}{Incremento} &\multicolumn{1}{c}{Porcentaje de} \\
+\cline{2-4}
+	& \multicolumn{1}{c}{Mujeres} & \multicolumn{1}{c}{Hombres} & \multicolumn{1}{c}{Total} &  \multicolumn{1}{c}{afiliados}  & \multicolumn{1}{c}{incremento (\%)} \\
+\midrule
+\endfirsthead
+
+\toprule
+ \multicolumn{1}{c}{\multirow{2}[2]{*}{Año}}  & \multicolumn{3}{c}{Afiliados activos} & \multicolumn{1}{c}{Incremento} &\multicolumn{1}{c}{Porcentaje de} \\
+\cline{2-4}
+	& \multicolumn{1}{c}{Mujeres} & \multicolumn{1}{c}{Hombres} & \multicolumn{1}{c}{Total} &  \multicolumn{1}{c}{afiliados}  & \multicolumn{1}{c}{incremento (\%)} \\
+	\midrule
+\endhead
+
+\bottomrule \multicolumn{6}{c}{continúa...} \\
+\endfoot
+\bottomrule
+\caption*{\scriptsize Fuente:  Base de datos de planillas. \\
+Elaborado: DAIE.}
+\endlastfoot
+  \input{tablas/iess_cotizantes_ces_des.tex}
+\end{longtable}
+}
+
+
+A continuación, en la figura \ref{fig:iess_pir_afiliados}, se presenta la pirámide de poblacional de los afiliados cotizantes al Seguro de Desempleo y Cesantía por edad y género para el año 2018. La edad promedio de los cotizantes hombres es 38,2 años y 39,07 años para las mujeres. La pirámide poblacional presenta una forma regresiva y la edad con mayor frecuencia en la distribución poblacional es 29 años tanto en hombres como en mujeres, y presenta la misma distribución poblacional del SGO.
+
+\begin{figure}[H]
+\centering
+\caption{Distribución de la población afiliada activa en el 2018 al Seguro de Desempleo por edad y género}
+\label{fig:iess_pir_afiliados}
+\includegraphics[scale=1]{graficos/iess_pir_afiliados_ces_des.png}
+\caption*{\scriptsize Fuente: Base de datos de planillas. \\
+Elaborado: DAIE.}
+\end{figure}
+
+\subsection{Masa salarial de los cotizantes al Seguro de Desempleo}
+\label{chp_masa:salarial}
+
+En la tabla \ref{tab:iess_masa_salarial_ini} y figura \ref{fig:iess_masa_salarial_ini}, se presenta la evolución histórica de la masa salarial de los cotizantes al Seguro de Desempleo y Cesantía para el período 2006 a 2018. Solo incluye la masa salarial de los cotizantes de la tabla \ref{tab:iess_pob_afi_ini}, por lo tanto, difiere de la masa salarial de los cotizantes al SGO.
+
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{crrrrr}
+\caption{Evolución de la masa salarial de los cotizantes a desempleo y cesantía, del período 2006 a 2018}
+\label{tab:iess_masa_salarial_ini} \\
+\toprule
+ \multicolumn{1}{c}{\multirow{2}[2]{*}{Año}}  & \multicolumn{3}{c}{Masa Salarial (USD)} & \multicolumn{1}{c}{Incremento} &\multicolumn{1}{c}{Porcentaje de} \\
+\cline{2-4}
+	& \multicolumn{1}{c}{Hombres} & \multicolumn{1}{c}{Mujeres} & \multicolumn{1}{c}{Total} &  \multicolumn{1}{c}{ (USD)}  & \multicolumn{1}{c}{incremento (\%)} \\
+\midrule
+\endfirsthead
+
+\toprule
+ \multicolumn{1}{c}{\multirow{2}[2]{*}{Año}}  & \multicolumn{3}{c}{Masa Salarial (USD)} & \multicolumn{1}{c}{Incremento} &\multicolumn{1}{c}{Porcentaje de} \\
+\cline{2-4}
+	& \multicolumn{1}{c}{Hombres} & \multicolumn{1}{c}{Mujeres} & \multicolumn{1}{c}{Total} &  \multicolumn{1}{c}{ (USD)}  & \multicolumn{1}{c}{incremento (\%)} \\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{6}{c}{continúa...} \\
+\endfoot
+\bottomrule
+\caption*{\scriptsize Fuente: Base de datos de planillas. \\
+Elaborado: DAIE.}
+\endlastfoot
+  \input{tablas/iess_masa_salarial_ces_des.tex}
+\end{longtable}
+}
+
+\begin{figure}[H]
+\centering
+\caption{Masa salarial anual en el período 2005 – 2018 }
+\label{fig:iess_masa_salarial_ini}
+\includegraphics[scale=1]{graficos/iess_masa_salarial_ces_des.png}
+\caption*{\scriptsize Fuente: Base de datos de planillas. \\
+Elaborado: DAIE.}
+\end{figure}
+
+Se observa un rápido crecimiento de la masa salarial en el período 2005 al 2015, puesto que creció de USD 5.318.818.269,35 a USD 23.087.717.842,86 en ese período de tiempo, debido al crecimiento de los afiliados (ver tabla \ref{tab:iess_pob_afi_ini}). Para el año 2018, la masa salarial tiene un valor de USD 22.986.367.677,80, que representa un crecimiento del 332,17\% en comparación del año 2005. En promedio, la masa salarial de los cotizantes al Seguro de Desempleo y Cesantía creció 13,66\% anual en el período 2007 a 2018.
+
+En la figura \ref{fig:iess_pir_masa_salarial}, se muestra la distribución del salario declarado de los cotizantes al Seguro de Desempleo y Cesantía por género a diciembre del 2018; en cambio, el salario promedio declarado por parte de las mujeres a diciembre 2018 es USD  786,21 y para los
+hombres es de USD 817,39.
+
+\begin{figure}[H]
+\centering
+\caption{Distribución del salario declarado de los afiliados por género a diciembre de 2018}
+\label{fig:iess_pir_masa_salarial}
+\includegraphics[scale=1.0]{graficos/iess_pir_masa_salarial_des.png}
+\caption*{\scriptsize Fuente: Base de datos de planillas. \\
+Elaborado: DAIE.}
+\end{figure}
+
+En la tabla \ref{tab:iess_afi_tiempo_aportacion}, se presenta la población afiliada al IESS por rangos de edad,  número de aportaciones y sueldo promedio:
+La matriz precedente detalla la cantidad de afiliados activos a la fecha corte de este estudio,
+clasificados por edad, tiempo de aportes en años y el valor promedio del sueldo sobre el que se aporta.
+
+Además, se observa que el 39,22\% de la población afiliada tiene entre 0 y 5 años aportados, que el 50\%
+de la población afiliada está comprendida entre 25 y 45 años de edad; y que las personas que tienen más
+años aportados les corresponden los salarios promedios más altos. La población entre 35 y 40 años tiene el promedio de sueldos más altos.
+
+\begin{landscape}
+\begin{center}
+\begin{table}[H]
+\centering
+\caption{Población afiliada al \Sexpr{REP_seg} por rangos de edad, número de aportaciones y sueldo promedio a diciembre de 2018}
+\label{tab:iess_afi_tiempo_aportacion}
+\scalebox{0.56}{
+\begin{tabular}{c|rrrrrrrrrrr|r}
+\toprule
+\multicolumn{1}{c|}{\multirow{2}[4]{*}{Edad}} & \multicolumn{11}{c|}{Tiempo de afiliación} & \multicolumn{1}{c}{\multirow{2}[4]{*}{Total}} \\
+\cline{2-12}
+& [0 , 5] & [5 , 10] & [10 , 15] & [15 , 20] & [20 , 25] & [25 ,30] & [30 , 35] & [35 , 40] & [40 , 45]  & [45 , 50]& \text{mayor a $50$} &  \\
+%\midrule
+\hline
+\input{tablas/iess_afi_tiempo_aportacion_des.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Base de datos de planillas. \\
+Elaborado: DAIE.}
+\caption* {\scriptsize \textbf{Nota}: La segunda disposición general de la \legalcite{ResIESS_CD518} establece que los trabajadores autónomos, sin relación de dependencia, los afiliados voluntarios residentes en el Ecuador, pasantes, becarios, internos rotativos, afiliados voluntarios ecuatorianos residentes en el exterior, miembros del clero secular, las TNRH; y las personas jubiladas que se afilien al IESS; no aportarán al Seguro de Desempleo.}
+\end{table}
+\end{center}
+\end{landscape}
+
+
+
+\subsection{Número de afiliados con requisitos necesarios}
+\label{chp_demo:cumple_requisitos}
+
+El artículo 15 de la \legalcite{ResIESS_CD518} establece los requisitos que debe cumplir el afiliado para acceder a la prestación del Seguro de Desempleo son los siguientes:
+\begin{enumerate}[label=\alph*.]
+\item Acreditar al menos 24 aportaciones acumuladas y no simultáneas en relación de dependencia de las cuales al menos 6 deberán ser continuas e inmediatamente anteriores a la contingencia;
+\item Encontrarse en situación de desempleo por un período no menor a 60 días; y,
+\item Realizar la solicitud para el pago de la prestación a partir del día 61 de encontrarse desempleado y hasta en un plazo máximo de 45 días posteriores al plazo establecido en este literal. \end{enumerate}
+
+El número de afiliados con al menos veinticuatro (24) aportaciones, de las cuales las últimas seis (6) son consecutivas, y se encuentra cesante al menos dos (2) meses son 269.481, 295.770 y 348.001 afiliados cesantes en los años 2016, 2017 y 2018, respectivamente. En cambio, el número de afiliados solo con veinticuatro (24) aportaciones y dos (2) meses cesantes fue igual a 396.283, 368.414 y 358.865 en los años 2016, 2017 y 2018; es decir, existió 126.802, 72.644 y 10.864 afiliados que no cumplían con las últimas seis imposiciones consecutivas en los tres años antes citados, respectivamente; esto se debe a la difícil situación económica que el Ecuador vivió después de la caída de los precios del petróleo, lo que produjo una alta inestabilidad laboral en los años 2015 y 2016.
+
+Además, estos números no toman en cuenta si el cese de actividades productivas fue voluntario o no. En la tabla \ref{tab:iess_cesante_con_requisitos_des}, se detallan por rangos de edad y sexo el número afiliados, con requisitos cumplidos para solicitar el \Sexpr{REP_seg}, para el periodo 2016 a 2018.
+
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{lrrrrrrrrr}
+\caption[Evolución del número de afiliados que cumplían requisitos]{Evolución del número afiliados, con requisitos cumplidos para solicitar el \Sexpr{REP_seg}, para el periodo 2016 a 2018.}
+\label{tab:iess_cesante_con_requisitos_des} \\
+\toprule
+ \multicolumn{1}{c}{Rango}  & \multicolumn{3}{c}{2016} & \multicolumn{3}{c}{2017} &\multicolumn{3}{c}{2018} \\
+\cmidrule(r){2-4} \cmidrule(r){5-7} \cmidrule(r){8-10}
+ \multicolumn{1}{c}{edades} & \multicolumn{1}{c}{Hombres} & \multicolumn{1}{c}{Mujeres} & \multicolumn{1}{c}{Total} & \multicolumn{1}{c}{Hombres} & \multicolumn{1}{c}{Mujeres}& \multicolumn{1}{c}{Total} & \multicolumn{1}{c}{Hombres} & \multicolumn{1}{c}{Mujeres} & \multicolumn{1}{c}{Total} \\
+\midrule
+\endfirsthead
+
+\toprule
+ \multicolumn{1}{c}{Rango}  & \multicolumn{3}{c}{2016} & \multicolumn{3}{c}{2017} &\multicolumn{3}{c}{2018} \\
+\cmidrule(r){2-4} \cmidrule(r){5-7} \cmidrule(r){8-10}
+ \multicolumn{1}{c}{edades} & \multicolumn{1}{c}{Hombres} & \multicolumn{1}{c}{Mujeres} & \multicolumn{1}{c}{Total} & \multicolumn{1}{c}{Hombres} & \multicolumn{1}{c}{Mujeres}& \multicolumn{1}{c}{Total} & \multicolumn{1}{c}{Hombres} & \multicolumn{1}{c}{Mujeres} & \multicolumn{1}{c}{Total} \\
+ \midrule
+\endhead
+
+\bottomrule \multicolumn{10}{c}{continúa...} \\
+\endfoot
+\bottomrule
+\caption*{\scriptsize Fuente: Base de datos de planillas. \\
+Elaborado: DAIE.}
+\endlastfoot
+  \input{tablas/iess_cesante_con_requisitos_des.tex}
+\end{longtable}
+}
+
+Cabe mencionar que durante el año 2018 se otorgaron la prestación del seguro de Desempleo a 20.745 afiliados, en al menos en el primer pago de la parte fija (ver tabla \ref{tab:iess_tipo_pago_des}), pero el número de afiliados que cumplían requisitos antes señalados en el mismo año fue 348.001 (sin tomar en cuenta si las desvinculaciones fueron voluntarias o no); lo cual se puede estimar una tasa de uso de este seguro en el año 2018 no fue menor a 5,96\%.
+
+
+
+
+%--------------------------------------------------------------------------------------------------
+\section{Estructura demográfica de la población de beneficiarios}
+\label{chp_demog:beneficiarios}
+A continuación, se realiza el análisis demográfico de la población beneficiaria del \Sexpr{REP_seg}. La prestación por \Sexpr{REP_seg} tiene una duración máxima de cinco (5) pagos consecutivos y los motivos de la terminación del pago de la prestación están señalados en el artículo 20 de la \legalcite{ResIESS_CD518} (ver la sección \ref{chp_reglamentacion:motivos_interrup}).
+
+Además, según lo establece el Reglamento de este seguro y la Ley Orgánica para promoción del Trabajo Juvenil, Cesantía Desempleo publicada en el registro oficial el 28 de marzo de 2016, cada pago se compone de dos partes (fija y variable). La parte fija se calcula según lo establece el artículo 9 de la \legalcite{ResIESS_CD518} (generalmente es el 70\% de SBU) y se financia con el 1\% del aporte patronal al \Sexpr{REP_seg} (ver ecuaciones \ref{ecu:pf1} y \ref{ecu:pf2}), que constituye un fondo común de reparto; en cambio, la parte variable comprenderá el saldo acumulado en la cuenta individual de cesantía de existir.
+
+La base de cálculo de la parte fija y variable se abordan en la sección \ref{chp_reglamentacion:base_calc} y la fórmula de cálculo de la parte fija de esta prestación se detallan en la sección \ref{chp_reglamentacion:calc_benef} y sus requisitos en la sección \ref{chp_reglamentacion:requisitos}.
+
+La información presentada en esta sección utiliza las bases de datos enviada a esta Dirección a través del memorando Nro. IESS-DNFTSD-2019-0513-M de fecha 01 de abril de 2019, el cual es la respuesta al pedido de información realizado por la DAIE mediante el memorando Nro. IESS-DAIE-2019-0226-M de fecha 27 de marzo de 2019.
+
+\subsection{Número de beneficiarios y montos pagados por prestaciones separados por parte fija y variable}
+\label{chap_Demo:ref_beneficiarios}
+
+La evolución de los beneficiarios y los pagos prestacionales del Seguro de Desempleo se presentan en la tabla \ref{tab:iess_tipo_pago_des} y la figura \ref{fig:iess_evo_ben_des}. El número de beneficiarios y montos pagados se dividen en la parte fija y variable. La información se obtuvo del memorando Nro. IESS-DNFTSD-2019-0513-M. Cabe señalar que se utilizó la fecha orden de pago del primer pago para contabilizar el número de beneficiarios y el valor del beneficio, por esta razón, los rubros presentados en la tabla \ref{tab:iess_tipo_pago_des} difieren de los valores por gastos de la sección \ref{chp_infofinan:egresos_pens}.
+
+\begin{table}[H]
+\begin{center}
+\caption{Evolución histórica del número de beneficiarios y montos pagados por prestaciones del \Sexpr{REP_seg}}
+\label{tab:iess_tipo_pago_des}
+{\fontsize{11}{12}\selectfont
+\begin{tabular}{crrrrr}
+\toprule
+ \multicolumn{1}{c}{\multirow{2}[2]{*}{Año}}  & \multicolumn{2}{c}{Beneficiarios} & \multicolumn{3}{c}{Monto pagado (USD)}\\
+\cmidrule(r){2-3} \cmidrule(r){4-6}
+   & \multicolumn{1}{c}{Parte fija} & \multicolumn{1}{c}{Parte variable} & \multicolumn{1}{c}{Parte fija} & \multicolumn{1}{c}{Parte variable} &\multicolumn{1}{c}{Total} \\
+\midrule
+\input{tablas/iess_tipo_pago_des.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Base de datos del Seguro de Desempleo de la DNTI.\\
+Elaborado: DAIE.}
+\end{center}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica de los beneficiarios del \Sexpr{REP_seg}}
+\label{fig:iess_evo_ben_des}
+\includegraphics[scale=1]{graficos/iess_evo_ben_des.png}
+\caption*{\scriptsize Fuente: Base de datos del Seguro de Desempleo  DNTI. \\
+Elaborado: DAIE.}
+\end{figure}
+
+Con las respectivas aclaraciones, en el año 2018, se registró 20.745 beneficiarios del seguro de desempleo, de los cuales solo 4.319 (20,82\%) accedieron al menos a un pago de la parte variable. En promedio, para el período 2016 a 2018, se ha entregado anualmente el beneficio a 25.370,97 afiliados beneficiarios de al menos un pago de la parte fija y a 5.919,67 beneficiarios de la parte variable, lo que representa el 23,33\% de los que recibieron al menos un pago de la parte fija (las modalidades de pago del seguro están en la sección \ref{chp_reglamentacion:modalidades}). 
+
+Desde la fecha de creación de este seguro hasta el 31 de diciembre de 2018, se ha entregado USD 105.749.094,96, de los cuales USD 84.371.363,68 (79,78\%) corresponden a la parte fija y USD 21.377.731,28 (20,22\%) a la parte variable. En cambio, se ha entregado por beneficios promedio anuales USD 28.123.787,89 en la parte fija y USD 7.125.910,43 en la parte variable, para el período 2016 a 2018.
+
+\subsection{Número de beneficiarios y montos pagados por pagos}
+
+La prestación del \Sexpr{REP_seg} comprende de máximo de cinco pagos mensuales. Cada pago contiene una parte fija y una variable, de haber valores en la cuenta individual de cesantía del afiliado. 
+
+El registro histórico del número de beneficiarios y beneficios entregados por cada pago de la parte fija se presentan en la tabla \ref{tab:iess_pf_numero_pago_des} y la figura \ref{fig:iess_pf_numero_pago_des_1}.
+
+{\fontsize{8}{9}\selectfont
+\begin{longtable}[H]{crrrrrrrrrr}
+\caption{Evolución histórica los beneficiarios y montos pagados de la parte fija por cada pago del \Sexpr{REP_seg}} \\
+\label{tab:iess_pf_numero_pago_des} \\
+\toprule
+ \multicolumn{1}{c}{\multirow{2}[2]{*}{Año}}  & \multicolumn{5}{c}{Beneficiarios} & \multicolumn{5}{c}{Monto pagado (USD)} \\
+\cmidrule(r){2-6} \cmidrule(r){7-11}
+   & \multicolumn{1}{c}{Pago 1} & \multicolumn{1}{c}{Pago 2} & \multicolumn{1}{c}{Pago 3} & \multicolumn{1}{c}{Pago 4} & \multicolumn{1}{c}{Pago 5} & \multicolumn{1}{c}{Pago 1} & \multicolumn{1}{c}{Pago 2} & \multicolumn{1}{c}{Pago 3} & \multicolumn{1}{c}{Pago 4} & \multicolumn{1}{c}{Pago 5}\\
+\midrule
+\endfirsthead
+
+\toprule
+ \multicolumn{1}{c}{\multirow{2}[2]{*}{Año}}  & \multicolumn{5}{c}{Beneficiarios} & \multicolumn{5}{c}{Monto pagado (USD)} \\
+\cmidrule(r){2-6} \cmidrule(r){7-11}
+   & \multicolumn{1}{c}{Pago 1} & \multicolumn{1}{c}{Pago 2} & \multicolumn{1}{c}{Pago 3} & \multicolumn{1}{c}{Pago 4} & \multicolumn{1}{c}{Pago 5} & \multicolumn{1}{c}{Pago 1} & \multicolumn{1}{c}{Pago 2} & \multicolumn{1}{c}{Pago 3} & \multicolumn{1}{c}{Pago 4} & \multicolumn{1}{c}{Pago 5}\\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{11}{c}{continúa...} \\
+\endfoot
+\bottomrule
+\caption*{\scriptsize Fuente: Base de datos del Seguro de Desempleo de la DNTI. \\
+Elaborado: DAIE.}
+\endlastfoot
+  \input{tablas/iess_pf_numero_pago_des.tex}
+\end{longtable}
+}
+
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica de los beneficiarios de la parte fija por pago del \Sexpr{REP_seg}}
+\label{fig:iess_pf_numero_pago_des_1}
+\includegraphics[scale=1]{graficos/iess_ben_pago_pf_des.png}
+\caption*{\scriptsize Fuente: Base de datos del Seguro de Desempleo de la DNTI. \\
+Elaborado: DAIE.}
+\end{figure}
+
+El número de beneficiarios y el monto entregado va decreciendo del pago 1 al pago 5, puesto que por los motivos de terminación de pagos del artículo 20 de la \legalcite{ResIESS_CD518} y citados en la sección \ref{chp_reglamentacion:motivos_interrup}. En el año 2018, se registró 20.745 beneficiarios de la parte fija del pago 1 y se redujo a 17.841 en el pago 5, igualmente, en prestaciones de la parte fija se entregaron USD 5.458.573,29 en el pago 1, mientras que solo se entregaron USD 4.653.620,41 por el pago 5. Tomando en cuenta el período 2016 a 2018, el número de beneficiarios promedio anual por pago de la parte fija es el siguiente: beneficiarios pago 1, 25.370,67; beneficiarios del pago 2, 23.836,33; beneficiarios del pago 3, 22.193,00, beneficiarios pago 4, 20.602,33; y beneficiarios del pago5, 19.126,33. Por otro lado, los beneficios promedio entregados por año para cada pago son: USD 6.469.827,68, USD 6.023.131,00, USD 5.599.197,77, USD 5.199.534,71 y USD 4.832.096,73 para el pago 1, pago 2, pago 3, pago 4 y pago 5, respectivamente.
+
+El registro histórico del número de beneficiarios y beneficios entregados por cada pago de la parte variable del Seguro de Desempleo se presentan en la tabla \ref{tab:iess_pf_numero_pago_des} y la figura \ref{fig:iess_pf_numero_pago_des}.
+
+\begin{table}[H]
+\begin{center}
+\caption{Evolución histórica los beneficiarios y montos pagados de la parte variable por pago del \Sexpr{REP_seg}}
+\label{tab:iess_pv_numero_pago_des}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{crrrrrrrrrr}
+\toprule
+ \multicolumn{1}{c}{\multirow{2}[2]{*}{Año}}  & \multicolumn{5}{c}{Beneficiarios} & \multicolumn{5}{c}{Monto pagado (USD)} \\
+\cmidrule(r){2-6} \cmidrule(r){7-11}
+   & \multicolumn{1}{c}{Pago 1} & \multicolumn{1}{c}{Pago 2} & \multicolumn{1}{c}{Pago 3} & \multicolumn{1}{c}{Pago 4} & \multicolumn{1}{c}{Pago 5} & \multicolumn{1}{c}{Pago 1} & \multicolumn{1}{c}{Pago 2} & \multicolumn{1}{c}{Pago 3} & \multicolumn{1}{c}{Pago 4} & \multicolumn{1}{c}{Pago 5}\\
+\midrule
+\input{tablas/iess_pv_numero_pago_des.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Base de datos del Seguro de Desempleo de la DNTI.  \\
+Elaborado: DAIE.}
+\end{center}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica de los beneficiarios de la parte variable por pago del \Sexpr{REP_seg}}
+\label{fig:iess_pf_numero_pago_des}
+\includegraphics[scale=1]{graficos/iess_ben_pago_pv_des.png}
+\caption*{\scriptsize Fuente: Base de datos del Seguro de Desempleo de la DNTI. \\
+Elaborado: DAIE.}
+\end{figure}
+
+En el año 2018, se registró 4.319 beneficiarios de la parte variable del pago 1 y se redujo a 1.617 en el pago 5, igualmente, en prestaciones de la parte variable se entregaron USD 1.993.737,23 en el pago 1, mientras que solo se entregaron USD 473.973,82 por el pago 5. La mayoría de los beneficiarios del \Sexpr{REP_seg} solo recibe la parte fija en el quinto (5) pago, puesto que, en el año 2018, 17.841 afiliados recibieron de la parte fija y solo 1.617 (37,44\% de los beneficiarios del quinto (5) pago) de la parte variable en el quinto pago. Tomando en cuenta el período 2016 a 2018, el número de beneficiarios promedio anual por pago de la parte variable es el siguiente: beneficiarios pago 1, 5.920; beneficiarios del pago 2, 4.923; beneficiarios del pago 3, 3.827, beneficiarios pago 4, 2.724; y beneficiarios del pago 5, 1.868. Por otro lado, los beneficios totales promedio entregados por año para cada pago son: USD 2.680.252,80, USD 1.916.428,70, USD 1.260.716,28, USD 789.566,18 y USD 478.946,46 para el pago 1, pago 2, pago 3, pago 4 y pago 5, respectivamente.
+
+\subsection{Beneficiarios de la prestación de desempleo por edad y sexo}
+
+La población los beneficiarios a la parte fija del \Sexpr{REP_seg} para el período 2016 a 2018, se compone por 76.003 afiliados, de los cuales 130 aplicaron y recibieron el beneficio dos  (2) veces, cuatro (4) lo recibieron tres (3) veces y tres (3) lo recibieron tres (3) veces (no confundir con el número de pagos que tiene la prestación). Analizando por sexo, 47.245 (62,16\%) son hombres con edad promedio igual a 37,90 años y 28.758 (37,84\%) son mujeres con edad promedio igual a 37,23 años de edad. En la pirámide poblacional de los beneficiarios de la parte fija (ver figura \ref{fig:iess_pir_ben_pf_des}), se puede observar que muestra una forma regresiva en forma de campana, lo cual nos indica que la población de beneficiarios de este seguro se compone principalmente por afiliados entre 25 y 40 años.
+
+\begin{figure}[H]
+\centering
+\caption{Pirámide poblacional de los beneficiarios de la parte fija del \Sexpr{REP_seg}}
+\label{fig:iess_pir_ben_pf_des}
+\includegraphics[scale=1]{graficos/iess_pir_ben_pf_des.png}
+\caption*{\scriptsize Fuente: Base de datos del Seguro de Desempleo de la DNTI. \\
+Elaborado: DAIE.}
+\end{figure}
+
+La población los beneficiarios a la parte variable del \Sexpr{REP_seg} para el período 2016 a 2018, se compone por 17.753 afiliados, de los cuales 6 aplicaron y recibieron el beneficio dos (2) veces (no confundir con el número de pagos que tiene la prestación). Analizando por sexo, 10.688 (60,20\%) son hombres con edad promedio igual a 36,8 años y 7.066 (39,80\%) son mujeres con edad promedio igual a 35,5 años de edad. En la pirámide poblacional de los beneficiarios de la parte variable (ver figura \ref{fig:iess_pir_ben_pv_des}), se puede observar que muestra una forma regresiva en forma de campana, lo cual nos indica que la población de beneficiarios de este seguro se compone principalmente por afiliados entre 25 y 40 años.
+
+\begin{figure}[H]
+\centering
+\caption{Pirámide poblacional de los beneficiarios de la parte variable del \Sexpr{REP_seg}}
+\label{fig:iess_pir_ben_pv_des}
+\includegraphics[scale=1]{graficos/iess_pir_ben_pv_des.png}
+\caption*{\scriptsize Fuente: Base de datos del Seguro de Desempleo de la DNTI. \\
+Elaborado: DAIE.}
+\end{figure}
+
+\subsection{Monto pagado por rango de edad y por género}
+Los valores cancelados de la parte fija del \Sexpr{REP_seg}, tanto a hombres como mujeres durante los años 2016, 2017 y 2018, se presentan en la tabla \ref{tab:iess_monto_pag_edad_pf}.
+
+\begin{table}[H]
+\centering
+\caption{Valores pagados de la parte fija del Seguro de Desempleo por rangos de edad y sexo}
+\label{tab:iess_monto_pag_edad_pf}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{c*{3}{r}*{3}{r}*{3}{r}}
+\toprule
+\multirow{2}[4]{*}{\textbf{Rango por años}} & \multicolumn{3}{c}{\textbf{2016}} & \multicolumn{3}{c}{\textbf{2017}} & \multicolumn{3}{c}{\textbf{2018}} \\
+\cmidrule(r){2-4} \cmidrule(r){5-7} \cmidrule(r){8-10}
+\cmidrule(r){2-4} \cmidrule(r){5-7} \cmidrule(r){8-10}
+& \textbf{Masculino} & \textbf{Femenino} & \textbf{Total} & \textbf{Masculino} & \textbf{Femenino} & \textbf{Total } & \textbf{Masculino} & \textbf{Femenino} & \textbf{Total } \\
+\midrule
+\input{tablas/iess_tot_pag_pf_rango_edad_sexo_des.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Base de datos del Seguro de Desempleo -  DNTI. \\
+Elaborado: DAIE.}
+\end{table}
+
+Durante los tres (3) años del período 2016 a 2018, la mayoría de los montos cancelados por la parte fija del \Sexpr{REP_seg} se pagó a afiliados de sexo masculino (USD 52.173.853,97 (61,84\%)); en cambio, solo se pagó USD 32.197.509,71 a las afiliadas mujeres, lo que representa el 38,16\% del total pagado. Por edades, los hombres de 31 a 40 años han recibido USD 20.128.257,68 de la parte fija; en cambio, las mujeres de esa edad solo recibieron USD 13.416.318,71 durante el período 2016 a 2018; en total los afiliados de entre 31 a 40 años recibieron USD 33.544.576,39, lo que representa el 39,76\% del total entregado en la parte fija.
+
+
+
+\begin{table}[H]
+\centering
+\caption{Valores pagados de la parte variable del Seguro de Desempleo por rangos de edad y sexo}
+\label{tab:iess_monto_pag_edad_pv}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{c*{3}{r}*{3}{r}*{3}{r}}
+\toprule
+\multirow{2}[4]{*}{\textbf{Rango por años}} & \multicolumn{3}{c}{\textbf{2016}} & \multicolumn{3}{c}{\textbf{2017}} & \multicolumn{3}{c}{\textbf{2018}} \\
+\cmidrule(r){2-4} \cmidrule(r){5-7} \cmidrule(r){8-10}
+\cmidrule(r){2-4} \cmidrule(r){5-7} \cmidrule(r){8-10}
+& \textbf{Masculino} & \textbf{Femenino} & \textbf{Total} & \textbf{Masculino} & \textbf{Femenino} & \textbf{Total} & \textbf{Masculino} & \textbf{Femenino} & \textbf{Total } \\
+\midrule
+\input{tablas/iess_tot_pag_pv_rango_edad_sexo_des.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Base de datos del Seguro de Desempleo -  DNTI.\\
+Elaborado: DAIE.}
+\end{table}
+
+Durante los tres (3) años del período 2016 a 2018, la mayoría de los montos cancelados por la parte variable (ver tabla \ref{tab:iess_monto_pag_edad_pv}) del \Sexpr{REP_seg} se pagó a afiliados de sexo masculino (USD 13.310.800,58 (62,26\%)); en cambio, solo se pagó USD 8.066.930,70 a las afiliadas mujeres, lo que representa el 37,74\% del total pagado. Por edades, los hombres de 31 a 40 años han recibido USD 5.560.213,55 de la parte variable; en cambio, las mujeres de esa edad solo recibieron USD 3.905.552,26 durante el período 2016 a 2018; en total los afiliados de entre 31 a 40 años recibieron USD 9.465.765,81, lo que representa el 44,28\% del total entregado en la parte variable.
+
+\subsection{Monto promedio de los beneficios}
+
+Dividiendo el valor pagado por fecha de orden de pago por el número de beneficiarios por pago mostrado en las tablas \ref{tab:iess_pf_numero_pago_des} y \ref{tab:iess_pv_numero_pago_des}, se calcula el monto promedio por pago de la parte fija y variable del Seguro de Desempleo y se los presenta en la tabla \ref{tab:iess_prom_pago_des}.
+
+\begin{table}[H]
+\begin{center}
+\caption{Evolución histórica del beneficio promedio de la parte variable y fija, por pago del \Sexpr{REP_seg}}
+\label{tab:iess_prom_pago_des}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{crrrrrrrrrr}
+\toprule
+ \multicolumn{1}{c}{\multirow{2}[2]{*}{Año}}  & \multicolumn{5}{c}{Parte fija (USD)} & \multicolumn{5}{c}{Parte variable (USD)} \\
+\cmidrule(r){2-6} \cmidrule(r){7-11}
+   & \multicolumn{1}{c}{Pago 1} & \multicolumn{1}{c}{Pago 2} & \multicolumn{1}{c}{Pago 3} & \multicolumn{1}{c}{Pago 4} & \multicolumn{1}{c}{Pago 5} & \multicolumn{1}{c}{Pago 1} & \multicolumn{1}{c}{Pago 2} & \multicolumn{1}{c}{Pago 3} & \multicolumn{1}{c}{Pago 4} & \multicolumn{1}{c}{Pago 5}\\
+\midrule
+\input{tablas/iess_prom_pago_des.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Base de datos del Seguro de Desempleo de la DNTI.  \\
+Elaborado: DAIE.}
+\end{center}
+\end{table}
+
+
+Se registró el beneficio promedio en la parte fija igual a USD 263,13, USD 262,16, USD 261,76 y USD 260,84 de los pagos 1, 2, 3, 4 y 5, respectivamente, en el año 2018. En cambio, en el mismo año, la parte variable registró pagos promedios iguales a USD 461,62, USD 404,70, USD 350,12, USD 321,62 y USD 293,12 para los pagos 1, 2, 3, 4 y 5, respectivamente.
+
+Para el período 2016 a 2018, se registró beneficios promedios en la parte fija iguales a USD 255,01, USD 252,69, USD 252,30, USD 252,38 y USD 252,64 en los pagos 1, 2, 3, 4 y 5, respectivamente, en cambio, para el mismo período de tiempo, la parte variable pagó en promedio: USD 452,77, USD 389,31, USD 329,40, USD 289,82 y USD 256,40 en los pagos 1, 2, 3, 4 y 5, respectivamente.
+
+
+

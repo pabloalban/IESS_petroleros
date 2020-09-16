@@ -1,0 +1,462 @@
+\chapter{Tablas demográficas y factores de riesgo}
+\label{chp_riesgos}
+
+En este capítulo presentamos las tablas biométricas y de siniestralidad del \Sexpr{REP_seg} que fueron usadas en el desarrollo del presente 
+estudio. En estas tablas utilizamos la notación actuarial siguiente:
+
+\begin{description}
+  \item   $x$: edad en años.
+  \item   $l_x$: número de asegurados con vida a la edad $x$.
+  \item   $q_x$: probabilidad de que un asegurado que alcanzó la edad $x$, fallezca antes de alcanzar la edad $x+1$.
+  \item   $p_x$: probabilidad de que un asegurado de edad $x$, sobreviva hasta alcanzar la edad $x+1$.
+  \item   $e_x$: esperanza de vida a la edad $x$.
+  \item   $p_{i,g,x}$: probabilidad de realizar un pago $i$, para $i=1,\ldots,5$, del beneficio del \Sexpr{REP_seg} a un afiliado cesante de edad $x$ y sexo $g$.
+\end{description}
+
+Antes de continuar con la presentación de cada una de las tablas biométricas, es importante 
+recalcar que el número de personas $l_x$ no tiene porqué tomar un valor entero, es así que en las 
+tablas a continuación $l_x$ está redondeado a dos cifras decimales, esto fue realizado con la 
+finalidad de proveer de tablas biométricas que ofrezcan una mayor precisión al momento de realizar 
+cálculos numéricos con los valores presentados.
+
+%---------------------------------------------------------------------------------------------------
+% \clearpage
+\section{Tablas de siniestralidad del \Sexpr{REP_seg}}
+\label{chp_riesgos:tabsiniestralidad}
+La tasa de uso o tasa de siniestralidad, $p_{i,g,x}$, del \Sexpr{REP_seg} es la probabilidad de realizar un pago $i$ con monto igual a $0,7\, \alpha_{i,g} \, SBU_{t}$ a un afiliado que se encuentre cesante. Utilizando los datos históricos registrados desde la fecha que este seguro empezó a pagar beneficios, abril de 2016. Se estima la tasa de uso observada, $\hat{p}_{i,g,x}$, para cada pago ($i=1, \ldots, 5$), sexo ($g=1,2$) y edad ($x=15, \ldots, 115$), como se establece a continuación:
+\begin{equation}
+\hat{p}_{i,g,x}=\frac{\sum_{t=2016}^{2018} P_{i,t,g,x}}{\sum_{t=2016}^{2018} l_{t,g,x}^{2,ces}},
+\label{eq:tasa_uso_obs}
+\end{equation}
+donde $ P_{i,t,g,x}$ es el número de pagos $i$ cancelados a los afiliados en el año $t$ y $l_{t,g,x}^{2,ces}$ es el número de afiliados cesantes en el año $t$.
+
+A partir de las $\hat{p}_{i,g,x}$ observadas, se obtienen las $p_{i,g,x}$ alisadas, utilizando la metodología de spline suavizado. Las splines suavizadas abordan el suavizamiento desde un ángulo diferente más explícito. Una spline de suavizado cúbico ajustada a nuestros datos es una función $f$ que minimiza la función de residuos mínimos cuadrados penalizados:
+\begin{equation}
+PRSS= \sum_{x=15}^{\omega=115} \left(p_{i,g,x}-f(x)\right)^2+\lambda\,\int_{15}^{115} \left(f''(x)\right)^2 \, dx,
+\label{eq:PRSS}
+\end{equation}
+
+sobre todas las funciones con primera derivada continua y segunda derivada integrable. Donde $\lambda $ es un parámetro de suavizado que controla la compensación entre la fidelidad a los datos y la rugosidad de la estimación de la función. La solución es una función, una spline cúbica con nudos interiores y de frontera en los valores únicos de $x_i $. Se utilizó para su estimación la función $\text{smooth.spline()}$ del software estadístico R. Para documentación más detallada de este método de suavizamiento revisar \cite{Green1994}.
+
+Debido a un error en la parametrización del sistema de verificación de requisitos del \Sexpr{REP_seg}, se otorgó el beneficio a afiliados que cumplían con las 24 aportaciones, pero su empleador no estaba al día en sus aportaciones. De esta manera, estos afiliados no cumplían con el requisito establecido en el literal a del artículo 15 de la \legalcite{ResIESS_CD518}, el cual establece: ``acreditar al menos 24 aportaciones acumuladas y no simultáneas en relación de dependencia de las cuales al menos 6 deberán continuas e inmediatamente anteriores a la contingencia''; y ,por lo tanto, no debieron acceder al beneficio. A octubre de 2018 la DNTI corrigió este inconveniente; por consiguiente, se espera que no se repetiría esta situación en el futuro; por esta razón la Dirección Actuarial, de Investigación y Estadística cree prudente excluir 4.148 afiliados que recibieron este beneficio desde abril de 2016 a octubre de 2018 del escenario base. A continuación, se muestra las tasas de uso del \Sexpr{REP_seg} utilizadas en el escenario base en las figuras \ref{fig:tasa_uso_m} y \ref{fig:tasa_uso_f}, y en la tabla \ref{tab:iess_tasa_uso}.
+
+\begin{center}
+{\fontsize{10}{12}\selectfont
+  \begin{longtable}[H]{c*{5}{r}|*{5}{r}}
+    \caption{Tabla de la probabilidad de siniestralidad del \Sexpr{REP_seg}, $p_{i,g,x}$, estimada y alisada por sexo}\\
+    \label{tab:iess_tasa_uso}\\
+    \toprule
+    & \multicolumn{5}{c|}{Mujeres} & \multicolumn{5}{c}{Hombres} \\
+    \midrule
+    $x$ & $p_{1,1,x}$ & $p_{2,1,x}$ & $p_{3,1,x}$ & $p_{4,1,x}$ & $p_{5,1,x}$ & $p_{1,2,x}$ & $p_{2,2,x}$ & $p_{3,2,x}$ & $p_{4,2,x}$ & $p_{5,2,x}$\\ 
+    \midrule
+    \endfirsthead
+    
+    \toprule
+     & \multicolumn{5}{c|}{Mujeres} & \multicolumn{5}{c}{Hombres} \\
+    \midrule
+    $x$ & $p_{1,1,x}$ & $p_{2,1,x}$ & $p_{3,1,x}$ & $p_{4,1,x}$ & $p_{5,1,x}$ & $p_{1,2,x}$ & $p_{2,2,x}$ & $p_{3,2,x}$ & $p_{4,2,x}$ & $p_{5,2,x}$\\  
+    \midrule
+    \endhead
+    
+    \bottomrule \multicolumn{11}{r}{continúa...} \\
+    \endfoot
+    
+    \bottomrule
+    \caption*{\scriptsize Elaborado: DAIE.}
+    \endlastfoot
+    
+       \input{tablas/iess_tasa_uso.tex}
+       
+  \end{longtable}
+}
+\end{center}
+
+
+
+
+\begin{landscape}
+\begin{figure}[H]
+\caption{Tasa de siniestralidad de cada pago del \Sexpr{REP_seg}, $p_{i,2,x}$, estimada y alisada para hombres}
+\label{fig:tasa_uso_m}
+\begin{center}
+\includegraphics[scale=1.0]{graficos/iess_tasa_uso_m.png}
+\end{center}
+\end{figure}
+\end{landscape}
+
+\begin{landscape}
+\begin{figure}[H]
+\caption{Tasa de siniestralidad de cada pago del \Sexpr{REP_seg}, $p_{i,1,x}$, estimada y alisada para mujeres}
+\label{fig:tasa_uso_f}
+\begin{center}
+\includegraphics[scale=1.0]{graficos/iess_tasa_uso_f.png}
+\end{center}
+\end{figure}
+\end{landscape}
+
+\subsection{Tablas de siniestralidad \Sexpr{REP_seg}, incluyendo beneficiarios con aportes patronales extemporáneos}
+\label{chp_riesgos:tabsiniestralidad_pagos_ind}
+
+Ante el pedido realizado por la Dirección Nacional de Fondos de Terceros y Seguro de Desempleo, a través del memorando Nro. IESS-DNFTSD-2019-1132-M de fecha 24 de junio de 2019, en el cual se solicita: ``Por lo expuesto y con finalidad de cumplir con lo establecido en la normativa legal vigente, esta Dirección solicita se incluya en el Estudio Actuarial de Seguro de Desempleo, un análisis de sostenibilidad de conceder el Seguro de Desempleo cuando el afiliado acumule las aportaciones correspondientes, pero el empleador no haya realizado el pago respectivo de las aportaciones que le permitan al afiliado acreditar el derecho a este seguro.''.
+
+Ante este pedido, se incluyen dos escenarios a este estudio actuarial (escenario intermedio y extremo). Ambos escenarios contemplan el otorgamiento del beneficio a afiliados con las consideraciones antes expuestas. Por consiguiente, para el cálculo de la tasa de siniestralidad de estos dos escenarios, se incluyen a los 4.148 beneficiarios del \Sexpr{REP_seg}, cuales sus empleadores no estaban al día en sus aportaciones al momento de la contingencia. A continuación, se muestra las tasas de uso del \Sexpr{REP_seg} utilizadas en el escenario intermedio y extremo en las figuras \ref{fig:tasa_uso_m_ind} y \ref{fig:tasa_uso_f_ind}, y en la tabla \ref{tab:iess_tasa_uso_ind}.
+
+\begin{center}
+{\fontsize{10}{12}\selectfont
+  \begin{longtable}[H]{c*{5}{r}|*{5}{r}}
+    \caption{Tabla de la probabilidad de siniestralidad del \Sexpr{REP_seg}, $p_{i,g,x}$, estimada y alisada por sexo, incluyendo beneficiarios con aportes patronales extemporáneos }\\
+    \label{tab:iess_tasa_uso_ind}\\
+    \toprule
+    & \multicolumn{5}{c|}{Mujeres} & \multicolumn{5}{c}{Hombres} \\
+    \midrule
+    $x$ & $p_{1,1,x}$ & $p_{2,1,x}$ & $p_{3,1,x}$ & $p_{4,1,x}$ & $p_{5,1,x}$ & $p_{1,2,x}$ & $p_{2,2,x}$ & $p_{3,2,x}$ & $p_{4,2,x}$ & $p_{5,2,x}$\\ 
+    \midrule
+    \endfirsthead
+    
+    \toprule
+     & \multicolumn{5}{c|}{Mujeres} & \multicolumn{5}{c}{Hombres} \\
+    \midrule
+    $x$ & $p_{1,1,x}$ & $p_{2,1,x}$ & $p_{3,1,x}$ & $p_{4,1,x}$ & $p_{5,1,x}$ & $p_{1,2,x}$ & $p_{2,2,x}$ & $p_{3,2,x}$ & $p_{4,2,x}$ & $p_{5,2,x}$\\  
+    \midrule
+    \endhead
+    
+    \bottomrule \multicolumn{11}{r}{continúa...} \\
+    \endfoot
+    
+    \bottomrule
+    \caption*{\scriptsize Elaborado: DAIE.}
+    \endlastfoot
+    
+       \input{tablas/iess_tasa_uso_ind.tex}
+       
+  \end{longtable}
+}
+\end{center}
+
+\newpage
+\begin{landscape}
+\begin{figure}[H]
+\caption{Tasa de siniestralidad de cada pago del \Sexpr{REP_seg}, $p_{i,2,x}$, estimada y alisada para hombres, incluyendo beneficiarios con aportes patronales extemporáneos}
+\label{fig:tasa_uso_m_ind}
+\begin{center}
+\includegraphics[scale=0.97]{graficos/iess_tasa_uso_m_ind.png}
+\end{center}
+\end{figure}
+\end{landscape}
+
+\begin{landscape}
+\begin{figure}[H]
+\caption{Tasa de siniestralidad de cada pago del \Sexpr{REP_seg}, $p_{i,1,x}$, estimada y alisada para mujeres, incluyendo beneficiarias con aportes patronales extemporáneos}
+\label{fig:tasa_uso_f_ind}
+\begin{center}
+\includegraphics[scale=0.97]{graficos/iess_tasa_uso_f_ind.png}
+\end{center}
+\end{figure}
+\end{landscape}
+
+\section{Tablas del número de pagos de prestaciones pronosticadas de la parte fija de la prestación}
+\label{chp_riesgos:tab_beneficiarios}
+En la tabla \ref{tab:iess_tab_pob_proy_ben_pagos} y las figuras \ref{fig:iess_proy_benf_f} y \ref{fig:iess_proy_benf_m}, se detallan el número de beneficios entregados por pago y sexo, $l_{i,t,g}$, de la parte fija del Seguro de Desempleo para el período de valuación utilizados en el escenario base. Estas proyecciones, se calculan utilizando la ecuación \ref{eq:proy_siniestros} de la sección \ref{chp_modelo:benef}.
+
+\begin{center}
+{\fontsize{8}{10}\selectfont
+  \begin{longtable}[H]{c*{5}{r}|*{5}{r}}
+    \caption{Número de pagos pronosticados de la parte fija del \Sexpr{REP_seg}, por sexo}\\
+    \label{tab:iess_tab_pob_proy_ben_pagos}\\
+    \toprule
+    & \multicolumn{5}{c|}{Mujeres} & \multicolumn{5}{c}{Hombres} \\
+    \midrule
+    $t$ & $l_{1,t,1}$ & $l_{2,t,1}$ & $l_{3,t,1}$ & $l_{4,t,1}$ & $l_{5,t,1}$ & $l_{1,t,2}$ & $l_{2,t,2}$ & $l_{3,t,2}$ & $l_{4,t,2}$ & $l_{5,t,2}$\\  
+    \midrule
+    \endfirsthead
+    
+    \toprule
+     & \multicolumn{5}{c|}{Mujeres} & \multicolumn{5}{c}{Hombres} \\
+    \midrule
+    $t$ & $l_{1,t,1}$ & $l_{2,t,1}$ & $l_{3,t,1}$ & $l_{4,t,1}$ & $l_{5,t,1}$ & $l_{1,t,2}$ & $l_{2,t,2}$ & $l_{3,t,2}$ & $l_{4,t,2}$ & $l_{5,t,2}$\\  
+    \midrule
+    \endhead
+    
+    \bottomrule \multicolumn{11}{r}{continúa...} \\
+    \endfoot
+    
+    \bottomrule
+    \caption*{\scriptsize Elaborado: DAIE.}
+    \endlastfoot
+    
+       \input{tablas/iess_tab_pob_proy_ben_pagos.tex}
+       
+  \end{longtable}
+}
+\end{center}
+
+\begin{figure}[H]
+\caption{Número de pagos pronosticados de la parte fija del \Sexpr{REP_seg} realizados a mujeres, $l_{i,t,1}$}
+\label{fig:iess_proy_benf_f}
+\begin{center}
+\includegraphics[scale=1.0]{graficos/iess_proy_benf_f.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Número de pagos pronosticados de la parte fija del \Sexpr{REP_seg} realizados a hombres, $l_{i,t,2}$}
+\label{fig:iess_proy_benf_m}
+\begin{center}
+\includegraphics[scale=1.0]{graficos/iess_proy_benf_m.png}
+\end{center}
+\end{figure}
+
+
+\subsection{Tablas del número de pagos de prestaciones pronosticadas de la parte fija de la prestación, incluyendo beneficiarios con aportes patronales extemporáneos}
+\label{chp_riesgos:tab_beneficiarios_ind}
+
+A diferencia de las proyecciones presentadas en la sección \ref{chp_riesgos:tab_beneficiarios} utilizadas en el escenario base, a continuación, se muestran el número de beneficios por pago y sexo de la parte fija del Seguro de Desempleo, incluyendo los beneficiarios que registraron aportes extemporáneos en sus últimas 6 cotizaciones. Estas proyecciones se emplean en los escenarios intermedio y extremo, según el pedido de la Dirección de Fondos de Terceros y Seguro de Desempleo realizado a través del memorando Nro. IESS-DNFTSD-2019-1132-M.
+
+\begin{center}
+{\fontsize{7.9}{9}\selectfont
+  \begin{longtable}[H]{c*{5}{r}|*{5}{r}}
+    \caption{Número de pagos pronosticados de la parte fija del \Sexpr{REP_seg} por sexo, incluyendo beneficiarios con aportes patronales extemporáneos}\\
+    \label{tab:iess_tab_pob_proy_ben_pagos_ind}\\
+    \toprule
+    & \multicolumn{5}{c|}{Mujeres} & \multicolumn{5}{c}{Hombres} \\
+    \midrule
+    $t$ & $l_{1,t,1}$ & $l_{2,t,1}$ & $l_{3,t,1}$ & $l_{4,t,1}$ & $l_{5,t,1}$ & $l_{1,t,2}$ & $l_{2,t,2}$ & $l_{3,t,2}$ & $l_{4,t,2}$ & $l_{5,t,2}$\\  
+    \midrule
+    \endfirsthead
+    
+    \toprule
+     & \multicolumn{5}{c|}{Mujeres} & \multicolumn{5}{c}{Hombres} \\
+    \midrule
+    $t$ & $l_{1,t,1}$ & $l_{2,t,1}$ & $l_{3,t,1}$ & $l_{4,t,1}$ & $l_{5,t,1}$ & $l_{1,t,2}$ & $l_{2,t,2}$ & $l_{3,t,2}$ & $l_{4,t,2}$ & $l_{5,t,2}$\\  
+    \midrule
+    \endhead
+    
+    \bottomrule \multicolumn{11}{r}{continúa...} \\
+    \endfoot
+    
+    \bottomrule
+    \caption*{\scriptsize Elaborado: DAIE.}
+    \endlastfoot
+    
+       \input{tablas/iess_tab_pob_proy_ben_pagos_ind.tex}
+       
+  \end{longtable}
+}
+\end{center}
+\newpage
+\begin{figure}[H]
+\caption{Número de pagos pronosticados de la parte fija del \Sexpr{REP_seg} realizados a hombres, $l_{i,t,2}$, incluyendo beneficiarias con aportes patronales extemporáneos}
+\label{fig:iess_proy_benf_f_ind}
+\begin{center}
+\includegraphics[scale=1.0]{graficos/iess_proy_benf_f_ind.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Número de pagos pronosticados de la parte fija del \Sexpr{REP_seg} realizados a hombres, $l_{i,t,2}$, incluyendo beneficiarios con aportes patronales extemporáneos}
+\label{fig:iess_proy_benf_m_ind}
+\begin{center}
+\includegraphics[scale=1.0]{graficos/iess_proy_benf_m_ind.png}
+\end{center}
+\end{figure}
+
+\section{Tablas de mortalidad}
+\label{chp_riesgos:tabmort}
+
+A continuación, se presentan las tablas de mortalidad para el año 2018 para la población de afiliados, 
+pensionistas de vejez, pensionistas de invalidez y montepíos.
+
+% --------------------------------------------------------------------------------------------------
+\subsection{Tabla de mortalidad de afiliados}
+La tabla de mortalidad de afiliados por edad y sexo se presenta en la tabla 
+\ref{tab:iess_afi_mort_2018}.
+
+\begin{center}
+{\fontsize{10}{12}\selectfont
+  \begin{longtable}[H]{l*{4}{r}|l*{4}{r}}
+    \caption{Tabla de mortalidad de afiliados (2018)}\\
+    \label{tab:iess_afi_mort_2018}\\
+    \toprule
+    \multicolumn{5}{c|}{Mujeres} & \multicolumn{5}{c}{Hombres} \\
+    \midrule
+    $x$ & $l_x$ & $q_x$ & $p_x$ & $e_x$ & $x$ & $l_x$ & $q_x$ & $p_x$ & $e_x$\\ 
+    \midrule
+    \endfirsthead
+    
+    \toprule
+    \multicolumn{5}{c|}{Mujeres} & \multicolumn{5}{c}{Hombres} \\
+    \midrule
+    $x$ & $l_x$ & $q_x$ & $p_x$ & $e_x$ & $x$ & $l_x$ & $q_x$ & $p_x$ & $e_x$\\ 
+    \midrule
+    \endhead
+    
+    \bottomrule \multicolumn{10}{r}{continúa...} \\
+    \endfoot
+    
+    \bottomrule
+    \caption*{\scriptsize Elaborado: DAIE.}
+    \endlastfoot
+    
+       \input{tablas/iess_afi_mort_2018.tex}
+       
+  \end{longtable}
+}
+\end{center}
+
+% --------------------------------------------------------------------------------------------------
+% \clearpage
+\subsection{Tabla de mortalidad de pensionistas de vejez}
+A  continuación, en la tabla \ref{tab:iess_pen_vej_mort_2018}, se presenta la mortalidad de pensionistas 
+de vejez por edad y sexo. 
+
+\begin{center}
+{\fontsize{10}{12}\selectfont
+  \begin{longtable}[H]{l*{4}{r}|l*{4}{r}}
+    \caption{Tabla de mortalidad de pensionistas vejez (2018)}\\
+    \label{tab:iess_pen_vej_mort_2018}\\
+    \toprule
+    \multicolumn{5}{c|}{Mujeres} & \multicolumn{5}{c}{Hombres} \\
+    \midrule
+    $x$ & $l_x$ & $q_x$ & $p_x$ & $e_x$ & $x$ & $l_x$ & $q_x$ & $p_x$ & $e_x$\\ 
+    \midrule
+    \endfirsthead
+    
+    \toprule
+    \multicolumn{5}{c|}{Mujeres} & \multicolumn{5}{c}{Hombres} \\
+    \midrule
+    $x$ & $l_x$ & $q_x$ & $p_x$ & $e_x$ & $x$ & $l_x$ & $q_x$ & $p_x$ & $e_x$\\ 
+    \midrule
+    \endhead
+    
+    \bottomrule \multicolumn{10}{r}{continúa...} \\
+    \endfoot
+    
+    \bottomrule
+    \caption*{\scriptsize Elaborado: DAIE.}
+    \endlastfoot
+    
+       \input{tablas/iess_pen_vej_mort_2018.tex}
+       
+  \end{longtable}
+}
+\end{center}
+
+% --------------------------------------------------------------------------------------------------
+% \clearpage
+\subsection{Tabla de mortalidad de pensionistas de invalidez}
+En la tabla \ref{tab:iess_pen_inv_mort_2018}, se presenta la mortalidad de pensionistas de invalidez por edad y sexo.
+
+\begin{center}
+{\fontsize{10}{12}\selectfont
+  \begin{longtable}[H]{l*{4}{r}|l*{4}{r}}
+    \caption{Tabla de mortalidad de pensionistas invalidez (2018)}\\
+    \label{tab:iess_pen_inv_mort_2018}\\
+    \toprule
+    \multicolumn{5}{c|}{Mujeres} & \multicolumn{5}{c}{Hombres} \\
+    \midrule
+    $x$ & $l_x$ & $q_x$ & $p_x$ & $e_x$ & $x$ & $l_x$ & $q_x$ & $p_x$ & $e_x$\\ 
+    \midrule
+    \endfirsthead
+    
+    \toprule
+    \multicolumn{5}{c|}{Mujeres} & \multicolumn{5}{c}{Hombres} \\
+    \midrule
+    $x$ & $l_x$ & $q_x$ & $p_x$ & $e_x$ & $x$ & $l_x$ & $q_x$ & $p_x$ & $e_x$\\ 
+    \midrule
+    \endhead
+    
+    \bottomrule \multicolumn{10}{r}{continúa...} \\
+    \endfoot
+    
+    \bottomrule
+    \caption*{\scriptsize Elaborado: DAIE.}
+    \endlastfoot
+    
+       \input{tablas/iess_pen_inv_mort_2018.tex}
+       
+  \end{longtable}
+}
+\end{center}
+
+% --------------------------------------------------------------------------------------------------
+% \clearpage
+\subsection{Tabla de mortalidad de montepío por viudedad}
+A continuación, se presenta la tabla de mortalidad de montepío por viudedad detallado por edad y sexo.
+
+\begin{center}
+{\fontsize{10}{12}\selectfont
+  \begin{longtable}[H]{l*{4}{r}|l*{4}{r}}
+    \caption{Tabla de mortalidad de pensionistas de montepío (2018)}\\
+    \label{tab:iess_pen_mont_mort_2018}\\
+    \toprule
+    \multicolumn{5}{c|}{Mujeres} & \multicolumn{5}{c}{Hombres} \\
+    \midrule
+    $x$ & $l_x$ & $q_x$ & $p_x$ & $e_x$ & $x$ & $l_x$ & $q_x$ & $p_x$ & $e_x$\\ 
+    \midrule
+    \endfirsthead
+    
+    \toprule
+    \multicolumn{5}{c|}{Mujeres} & \multicolumn{5}{c}{Hombres} \\
+    \midrule
+    $x$ & $l_x$ & $q_x$ & $p_x$ & $e_x$ & $x$ & $l_x$ & $q_x$ & $p_x$ & $e_x$\\ 
+    \midrule
+    \endhead
+    
+    \bottomrule \multicolumn{10}{r}{continúa...} \\
+    \endfoot
+    
+    \bottomrule
+    \caption*{\scriptsize Elaborado: DAIE.}
+    \endlastfoot
+    
+       \input{tablas/iess_mon_mort_2018.tex}
+  
+  \end{longtable}
+}
+\end{center}
+
+%---------------------------------------------------------------------------------------------------
+\clearpage
+\section{Tabla de decrementos múltiples para afiliados}
+
+A partir de las diferentes tasas estimadas para los afiliados $\mu^{2,3}_{t,g,x}, \mu^{2,4}_{t,g,x},
+\mu^{2,5}_{t,g,x}$, cuya metodología de estimación y ajuste ha sido descrita en la sección
+\ref{chp_modelo:sec_cad_markov_cont}, se está en la capacidad de generar una tabla de decrementos 
+múltiples para afiliados, para más detalles al respecto se puede referir a 
+\textcite{ActMathLifContRisk:2013}. Esta tabla de decrementos múltiples es de extrema importancia 
+para el cálculo de conmutativos asociados a activos, por estar sujetos a realizar transiciones a 
+muerto, pensionista por vejez o pensionista por invalidez. 
+\begin{center}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{*{5}{r}|*{5}{r}}
+  \caption{Tabla de decrementos para afiliados ambos sexos}\\
+  \label{tab:dec_afi}\\
+
+  \toprule
+  \multicolumn{5}{c|}{Mujeres} & \multicolumn{5}{c}{Hombres} \\
+  \midrule
+  $x$ & $l_x$ & $d^3_x$ & $d^4_x$ & $d^5_x$ & $x$ & $l_x$ & $d^3_x$ & $d^4_x$ & $d^5_x$ \\ 
+  \midrule
+  \endfirsthead
+
+  \toprule
+  \multicolumn{5}{c|}{Mujeres} & \multicolumn{5}{c}{Hombres} \\
+  \midrule
+  $x$ & $l_x$ & $d^3_x$ & $d^4_x$ & $d^5_x$ & $x$ & $l_x$ & $d^3_x$ & $d^4_x$ & $d^5_x$ \\ 
+  \midrule
+  \endhead
+
+  \bottomrule
+  \multicolumn{10}{r}{continúa...} \\ 
+  \endfoot
+
+  \bottomrule
+  \caption*{\scriptsize Elaborado: DAIE.}
+  \endlastfoot
+  
+    \input{tablas/iess_tab_dec.tex}
+      
+  \end{longtable}
+}
+\end{center}

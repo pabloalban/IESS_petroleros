@@ -1,0 +1,64 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Opinión actuarial}
+\label{chp_opinion}
+
+El estudio se ha realizado bajo técnicas actuariales, observando las recomendaciones de las resoluciones
+de la Superintendencia de Bancos y Seguros, respecto de los estudios actuariales, así como las 
+normas internacionales para la elaboración de estudios actuariales, y los principios actuariales 
+generalmente aceptados como son la buena fe y la conservación.
+
+%---------------------------------------------------------------------------------------------------
+\section{Calidad y suficiencia de los datos}
+\label{chp_opinion:calidad}
+
+El estudio se realizó con la información que mantiene la institución. Las bases de datos de afiliados y beneficiarios del \Sexpr{REP_seg} fueron sometidas a rigurosas medidas estadísticas de control de calidad e integridad, luego de lo cual presentaron un nivel de confiabilidad y coherencia técnica suficientes para realizar el estudio actuarial.
+Al no disponer de una base de datos de los cotizantes a este seguro, se optó por identificarlos utilizando sus tasas de aportación, según lo establecen la \legalcite{ResIESS_CD261}, \legalcite{ResIESS_CD501} y \legalcite{ResIESS_CD515} en las bases de planillas.
+
+La Dirección Actuarial, de Investigación y Estadística validó mediante métodos estadísticos reconocidos la información de las bases de la Dirección Nacional de Fondos de Terceros y Seguro de Desempleo.
+
+El estudio se realiza con la base demográfica y masa salarial correspondiente a los aportantes al IESS, en la que no se incluyen a los afiliados pertenecientes a los sectores de los trabajadores autónomos, TNRH, voluntarios y otros sectores señalados en la segunda disposición general de la \legalcite{ResIESS_CD518}.
+%---------------------------------------------------------------------------------------------------
+\section{Razonabilidad de las hipótesis}
+\label{chp_opinion:hipotesis}
+
+Las hipótesis que intervienen en el estudio fueron recopiladas tanto del comportamiento histórico 
+relevante de la institución como de los fenómenos económicos publicados por los organismos estatales 
+especializados.
+
+Los supuestos que se utilizaron en el estudio pretenden acercarse a la realidad demográfica, económica
+y financiera del país, y en particular de los partícipes de este fondo.
+
+%---------------------------------------------------------------------------------------------------
+\section{Idoneidad de la metodología empleada}
+\label{chp_opinion:metodologia}
+
+La metodología utilizada para la elaboración de esta valuación actuarial está ampliamente explicada
+en el capítulo \ref{chp_modelo} del presente estudio y cumple con las especificaciones y disposiciones
+de la Superintendencia de Bancos y las normas generalmente aceptadas en la elaboración de estudios 
+actuariales.
+%---------------------------------------------------------------------------------------------------
+\section{Fecha de valuación}
+
+\begin{itemize}
+  \item La información de base para este estudio fue cortada al 2018-12-31. 
+  \item El período de proyección de este estudio es de 40 años, del 2018-12-31 hasta el 2058-12-31.
+\end{itemize}
+
+%---------------------------------------------------------------------------------------------------
+\section{Responsabilidad actuarial}
+\label{chp_opinion:actuario}
+Del presente estudio es responsabilidad del Director Actuarial, de Investigación y Estadística.
+
+\section{Firma de responsabilidad}
+Quito, 03 de noviembre de 2019 \\
+
+\vspace{2cm}
+Atentamente,
+
+%---------------------------------------------------------------------------------------------------
+\vspace{2cm}
+\begin{center}
+\textbf{Ramiro Vega Suárez, Lic.} \\
+Director Actuarial, de Investigación y Estadística \\
+Instituto Ecuatoriano de Seguridad Social
+\end{center}
