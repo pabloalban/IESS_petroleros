@@ -29,15 +29,9 @@ REP_bib_lib <- 'bibliografia_libros.bib'
 REP_bib_art <- 'bibliografia_articulos.bib'
 REP_bib_ley <- 'bibliografia_leyes.bib'
 
-REP_tit <- 'Estudio Actuarial de la Jubilación Especial de la Industria del Petróleo'
-REP_nom_seg <- 'Jubilación Especial de la Industria del Petróleo'
-REP_seg <- switch( parametros$seguro,
-                  'IVM' = 'Seguro IVM',
-                  'CES' = 'Seguro de Cesantía',
-                  'DES' = 'Seguro de Desempleo',
-                  'RTR' = 'Seguro de Riesgos del Trabajo',
-                  'SAL' = 'Seguro de Salud',
-                  'SSC' = 'SSC') 
+REP_tit <- 'Estudio Actuarial de la Jubilación Especial de las y los Trabajadores del Sector Petrolero'
+REP_nom_seg <- 'Jubilación Especial de las y los Trabajadores del Sector Petrolero'
+REP_seg <- 'Jubilación Especial de las y los Trabajadores del Sector Petrolero'
   
 paste( 'Seguro', parametros$seguro )
 REP_fec_fin <- format( parametros$fec_fin, '%Y-%m-%d' )
